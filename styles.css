@@ -1,0 +1,555 @@
+html {
+    box-sizing: border-box;
+  }
+*, *::before, *::after {
+    box-sizing: inherit;
+    }
+* {
+	padding: 0;
+	margin: 0;
+	}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    }
+
+.container { /*layout-start*/
+    display: grid;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    grid-template-areas: "header header header header header header header header header header header header"
+                         "title title title title title title title title title title title title"
+                         "desc desc desc desc desc desc desc desc desc desc desc desc"
+                         "bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson"
+                         "purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle"
+                         "purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose"
+                         "reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf"
+                         "footer footer footer footer footer footer footer footer footer footer footer footer";
+    grid-template-columns: (12, 1fr);
+    grid-template-rows: 8.83vh 91.17vh 100vh 100vh 30vh 70vh 91.17vh 8.83vh;
+    }/*layout-end*/
+/*header styles including logo and first nav*/
+header {
+    background-color: rgba(0, 0, 0, 0.1);
+    grid-area: header;
+    z-index: 2;
+    }
+#MyLogo {
+    float: left;
+    }
+#MyLogo a {
+    display: block;
+    position: relative;
+    color: #0026FF;
+    text-align: left;
+    padding: 0.2em 0 0 3em;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    text-shadow: -0.5px 0.5px rgb(20, 20, 20);
+    }
+    #MyLogo a:hover{
+        /*color: rgb(240, 240, 240);*/
+        color: #B400FC;
+        }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+        padding-right: 3em;
+        }
+        li {
+            float: right;
+            }
+        li a {
+            display: block;
+            color: rgb(240, 240, 240);
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            font-size: 0.9em;
+            letter-spacing: 0.2em;
+            padding: 16px;
+            text-decoration: none;
+            z-index: 1;
+            }
+        li a:hover {
+            color: #B400FC;
+            }
+        /*li a:visited {
+        color: #0026FF;
+        }*/
+
+/*title section*/
+.title {
+    grid-area: title;
+    background-image: linear-gradient(240deg, rgba(0,38,255,0.8), rgba(180,0,252,0.8)), url('images/TechnologyHuman.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-position-x: 64.75%;
+    max-width: 100%;
+    max-height: auto;
+    margin-top: -8.83vh; 
+    }
+    .title .type { /*div class of the type*/
+        
+        position: relative; 
+        padding-top: 54vh; /*lo tenía directo en el texto*/
+        width: auto;
+        display: flex;
+        
+    }
+
+    #question {
+        font-family: 'Permanent Marker', cursive;
+        font-weight: 300;
+        text-align: center;
+        /*padding-top: 54vh;*/
+        color:rgb(245, 245, 245);
+        font-size: 3.5vw;
+        letter-spacing: 0.09em;
+
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        /*border-right: .08em solid transparent;*/ /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+        
+        animation: 
+          typing 7s steps(40, end),
+          blink-caret .75s step-end 9.514;
+        }
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/*@keyframes slidein {
+    0% {
+      opacity: 1;
+    }
+    73% {
+      opacity: 0;
+    }
+}*/
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: rgb(255, 255, 255);}
+}
+
+.jumper { /*positioning of container for the button to description section*/
+    height: 40px;
+    position: relative;
+    margin-top: 27vh;
+    
+}
+.button { /*div class of the button*/
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#chevron { /*the button for colored background*/
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    padding: 4px 16px;
+    border-radius: 8px;
+    border-width: 1px;
+    /*box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);*/
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6); 
+}
+#chevron2 { /*the button for white background*/
+    font-size: 30px;
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 4px 16px;
+    border-radius: 8px;
+    border-width: 1px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
+}
+#chevron:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
+}
+#chevron2:hover {
+    border-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
+}
+/*description section*/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .desc {
+        grid-area: desc;
+        display: flex;
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        height: 100%;
+        max-height: 100%;
+        border-left: 2px solid #7600A5;
+        border-right: 2px solid #0019A8;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
+        
+        }
+    .desc .desc1 { /*description of blog on the left side*/
+        flex-basis: 50%;
+        text-align: justify;
+        padding: 20vw 3vw 0vw 3vw;
+        font-family: 'Lora', serif;
+        font-size: 1.02rem;
+        line-height: 1.5;
+        color: rgb(128, 128, 128);
+     
+    }
+    .desc .desc1 h2 { 
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        letter-spacing: 1.5; 
+        color: #0019A8;
+        text-align: left;
+        font-weight: 600;
+        line-height: 1.5;
+        padding-top: 1vh;
+    }
+    .desc .desc2 { /*description of resources on the right side*/
+        flex-basis: 50%;
+        text-align: justify;
+        padding: 0vw 3vw 20vw 3vw;
+        font-family: 'Lora', serif;
+        font-size: 1.02rem;
+        line-height: 1.5;
+        color: rgb(128, 128, 128);
+        
+    }
+    .desc .desc2 h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        letter-spacing: 1.5;
+        color: #7600A5;
+        text-align: right;
+        font-weight: 600;
+        line-height: 1.5;
+        padding-bottom: 1vh;
+    }
+    .desc .jumper1 { /*positioning of container for the button to quote section*/
+        display: none;
+        height: 40px;
+        position: absolute;
+        justify-self: center;
+       
+        margin-top: 0vh;
+        margin-left: 0vw;
+    }
+  }
+/*for the computer screen*/
+.desc {
+    grid-area: desc;
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    max-height: 100%;
+    border-left: 2px solid #7600A5;
+    border-right: 2px solid #0019A8;
+}
+.desc1 { /*description of blog on the left side*/
+    flex-basis: 50%;
+    text-align: justify;
+    padding: 13vw 3vw 10vw 3vw;
+    font-family: 'Lora', serif;
+    font-size: 1.3vw;
+    line-height: 1.8;
+    color: rgb(128, 128, 128);
+     
+}
+.desc1 h2 { 
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.4vw;
+    letter-spacing: 1.5; 
+    color: #0019A8;
+    text-align: left;
+    font-weight: 600;
+    line-height: 3;
+    padding-top: 5vh;
+}
+.desc2 { /*description of resources on the right side*/
+    flex-basis: 50%;
+    text-align: justify;
+    padding: 9vw 3vw 10vw 3vw;
+    font-family: 'Lora', serif;
+    font-size: 1.3vw;
+    line-height: 1.8;
+    color: rgb(128, 128, 128);
+    
+}
+.desc2 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.4vw;
+    letter-spacing: 1.5;
+    color: #7600A5;
+    text-align: right;
+    font-weight: 600;
+    line-height: 3;
+    padding-bottom: 9vh;
+}
+.jumper1 { /*positioning of container for the button to quote section*/
+    height: 40px;
+    position: relative;
+    float: left;
+    margin-top: 11vh;
+    margin-left: -3vw;
+}
+/*quote section*/
+.bateson {
+    grid-area: bateson;
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    background-size: stretch;
+    background-position-y: 55%;
+    background-position-x: 65%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(240deg, rgba(0,38,255,0.1), rgba(180,0,252,0.3)), url('images/Particle (Gerd altmann pixabay).jpg');
+}
+.bateson1 {
+    flex-basis: 50%;
+    background-color: rgba(66, 91, 216, 0.801);
+    text-align: center;
+    padding: 27.3vh 6vw;
+    font-family: 'Lora', serif;
+    font-size: 1.4vw;
+    line-height: 2;
+    color: rgb(221, 221, 221);
+}
+.bateson1 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2vw;
+    font-weight: 500;
+    line-height: 3;
+    letter-spacing: 1.5px;
+    color: rgb(221, 221, 221);
+    text-align: center;
+}
+.bateson2 {
+    flex-basis: 50%;
+    text-align: center;
+    color: transparent; 
+}
+.jumper2 { /*positioning of container for the button to purpose section*/
+    height: 40px;
+    position: relative;
+    float: left;
+    margin-top: 88vh;
+    
+}
+/*purpose section*/
+.purposetitle { 
+    grid-area: purposetitle;
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    border-left: 2px solid #0019A8;
+    border-right: 2px solid #7600A5;
+}
+.purposetitle h2 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4vw;
+    letter-spacing: 1.5; 
+    color: #000000;
+    padding-top: 11vh;
+}
+.purpose {
+    grid-area: purpose;
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    border-left: 2px solid #0019A8;
+    border-right: 2px solid #7600A5;
+}
+.purpose1 { /*make a difference*/
+    flex-basis: 50%;
+    text-align: justify;
+    padding: 4vh 3vw 15vh 3vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3vw;
+    line-height: 1.8;
+    color: rgb(128, 128, 128); 
+}
+.purpose1 h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7vw;
+    letter-spacing: 1;
+    color: #7600A5;
+    text-align: left;
+    font-weight: 600;
+    line-height: 3;
+}
+.purpose2 { /*change*/
+    flex-basis: 50%;
+    text-align: justify;
+    padding: 4vh 6vw 3vh 3vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3vw;
+    line-height: 1.8;
+    color: rgb(128, 128, 128);
+   
+}
+.purpose2 h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7vw;
+    letter-spacing: 1; 
+    color: #0019A8;
+    text-align: right;
+    font-weight: 600;
+    line-height: 3;
+}
+.jumper3 { /*positioning of container for the button to reconfigure section*/
+    height: 40px;
+    position: relative;
+    float: left;
+    margin-top: 12vh;
+    margin-left: -3vw;
+}
+
+/*reconf section*/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .reconf {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        grid-area: reconf;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: linear-gradient(240deg, rgba(180,0,252,0.8), rgba(0,38,255,0.8)), url('images/robot.jpg');
+        background-repeat: repeat-x;
+        background-size: cover;
+        background-attachment: scroll;
+        margin-bottom: -8.83vh; 
+    }
+    .reconf div h2 {
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.95);
+        text-align: left;
+        padding: 7vh 39vw 3vh 16vw; 
+    }
+    .reconf div p {
+        position: relative;
+        font-family: 'Lora', serif;
+        font-size: 1rem;
+        line-height: 1.7;
+        color: rgba(255, 251, 251, 0.85);
+        padding: 0vh 17vw 18vh 17vw;
+        text-align: justify;
+    }
+}
+
+/*for the computer screen*/
+.reconf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-area: reconf;
+    max-width: 100%;
+    max-height: auto;
+    background-image: linear-gradient(240deg, rgba(180,0,252,0.8), rgba(0,38,255,0.8)), url('images/robot.jpg');
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-attachment: scroll;
+    margin-bottom: -8.83vh; 
+}
+.reconf h2 {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5vw;
+    font-weight: 500;
+    line-height: 2.5;
+    color: rgba(255, 255, 255, 0.95);
+    text-align: left;
+    padding: 0vh 39vw 0vh 16vw;
+}
+.reconf p {
+    position: relative;
+    font-family: 'Lora', serif;
+    font-size: 1.4vw;
+    line-height: 2;
+    color: rgba(255, 251, 251, 0.85);
+    padding: 0vh 17vw 20vh 17vw;
+    text-align: justify;
+}
+.reconf .imglink { 
+    position: relative;
+    width: 66%;
+    bottom: 12%;
+    left: 0%;   
+}
+.reconf .overlay {
+    /*height: 260px;*/
+    background-color: #0019a800;
+    transition: .5s ease;
+    color: #0019A8;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
+}
+.reconf .overlay img { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.reconf .overlay .text {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vw;
+    top: 70%;
+    left: 13%;
+    text-align: left;
+}
+.reconf .overlay:hover {
+    background-color: #0019a80c;
+    color: #7600A5;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
+}
+footer {
+    grid-area: footer;
+    background-color: rgba(0, 0, 0, 0.5);
+    height:auto;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+    
