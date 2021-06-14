@@ -28,7 +28,21 @@ h1,h2,h3,h4,h5,h6 {
                          "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: (12, 1fr);
     grid-template-rows: 8.83vh 91.17vh 100vh 100vh 30vh 70vh 91.17vh 8.83vh;
-    }/*layout-end*/
+    }
+#pagecontainer {
+				display: grid;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    grid-template-areas: "header header header header header header header header header header header header"
+                         "title title title title title title title title title title title title"
+                         "desc desc desc desc desc desc desc desc desc desc desc d
+                         "footer footer footer footer footer footer footer footer footer footer footer footer";
+    grid-template-columns: (12, 1fr);
+    grid-template-rows: 8.83vh 91.17vh 100vh 8.83vh;
+}    
+    
+    /*layout-end*/
 /*header styles including logo and first nav*/
 header {
     background-color: rgba(0, 0, 0, 0.1);
@@ -36,7 +50,7 @@ header {
     z-index: 2;
     }
 .pageheader{
-		 background-image: linear-gradient(240deg, rgba(0,38,255,0.8), rgba(180,0,252,0.8));
+		 background-color: #1c2138;
 }
 #MyLogo {
     float: left;
@@ -108,7 +122,6 @@ header {
         display: flex;
         
     }
-
     #question {
         font-family: 'Permanent Marker', cursive;
         font-weight: 300;
@@ -147,12 +160,10 @@ header {
   from, to { border-color: transparent; }
   50% { border-color: rgb(255, 255, 255);}
 }
-
 .jumper { /*positioning of container for the button to description section*/
     height: 40px;
     position: relative;
-    margin-top: 27vh;
-    
+    margin-top: 27vh; 
 }
 .button { /*div class of the button*/
     margin: 0;
@@ -190,6 +201,32 @@ header {
     border-color: rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
+}
+.page_title {
+    grid-area: title;
+    background-image: url('images/TechnologyHuman.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-position-x: 64.75%;
+    max-width: 100%;
+    max-height: 50%;
+    margin-top: -8.83vh;  
+}
+.page_title .pages_title {
+    position: relative; 
+        padding-top: 35vh;
+        padding-right: 3em;
+        width: auto;  
+}
+.page_title .pages_title h1 {
+    font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        text-align: right;
+        color: #7600A5;
+        font-size: 3.5vw;
+        letter-spacing: 0.09em;
 }
 /*description section*/
 @media only screen and (max-width: 768px) {
@@ -548,8 +585,9 @@ footer {
     height:auto;
     z-index: 3;
 }
-
-
+.pagefooter {
+		 background-color: #1c2138;
+}
 
 
 
