@@ -30,19 +30,19 @@ h1,h2,h3,h4,h5,h6 {
     grid-template-rows: 8.83vh 91.17vh 100vh 100vh 30vh 70vh 91.17vh 8.83vh;
     }
 #pagecontainer {
-				display: grid;
+	display: grid;
     max-width: 100%;
     position: relative;
     margin: auto;
     grid-template-areas: "header header header header header header header header header header header header"
                          "title title title title title title title title title title title title"
-                         "desc desc desc desc desc desc desc desc desc desc desc d
+                         "cont cont cont cont cont cont cont cont cont cont cont cont"
                          "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: (12, 1fr);
-    grid-template-rows: 8.83vh 91.17vh 100vh 8.83vh;
+    grid-template-rows: 8.83vh 35.17vh 48.17vh 8.83vh;
 }    
-    
-    /*layout-end*/
+/*layout-end*/
+
 /*header styles including logo and first nav*/
 header {
     background-color: rgba(0, 0, 0, 0.1);
@@ -50,7 +50,7 @@ header {
     z-index: 2;
     }
 .pageheader{
-		 background-color: #1c2138;
+	background-color: #1c2138;
 }
 #MyLogo {
     float: left;
@@ -60,7 +60,7 @@ header {
     position: relative;
     color: #0026FF;
     text-align: left;
-    padding: 0.2em 0 0 3em;
+    padding: 0.2em 0 0 1.5em;
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
     font-weight: normal;
@@ -78,7 +78,7 @@ header {
         padding: 0;
         overflow: hidden;
         background-color: transparent;
-        padding-right: 3em;
+        padding-right: 1.5em;
         }
         li {
             float: right;
@@ -90,16 +90,23 @@ header {
             text-align: center;
             font-size: 0.9em;
             letter-spacing: 0.2em;
-            padding: 16px;
+            padding: 1.2em 1.6em 1.6em 1.6em;
             text-decoration: none;
             z-index: 1;
             }
+
         li a:hover {
             color: #B400FC;
             }
-        /*li a:visited {
-        color: #0026FF;
-        }*/
+        li a:active {
+            color: #0026FF;
+            }
+        
+        #resourceslink, #bloglink, #aboutlink, #purposelink {
+            color: #0026FF;
+            text-decoration: underline #0026FF;
+        }
+        
 
 /*title section*/
 .title {
@@ -109,18 +116,17 @@ header {
     background-size: cover;
     background-attachment: scroll;
     background-position: center;
-    background-position-x: 64.75%;
+    background-position-x: 65.13%;
     max-width: 100%;
     max-height: auto;
     margin-top: -8.83vh; 
+    position: relative;
     }
     .title .type { /*div class of the type*/
-        
         position: relative; 
         padding-top: 54vh; /*lo tenía directo en el texto*/
         width: auto;
-        display: flex;
-        
+        display: flex; 
     }
     #question {
         font-family: 'Permanent Marker', cursive;
@@ -162,9 +168,10 @@ header {
 }
 .jumper { /*positioning of container for the button to description section*/
     height: 40px;
-    position: relative;
-    margin-top: 27vh; 
-}
+    position: absolute;
+    margin-top: 14%; 
+    margin-left: 50%;
+} 
 .button { /*div class of the button*/
     margin: 0;
     position: absolute;
@@ -202,6 +209,16 @@ header {
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
 }
+#chevron:active {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
+}
+#chevron2:active {
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
+}
 .page_title {
     grid-area: title;
     background-image: url('images/TechnologyHuman.jpg');
@@ -210,15 +227,17 @@ header {
     background-attachment: scroll;
     background-position: center;
     background-position-x: 64.75%;
+    background-position-y: 75%;
     max-width: 100%;
-    max-height: 50%;
-    margin-top: -8.83vh;  
+    max-height: 100%;
+    /*margin-top: -8.83vh;*/
 }
 .page_title .pages_title {
     position: relative; 
-        padding-top: 35vh;
+        padding-top: 23vh;
         padding-right: 3em;
         width: auto;  
+    
 }
 .page_title .pages_title h1 {
     font-family: 'Poppins', sans-serif;
@@ -254,7 +273,6 @@ header {
         font-size: 1.02rem;
         line-height: 1.5;
         color: rgb(128, 128, 128);
-     
     }
     .desc .desc1 h2 { 
         font-family: 'Poppins', sans-serif;
@@ -273,8 +291,7 @@ header {
         font-family: 'Lora', serif;
         font-size: 1.02rem;
         line-height: 1.5;
-        color: rgb(128, 128, 128);
-        
+        color: rgb(128, 128, 128); 
     }
     .desc .desc2 h2 {
         font-family: 'Poppins', sans-serif;
@@ -352,7 +369,7 @@ header {
     height: 40px;
     position: relative;
     float: left;
-    margin-top: 11vh;
+    margin-top: 14%;
     margin-left: -3vw;
 }
 /*quote section*/
@@ -393,11 +410,20 @@ header {
     text-align: center;
     color: transparent; 
 }
+.bateson2 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2vw;
+    font-weight: 500;
+    line-height: 3;
+    letter-spacing: 1.5px;
+    color: transparent;
+    text-align: center;
+}
 .jumper2 { /*positioning of container for the button to purpose section*/
     height: 40px;
-    position: relative;
+    position: absolute;
     float: left;
-    margin-top: 88vh;
+    margin-top: 39.5%;
     
 }
 /*purpose section*/
@@ -432,7 +458,7 @@ header {
 .purpose1 { /*make a difference*/
     flex-basis: 50%;
     text-align: justify;
-    padding: 4vh 3vw 15vh 3vw;
+    padding: 4vh 3vw 15vh 4vw;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3vw;
     line-height: 1.8;
@@ -450,7 +476,7 @@ header {
 .purpose2 { /*change*/
     flex-basis: 50%;
     text-align: justify;
-    padding: 4vh 6vw 3vh 3vw;
+    padding: 4vh 4vw 3vh 3vw;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3vw;
     line-height: 1.8;
@@ -470,8 +496,55 @@ header {
     height: 40px;
     position: relative;
     float: left;
-    margin-top: 12vh;
+    margin-top: 13%;
     margin-left: -3vw;
+}
+.cont {
+    grid-area: cont;
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    /*margin: auto;*/
+    height: 100%;
+    /*margin-top: -8.83vh;*/
+    /*background-image: url('images/Particle (Gerd altmann pixabay).jpg'); */ 
+    /*background-color:white;
+    opacity: 99%;*/
+}
+.cont::after {
+    content: "";
+    background-image: url('images/Particle inverse.jpg');
+    opacity: 16%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-position-x: 64.75%;
+    background-position-y: 55%;
+}
+.cont .purpose1 {
+    flex-basis: 50%;
+    text-align: justify;
+    padding: 1.5vh 3vw 15vh 4vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3vw;
+    line-height: 1.6;
+    color: rgb(58, 58, 58); 
+}
+.cont .purpose2 {
+    flex-basis: 50%;
+    text-align: justify;
+    padding: 1.5vh 4vw 3vh 3vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3vw;
+    line-height: 1.6;
+    color: rgb(58, 58, 58);
 }
 
 /*reconf section*/
@@ -579,14 +652,20 @@ header {
     color: #7600A5;
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
 }
+.reconf .overlay:active {
+    background-color: #0019a800;
+    color: #0019A8;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
+}
 footer {
     grid-area: footer;
     background-color: rgba(0, 0, 0, 0.5);
-    height:auto;
+    height:100%;
     z-index: 3;
 }
 .pagefooter {
-		 background-color: #1c2138;
+	background-color: #1c2138;
+    height:auto; 
 }
 
 
