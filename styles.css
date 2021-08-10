@@ -29,7 +29,9 @@ h1,h2,h3,h4,h5,h6 {
     grid-template-columns: (12, 1fr);
     grid-template-rows: 8.83vh 91.17vh 100vh 100vh 30vh 70vh 91.17vh 8.83vh;
     }
-#pagecontainer {
+    
+    
+#pagecontainer {/*container for the single pages*/
 	display: grid;
     max-width: 100%;
     position: relative;
@@ -166,10 +168,12 @@ header {
   from, to { border-color: transparent; }
   50% { border-color: rgb(255, 255, 255);}
 }
+
+/*button at the end of each section*/
 .jumper { /*positioning of container for the button to description section*/
     height: 40px;
     position: absolute;
-    margin-top: 14%; 
+    margin-top: 25vh; 
     margin-left: 50%;
 } 
 .button { /*div class of the button*/
@@ -219,6 +223,8 @@ header {
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
 }
+
+/*title section for the pages*/
 .page_title {
     grid-area: title;
     background-image: url('images/TechnologyHuman.jpg');
@@ -230,7 +236,6 @@ header {
     background-position-y: 75%;
     max-width: 100%;
     max-height: 100%;
-    /*margin-top: -8.83vh;*/
 }
 .page_title .pages_title {
     position: relative; 
@@ -247,73 +252,135 @@ header {
         font-size: 3.5vw;
         letter-spacing: 0.09em;
 }
+
 /*description section*/
-@media only screen and (max-width: 768px) {
+ 
+@media only screen and (max-width: 769px) {
     /* For mobile phones: */
     .desc {
-        grid-area: desc;
-        display: flex;
-        max-width: 100%;
-        position: relative;
-        margin: auto;
-        height: 100%;
-        max-height: 100%;
-        border-left: 2px solid #7600A5;
-        border-right: 2px solid #0019A8;
         justify-content: center;
         align-items: center;
         flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
-        
         }
     .desc .desc1 { /*description of blog on the left side*/
-        flex-basis: 50%;
-        text-align: justify;
         padding: 20vw 3vw 0vw 3vw;
-        font-family: 'Lora', serif;
-        font-size: 1.02rem;
+        font-size: 1.2rem;
         line-height: 1.5;
-        color: rgb(128, 128, 128);
     }
     .desc .desc1 h2 { 
-        font-family: 'Poppins', sans-serif;
         font-size: 2rem;
-        letter-spacing: 1.5; 
-        color: #0019A8;
-        text-align: left;
-        font-weight: 600;
         line-height: 1.5;
         padding-top: 1vh;
     }
     .desc .desc2 { /*description of resources on the right side*/
-        flex-basis: 50%;
-        text-align: justify;
         padding: 0vw 3vw 20vw 3vw;
-        font-family: 'Lora', serif;
-        font-size: 1.02rem;
+        font-size: 1.2rem;
         line-height: 1.5;
-        color: rgb(128, 128, 128); 
     }
     .desc .desc2 h2 {
-        font-family: 'Poppins', sans-serif;
         font-size: 2rem;
-        letter-spacing: 1.5;
-        color: #7600A5;
-        text-align: right;
-        font-weight: 600;
         line-height: 1.5;
         padding-bottom: 1vh;
     }
     .desc .jumper1 { /*positioning of container for the button to quote section*/
         display: none;
-        height: 40px;
-        position: absolute;
-        justify-self: center;
-       
-        margin-top: 0vh;
-        margin-left: 0vw;
     }
   }
-/*for the computer screen*/
+  
+@media only screen and (max-width: 436px) {
+    .desc {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
+        }
+		.desc	.desc1 { /*description of blog on the left side*/
+        padding: 20vw 3vw 0vw 3vw;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .desc .desc1 h2 { 
+        font-size: 1.8rem;
+        line-height: 1.2;
+        padding-top: 1vh;
+    }
+    .desc .desc2 { /*description of resources on the right side*/
+        padding: 0vw 3vw 20vw 3vw;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .desc .desc2 h2 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        padding-bottom: 1vh;
+    }
+    .desc .jumper1 { /*positioning of container for the button to quote section*/
+        display: none;
+    }
+}
+ 
+@media only screen and (max-width: 376px) {
+    .desc {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
+        }
+		.desc	.desc1 { /*description of blog on the left side*/
+        padding: 20vw 3vw 0vw 3vw;
+        font-size: 0.98rem;
+        line-height: 1.5;
+    }
+    .desc .desc1 h2 { 
+        font-size: 1.55rem;
+        line-height: 1.1;
+        padding-top: 1vh;
+    }
+    .desc .desc2 { /*description of resources on the right side*/
+        padding: 0vw 3vw 20vw 3vw;
+        font-size: 0.98rem;
+        line-height: 1.5;
+    }
+    .desc .desc2 h2 {
+        font-size: 1.55rem;
+        line-height: 1.1;
+        padding-bottom: 1vh;
+    }
+    .desc .jumper1 { /*positioning of container for the button to quote section*/
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .desc {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
+        }
+		.desc	.desc1 { /*description of blog on the left side*/
+        padding: 20vw 3vw 0vw 3vw;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    .desc .desc1 h2 { 
+        font-size: 1.4rem;
+        line-height: 1;
+        padding-top: 1vh;
+    }
+    .desc .desc2 { /*description of resources on the right side*/
+        padding: 0vw 3vw 20vw 3vw;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    .desc .desc2 h2 {
+        font-size: 1.4rem;
+        line-height: 1;
+        padding-bottom: 1vh;
+    }
+    .desc .jumper1 { /*positioning of container for the button to quote section*/
+        display: none;
+    }
+}
+ 
+/*description section for the computer screen*/
 .desc {
     grid-area: desc;
     display: flex;
@@ -333,7 +400,6 @@ header {
     font-size: 1.3vw;
     line-height: 1.8;
     color: rgb(128, 128, 128);
-     
 }
 .desc1 h2 { 
     font-family: 'Poppins', sans-serif;
@@ -353,7 +419,6 @@ header {
     font-size: 1.3vw;
     line-height: 1.8;
     color: rgb(128, 128, 128);
-    
 }
 .desc2 h2 {
     font-family: 'Poppins', sans-serif;
@@ -367,12 +432,102 @@ header {
 }
 .jumper1 { /*positioning of container for the button to quote section*/
     height: 40px;
-    position: relative;
-    float: left;
-    margin-top: 14%;
-    margin-left: -3vw;
+    position: absolute;
+    margin-top: 88.7vh;
+    margin-left: 50%;
 }
-/*quote section*/
+
+/*Bateson quote section*/
+
+@media only screen and (max-width: 769px) { /*quote section mobile small*/
+.bateson {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
+    }
+.bateson .bateson1 {
+    padding: 10vh 6vw;
+    font-size: 2.5vw;
+    line-height: 2;
+    margin-top: 20vh;
+}
+.bateson .bateson1 h2 {
+    font-size: 3vw;
+    line-height: 3;
+    padding-top: 3vh;
+}
+.bateson .jumper2 { /*positioning of container for the button to purpose section*/
+    display: none;
+    }
+}
+
+@media only screen and (max-width: 436px) { /*quote section mobile small*/
+.bateson {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
+    }
+.bateson .bateson1 {
+    padding: 10vh 6vw;
+    font-size: 4vw;
+    line-height: 2;
+    margin-top: 20vh;
+}
+.bateson .bateson1 h2 {
+    font-size: 4.5vw;
+    line-height: 3;
+    padding-top: 3vh;
+}
+.jumper2 { /*positioning of container for the button to purpose section*/
+    display: none;
+ }
+}
+
+@media only screen and (max-width: 376px) { /*quote section mobile small*/
+.bateson {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
+    }
+.bateson .bateson1 {
+    padding: 10vh 6vw;
+    font-size: 4.5vw;
+    line-height: 2;
+    margin-top: 20vh;
+}
+.bateson .bateson1 h2 {
+    font-size: 5vw;
+    line-height: 3;
+    padding-top: 3vh;
+}
+.jumper2 { /*positioning of container for the button to purpose section*/
+    display: none;
+ }
+}
+
+@media only screen and (max-width: 321px) { /*quote section mobile small*/
+.bateson {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
+    }
+.bateson .bateson1 {
+    padding: 10vh 6vw;
+    font-size: 5vw;
+    line-height: 2;
+    margin-top: 20vh;
+}
+.bateson .bateson1 h2 {
+    font-size: 5.5vw;
+    line-height: 3;
+    padding-top: 3vh;
+}
+.jumper2 { /*positioning of container for the button to purpose section*/
+    display: none;
+ }
+}
+
+/*Bateson quote section computer screen*/
 .bateson {
     grid-area: bateson;
     display: flex;
@@ -392,7 +547,7 @@ header {
     text-align: center;
     padding: 27.3vh 6vw;
     font-family: 'Lora', serif;
-    font-size: 1.4vw;
+    font-size: 1.7vw;
     line-height: 2;
     color: rgb(221, 221, 221);
 }
@@ -408,7 +563,8 @@ header {
 .bateson2 {
     flex-basis: 50%;
     text-align: center;
-    color: transparent; 
+    color: white; 
+    visibility: hidden;
 }
 .bateson2 h2 {
     font-family: 'Poppins', sans-serif;
@@ -416,16 +572,17 @@ header {
     font-weight: 500;
     line-height: 3;
     letter-spacing: 1.5px;
-    color: transparent;
+    color: white;
     text-align: center;
 }
 .jumper2 { /*positioning of container for the button to purpose section*/
     height: 40px;
     position: absolute;
-    float: left;
-    margin-top: 39.5%;
-    
-}
+    margin-top: 88.7vh;
+    margin-left: 50%;
+ }
+ 
+
 /*purpose section*/
 .purposetitle { 
     grid-area: purposetitle;
@@ -494,10 +651,9 @@ header {
 }
 .jumper3 { /*positioning of container for the button to reconfigure section*/
     height: 40px;
-    position: relative;
-    float: left;
-    margin-top: 13%;
-    margin-left: -3vw;
+    position: absolute;
+    margin-top: 58.7vh;
+    margin-left: 50%;
 }
 .cont {
     grid-area: cont;
@@ -586,7 +742,7 @@ header {
     }
 }
 
-/*for the computer screen*/
+/*reconf section for the computer screen*/
 .reconf {
     display: flex;
     justify-content: center;
