@@ -258,12 +258,11 @@ header {
 @media only screen and (max-width: 769px) {
     /* For mobile phones: */
     .desc {
-        justify-content: center;
-        align-items: center;
+        
         flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
         }
     .desc .desc1 { /*description of blog on the left side*/
-        padding: 20vw 3vw 0vw 3vw;
+        padding: 10vw 3vw 0vw 3vw;
         font-size: 1.2rem;
         line-height: 1.5;
     }
@@ -441,8 +440,7 @@ header {
 
 @media only screen and (max-width: 769px) { /*quote section mobile small*/
 .bateson {
-    justify-content: center;
-    align-items: center;
+    
     flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
     }
 .bateson .bateson1 {
@@ -454,7 +452,7 @@ header {
 .bateson .bateson1 h2 {
     font-size: 3vw;
     line-height: 3;
-    padding-top: 3vh;
+    padding-top: 4vh;
 }
 .bateson .jumper2 { /*positioning of container for the button to purpose section*/
     display: none;
@@ -584,6 +582,41 @@ header {
  
 
 /*purpose section*/
+
+@media only screen and (max-width: 769px) {/* For mobile phones: */
+#purposetitle h2 {
+    font-size: 6vw;
+    padding-top: 2vh;
+}
+.purpose {
+    flex-direction: column;
+}
+.purpose .purpose1 h3 {
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-top: -19vh;
+}
+.purpose .purpose1 {
+    padding: 1vh 3vw 1vh 4vw;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.purpose .purpose2 h3 {
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-top: -5vh;
+}
+.purpose .purpose2 {
+    padding: 4vh 3vw 15vh 4vw;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.purpose .jumper3 {
+    display: none;
+}
+
+/*Purpose for computer sceen*/
+}
 .purposetitle { 
     grid-area: purposetitle;
     max-width: 100%;
