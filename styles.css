@@ -255,15 +255,15 @@ header {
 
 /*description section*/
  
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 769px), only screen and (min-device-width: 768) and (max-device-width: 1024px) and (orientation: portrait){
     /* For mobile phones: */
     .desc {
         
         flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
         }
     .desc .desc1 { /*description of blog on the left side*/
-        padding: 10vw 3vw 0vw 3vw;
-        font-size: 1.2rem;
+        padding: 4vw 3vw 0vw 3vw;
+        font-size: 1.1rem;
         line-height: 1.5;
     }
     .desc .desc1 h2 { 
@@ -273,7 +273,7 @@ header {
     }
     .desc .desc2 { /*description of resources on the right side*/
         padding: 0vw 3vw 20vw 3vw;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 1.5;
     }
     .desc .desc2 h2 {
@@ -288,12 +288,11 @@ header {
   
 @media only screen and (max-width: 436px) {
     .desc {
-        justify-content: center;
-        align-items: center;
+        
         flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
         }
-		.desc	.desc1 { /*description of blog on the left side*/
-        padding: 20vw 3vw 0vw 3vw;
+	.desc .desc1 { /*description of blog on the left side*/
+        padding: 2vw 3vw 0vw 3vw;
         font-size: 1rem;
         line-height: 1.5;
     }
@@ -303,7 +302,7 @@ header {
         padding-top: 1vh;
     }
     .desc .desc2 { /*description of resources on the right side*/
-        padding: 0vw 3vw 20vw 3vw;
+        padding: 0vw 3vw 10vw 3vw;
         font-size: 1rem;
         line-height: 1.5;
     }
@@ -319,12 +318,11 @@ header {
  
 @media only screen and (max-width: 376px) {
     .desc {
-        justify-content: center;
-        align-items: center;
+    
         flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
         }
-		.desc	.desc1 { /*description of blog on the left side*/
-        padding: 20vw 3vw 0vw 3vw;
+	.desc	.desc1 { /*description of blog on the left side*/
+        padding: 2vw 3vw 0vw 3vw;
         font-size: 0.98rem;
         line-height: 1.5;
     }
@@ -350,12 +348,11 @@ header {
 
 @media only screen and (max-width: 321px) {
     .desc {
-        justify-content: center;
-        align-items: center;
+    
         flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
         }
 		.desc	.desc1 { /*description of blog on the left side*/
-        padding: 20vw 3vw 0vw 3vw;
+        padding: 2vw 3vw 0vw 3vw;
         font-size: 0.9rem;
         line-height: 1.5;
     }
@@ -444,10 +441,10 @@ header {
     flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
     }
 .bateson .bateson1 {
-    padding: 10vh 6vw;
+    padding: 15vh 6vw;
     font-size: 2.5vw;
     line-height: 2;
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
 .bateson .bateson1 h2 {
     font-size: 3vw;
@@ -461,15 +458,13 @@ header {
 
 @media only screen and (max-width: 436px) { /*quote section mobile small*/
 .bateson {
-    justify-content: center;
-    align-items: center;
     flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
     }
 .bateson .bateson1 {
-    padding: 10vh 6vw;
+    padding: 15vh 6vw;
     font-size: 4vw;
     line-height: 2;
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
 .bateson .bateson1 h2 {
     font-size: 4.5vw;
@@ -488,10 +483,10 @@ header {
     flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
     }
 .bateson .bateson1 {
-    padding: 10vh 6vw;
+    padding: 15vh 6vw;
     font-size: 4.5vw;
     line-height: 2;
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
 .bateson .bateson1 h2 {
     font-size: 5vw;
@@ -505,15 +500,13 @@ header {
 
 @media only screen and (max-width: 321px) { /*quote section mobile small*/
 .bateson {
-    justify-content: center;
-    align-items: center;
     flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
     }
 .bateson .bateson1 {
-    padding: 10vh 6vw;
+    padding: 15vh 6vw;
     font-size: 5vw;
     line-height: 2;
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
 .bateson .bateson1 h2 {
     font-size: 5.5vw;
@@ -592,9 +585,9 @@ header {
     flex-direction: column;
 }
 .purpose .purpose1 h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2;
-    margin-top: -19vh;
+    margin-top: -22vh;
 }
 .purpose .purpose1 {
     padding: 1vh 3vw 1vh 4vw;
@@ -602,9 +595,9 @@ header {
     line-height: 1.5;
 }
 .purpose .purpose2 h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2;
-    margin-top: -5vh;
+    margin-top: -3vh;
 }
 .purpose .purpose2 {
     padding: 4vh 3vw 15vh 4vw;
