@@ -255,7 +255,7 @@ header {
 
 /*description section*/
 
-@media only screen and (max-width: 601px), only screen and (orientation: portrait) {
+@media only screen and (max-width: 601px) and (orientation: portrait) {
     .desc {
         
         flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
