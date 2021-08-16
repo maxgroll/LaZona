@@ -286,7 +286,7 @@ header {
     }
   }
   
-@media only screen and (max-width: 436px) {
+@media only screen and (max-width: 436px) , only screen and (orientation: portrait)  {
     .desc {
         
         flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
