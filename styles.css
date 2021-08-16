@@ -262,7 +262,7 @@ header {
         }
     .desc .desc1 { /*description of blog on the left side*/
         padding: 4vw 3vw 0vw 3vw;
-        font-size: 1.1rem;
+        font-size: 2rem;
         line-height: 1.5;
     }
     .desc .desc1 h2 { 
