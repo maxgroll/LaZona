@@ -255,7 +255,7 @@ header {
 
 /*description section*/
  
-@media only screen and (max-width: 769px), only screen and (orientation: portrait) {
+@media only screen and (max-width: 769px), only screen and (min-device-width: 435px), only screen and (orientation: portrait) {
     /* For mobile phones: */
     .desc {
         
@@ -286,7 +286,7 @@ header {
     }
   }
   
-@media only screen and (max-width: 436px) , only screen and (min-width: 435px), only screen and (orientation: portrait)  {
+@media only screen and (max-width: 436px) , only screen and (min-device-width: 435px), only screen and (orientation: portrait)  {
     .desc {
         
         flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
@@ -316,7 +316,7 @@ header {
     }
 }
  
-@media only screen and (max-width: 376px), only screen and (min-width: 375px), only screen and (orientation: portrait) {
+@media only screen and (max-width: 376px), only screen and (min-device-width: 375px), only screen and (orientation: portrait) {
     .desc {
     
         flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
