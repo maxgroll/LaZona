@@ -256,7 +256,7 @@ header {
 /*description section*/
 
 
-@media only screen and (max-width: 601px) and (orientation: portrait) {
+@media only screen and (max-width: 769px) {
     /* For mobile phones: */
     .desc {
         
