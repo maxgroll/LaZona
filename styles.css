@@ -254,8 +254,39 @@ header {
 }
 
 /*description section*/
- 
-@media only screen and (max-width: 769px), only screen and (min-device-width: 601px), only screen and (orientation: portrait) {
+
+@media only screen and (min-device-width: 601px), only screen and (orientation: portrait) {
+    .desc {
+        
+        flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
+        }
+    .desc .desc1 { /*description of blog on the left side*/
+        padding: 4vw 3vw 0vw 3vw;
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    .desc .desc1 h2 { 
+        font-size: 2rem;
+        line-height: 1.5;
+        padding-top: 1vh;
+    }
+    .desc .desc2 { /*description of resources on the right side*/
+        padding: 0vw 3vw 20vw 3vw;
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    .desc .desc2 h2 {
+        font-size: 2rem;
+        line-height: 1.5;
+        padding-bottom: 1vh;
+    }
+    .desc .jumper1 { /*positioning of container for the button to quote section*/
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 769px) {
     /* For mobile phones: */
     .desc {
         
