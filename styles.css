@@ -675,8 +675,7 @@ header {
           
             #purposetitle {
                 position: relative;
-                margin-top: 0vh;
-                z-index: -1;
+                margin-bottom: -12vh;
             }
             
             #purposetitle h2 {
@@ -685,14 +684,13 @@ header {
             .purpose .purpose1 h3 {
                 font-size: 1.20rem;
                 line-height: 1.5;
-                margin-top: -12vh;
+                margin-top: 0vh;
                 padding-bottom: 1.5vh;
                 }
             
             .purpose .purpose1 {
                 overflow: scroll;
             -webkit-overfow-scrolling: touch;
-            z-index: 10;
                 }
         
             .purpose .purpose2 {
