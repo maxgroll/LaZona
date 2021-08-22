@@ -27,7 +27,7 @@ h1,h2,h3,h4,h5,h6 {
                          "reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf"
                          "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: (12, 1fr);
-    grid-template-rows: 8.83vh 91.17vh 100vh 100vh 25vh 75vh 91.17vh 8.83vh;
+    grid-template-rows: 8.83vh 91.17vh 100vh 100vh 20vh 80vh 91.17vh 8.83vh;
     }
     
     
