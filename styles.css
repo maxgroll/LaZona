@@ -673,8 +673,6 @@ header {
 }
         @media only screen and (max-width: 430px) {
             #purposetitle h2 {
-                font-size: 6vw;
-                padding-top: 3vh;
                 z-index: -1;
             }
             
@@ -682,6 +680,7 @@ header {
             
                 overflow: scroll;
             -webkit-overfow-scrolling: touch;
+            z-index: 1;
                 }
         
             .purpose .purpose2 {
