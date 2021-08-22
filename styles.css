@@ -674,6 +674,7 @@ header {
         @media only screen and (max-width: 430px) {
             #purposetitle h2 {
                 z-index: -1;
+                margin-bottom: -12vh;
             }
             .purpose .purpose1 h3 {
                 font-size: 1.20rem;
