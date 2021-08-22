@@ -297,6 +297,7 @@ header {
         font-size: 1.1rem;
         line-height: 2.1;
         overflow: scroll;
+        -webkit-overfow-scrolling: touch;
     }
     .desc .desc1 h2 { 
         font-size: 1.8rem;
@@ -308,6 +309,7 @@ header {
         font-size: 1.1rem;
         line-height: 2.1;
         overflow: scroll;
+        -webkit-overfow-scrolling: touch;
     }
     .desc .desc2 h2 {
         font-size: 1.8rem;
