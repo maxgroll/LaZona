@@ -682,7 +682,7 @@ header {
                 z-index: -1;
             }
             .purpose {
-                padding-top: -12vh;
+                margin-top: -12vh;
             }
             .purpose .purpose1 h3 {
                 font-size: 1.20rem;
