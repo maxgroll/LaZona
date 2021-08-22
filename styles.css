@@ -672,8 +672,12 @@ header {
         }
 }
         @media only screen and (max-width: 430px) {
+            .purpose {
+                grid-template-rows: 80vh;
+            }
+            
             .purposetitle {
-                margin-bottom: -12vh;
+                grid-template-rows: 20vh;
             }
             
             #purposetitle h2 {
