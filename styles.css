@@ -674,16 +674,14 @@ header {
         @media only screen and (max-width: 430px) {
           
             #purposetitle {
-                margin-bottom: 0vh;
+                margin-bottom: -12vh;
                 margin-top: -12vh;
             }
             
             #purposetitle h2 {
                 z-index: -1;
             }
-            #purpose {
-                margin-top: -12vh;
-            }
+    
             .purpose .purpose1 h3 {
                 font-size: 1.20rem;
                 line-height: 1.5;
