@@ -675,7 +675,8 @@ header {
           
             #purposetitle {
                 margin-bottom: 0vh;
-                margin-top: 0vh;
+                margin-top: -12vh;
+                padding-top: 0vh;
             }
             
             #purposetitle h2 {
