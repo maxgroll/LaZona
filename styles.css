@@ -684,7 +684,6 @@ header {
             .purpose .purpose1 h3 {
                 font-size: 1.20rem;
                 line-height: 1.5;
-                margin-top: -12vh;
                 padding-bottom: 1.5vh;
                 z-index: 1;
                 }
@@ -693,6 +692,7 @@ header {
                 overflow: scroll;
             -webkit-overfow-scrolling: touch;
             z-index: 10;
+            margin-top: -12vh;
                 }
         
             .purpose .purpose2 {
