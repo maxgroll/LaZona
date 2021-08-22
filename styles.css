@@ -27,7 +27,7 @@ h1,h2,h3,h4,h5,h6 {
                          "reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf"
                          "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: (12, 1fr);
-    grid-template-rows: 8.83vh 91.17vh 100vh 100vh 20vh 80vh 91.17vh 8.83vh;
+    grid-template-rows: 8.83vh 91.17vh 100vh 100vh 25vh 75vh 91.17vh 8.83vh;
     }
     
     
@@ -678,7 +678,7 @@ header {
             .purpose .purpose1 h3 {
                 font-size: 1.20rem;
                 line-height: 1.5;
-                margin-top: -12vh;
+                margin-top: 0vh;
                 padding-bottom: 1.5vh;
                 z-index: 1;
                 }
@@ -730,7 +730,7 @@ header {
 .purpose1 { /*make a difference*/
     flex-basis: 50%;
     text-align: justify;
-    padding: 5vh 3vw 3vh 3vw;
+    padding: 0vh 3vw 3vh 3vw;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
     line-height: 1.8;
@@ -752,7 +752,7 @@ header {
 .purpose2 { /*change*/
     flex-basis: 50%;
     text-align: justify;
-    padding: 5vh 3vw 3vh 3vw;
+    padding: 0vh 3vw 3vh 3vw;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
     line-height: 1.8;
