@@ -674,7 +674,8 @@ header {
         @media only screen and (max-width: 430px) {
           
             #purposetitle {
-                padding-top: 0vh;
+                margin-top: 0vh;
+                margin-bottom: 0vh;
             }
             
             #purposetitle h2 {
