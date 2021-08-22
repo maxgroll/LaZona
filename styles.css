@@ -345,6 +345,7 @@ header {
            
             overflow: scroll;
             -webkit-overfow-scrolling: touch;
+    
         }
         
         .desc .desc2 { /*description of resources on the right side*/
