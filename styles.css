@@ -692,7 +692,7 @@ header {
                 overflow: scroll;
             -webkit-overfow-scrolling: touch;
             z-index: 10;
-            margin-top: -12vh;
+            padding-top: -12vh;
                 }
         
             .purpose .purpose2 {
