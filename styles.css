@@ -681,7 +681,7 @@ header {
             #purposetitle h2 {
                 z-index: -1;
             }
-            .purpose {
+            #purpose {
                 margin-top: -12vh;
             }
             .purpose .purpose1 h3 {
