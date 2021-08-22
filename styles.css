@@ -598,11 +598,15 @@ header {
     padding: 0vh 3vw 1vh 4vw;
     font-size: 1.01rem;
     line-height: 1.8;
+    overflow: scroll;
+    -webkit-overfow-scrolling: touch;
     }
 .purpose .purpose2 {
     padding: 4vh 3vw 15vh 4vw;
     font-size: 1.01rem;
     line-height: 1.8;
+    overflow: scroll;
+    -webkit-overfow-scrolling: touch;
     }
 }
 
