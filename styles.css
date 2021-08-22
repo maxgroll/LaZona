@@ -674,14 +674,13 @@ header {
         @media only screen and (max-width: 430px) {
             #purposetitle h2 {
                 z-index: -1;
-                margin-top: 0vh;
             }
             
-            .purpose .purpose1, .purpose .purpose1 h3 {
+            .purpose .purpose1 {
             
-                /*overflow: scroll;*/
+                overflow: scroll;
             -webkit-overfow-scrolling: touch;
-            z-index: 1;
+            z-index: 10;
                 }
         
             .purpose .purpose2 {
