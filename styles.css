@@ -685,14 +685,12 @@ header {
                 }
             
             .purpose .purpose1 {
-            
                 overflow: scroll;
             -webkit-overfow-scrolling: touch;
             z-index: 10;
                 }
         
             .purpose .purpose2 {
-            
                 overflow: scroll;
             -webkit-overfow-scrolling: touch;
                 }
