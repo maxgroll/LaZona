@@ -571,7 +571,7 @@ header {
     line-height: 2;
     margin-top: -8vh;
     padding-bottom: 3vh;
-    display: block;
+    display: flex;
     }
 .purpose .purpose1 #diff {
     display: none;
