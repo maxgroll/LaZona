@@ -675,6 +675,13 @@ header {
             #purposetitle h2 {
                 z-index: -1;
             }
+            .purpose .purpose1 h3 {
+                font-size: 1.20rem;
+                line-height: 1.5;
+                margin-top: -12vh;
+                padding-bottom: 1.5vh;
+                z-index: 1;
+                }
             
             .purpose .purpose1 {
             
