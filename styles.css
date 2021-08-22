@@ -296,7 +296,7 @@ header {
         padding: 5vw 3vw 0vw 3vw;
         font-size: 1.1rem;
         line-height: 2.1;
-        overflow: auto;
+        overflow: scroll;
     }
     .desc .desc1 h2 { 
         font-size: 1.8rem;
@@ -307,7 +307,7 @@ header {
         padding: 0vw 3vw 10vw 3vw;
         font-size: 1.1rem;
         line-height: 2.1;
-        overflow: auto;
+        overflow: scroll;
     }
     .desc .desc2 h2 {
         font-size: 1.8rem;
