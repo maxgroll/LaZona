@@ -672,12 +672,9 @@ header {
         }
 }
         @media only screen and (max-width: 430px) {
-            .purpose {
-                grid-template-rows: 80vh;
-            }
-            
-            .purposetitle {
-                grid-template-rows: 20vh;
+          
+            #purposetitle {
+                height:fit-content;
             }
             
             #purposetitle h2 {
