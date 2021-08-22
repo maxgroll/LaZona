@@ -676,7 +676,7 @@ header {
                 z-index: -1;
             }
             
-            .purpose .purpose1 {
+            .purpose .purpose1, .purpose .purpose1 h3 {
             
                 overflow: scroll;
             -webkit-overfow-scrolling: touch;
