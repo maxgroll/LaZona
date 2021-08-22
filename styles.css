@@ -674,7 +674,7 @@ header {
         @media only screen and (max-width: 430px) {
           
             #purposetitle {
-                height:fit-content;
+                height:60%;
             }
             
             #purposetitle h2 {
