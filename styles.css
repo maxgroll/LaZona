@@ -354,6 +354,7 @@ header {
     
 .desc .desc1 h2, .desc .desc2 h2 {
     position: fixed;
+    margin-top: 50%;
     z-index: 2;
     display: block;
 }
