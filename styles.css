@@ -352,7 +352,7 @@ header {
 }
     @media only screen and (max-width: 430px) {
     
-.desc .desc1 h2, .desc .desc2 h3 {
+.desc .desc1 h2, .desc .desc2 h2 {
     position: fixed;
 }
         .desc .desc1 p { /*description of blog on the left side*/
