@@ -257,9 +257,7 @@ header {
 /*description section*/
 
 @media only screen and (max-width: 810px) {
-    .desc .jumper1 { /*positioning of container for the button to reconfigure section*/
-        display: none;
-        }
+    
         .desc .desc1 { /*description of blog on the left side*/
             font-size: 1.25em;
             padding: 5vw 3vw 0vw 3vw;
@@ -274,6 +272,9 @@ header {
 
 @media only screen and (max-width: 690px) {
     /* For mobile phones: */
+    .desc .jumper1 { /*positioning of container for the button to reconfigure section*/
+        display: none;
+        }
     .desc {
         flex-direction: column; /*para el celular meter esto en media querie y ajustar paddings y demás*/
         /*justify-content: space-around;*/
@@ -427,11 +428,11 @@ header {
 
 /*Bateson quote section*/
 
-@media only screen and (max-width: 810px) {
-.bateson .jumper2 { /*positioning of container for the button to purpose section*/
+/*@media only screen and (max-width: 810px) {
+.bateson .jumper2 { 
     display: none;
     }
-}
+}*/
 @media only screen and (max-width: 740px) {
 .bateson .bateson1 h2 { 
     font-size: 1.3em;
@@ -445,6 +446,9 @@ header {
     }
 }
 @media only screen and (max-width: 690px) { /*quote section mobile small*/
+    .bateson .jumper2 { /*positioning of container for the button to purpose section*/
+        display: none;
+        }
 .bateson { 
     flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
     }
@@ -565,9 +569,7 @@ header {
         }
     }
     @media only screen and (max-width: 810px) {
-    .purpose .jumper3 { /*positioning of container for the button to reconfigure section*/
-        display: none;
-        }
+    
         #purposetitle h2 {
             padding-top: 3vh;
             font-size: 2.5em
@@ -596,6 +598,9 @@ header {
     }
 
 @media only screen and (max-width: 690px) {/* For mobile phones: */
+    .purpose .jumper3 { /*positioning of container for the button to reconfigure section*/
+        display: none;
+        }
 #purposetitle h2 {
     font-size: 2.2em;
     padding-top: 1vh;
