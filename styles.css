@@ -353,6 +353,7 @@ header {
     @media only screen and (max-width: 430px) {
     .desc .desc1 h2 {
         position: fixed;
+        z-index: 2;
     }
         .desc .desc1 { /*description of blog on the left side*/
            
