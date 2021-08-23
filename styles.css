@@ -27,7 +27,7 @@ h1,h2,h3,h4,h5,h6 {
                          "reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf"
                          "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: (12, 1fr);
-    grid-template-rows: 8.83vh 91.17vh 100vh 100vh 25vh 75vh 91.17vh 8.83vh;
+    grid-template-rows: 8.83vh 91.17vh 100vh 100vh 10vh 90vh 91.17vh 8.83vh;
     }
     
     
@@ -566,47 +566,28 @@ header {
     .purpose .jumper3 { /*positioning of container for the button to reconfigure section*/
         display: none;
         }
-        #purposetitle{
-            margin: auto;
+        #purposetitle h2 {
+            padding-top: 1vh;
+            font-size: 2.5em
         }
         .purpose .purpose1 { /*make a difference*/
-            flex-basis: 50%;
-            text-align: justify;
             margin: auto;
             padding: 0vh 3vw 0vh 3vw;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1.1em;
+            font-size: 1.2em;
             line-height: 2;
-            color: rgb(128, 128, 128); 
         }
         .purpose .purpose1 h3 {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1.2em;
-            letter-spacing: 1;
-            color: #7600A5;
-            text-align: left;
-            font-weight: 600;
             line-height: 1.5;
             padding-bottom: 6vh;
         }
         .purpose .purpose2 { /*change*/
-            flex-basis: 50%;
-            text-align: justify;
             margin: auto;
             padding: 0vh 3vw 0vh 3vw;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1.1em;
+            font-size: 1.2em;
             line-height: 2;
-            color: rgb(128, 128, 128);
            
         }
         .purpose .purpose2 h3 {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1.2em;
-            letter-spacing: 1; 
-            color: #0019A8;
-            text-align: right;
-            font-weight: 600;
             line-height: 1.5;
             padding-bottom: 6vh;
         }
@@ -615,7 +596,7 @@ header {
 @media only screen and (max-width: 690px) {/* For mobile phones: */
 #purposetitle h2 {
     font-size: 2.2em;
-    padding-top: 3vh;
+    padding-top: 1vh;
     }
 .purpose {
     flex-direction: column;
@@ -623,8 +604,8 @@ header {
 .purpose .purpose1 h3 {
     font-size: 1.3rem;
     line-height: 2;
-    margin-top: -8vh;
-    padding-bottom: 3vh;
+    margin: auto;
+    padding-bottom: 2vh;
     display: flex;
     }
 .purpose .purpose1 #diff {
@@ -632,17 +613,17 @@ header {
 }
 .purpose .purpose1 {
     padding: 0vh 3vw 1vh 4vw;
-    font-size: 1.03rem;
+    font-size: 1.13rem;
     line-height: 1.9;
     }
 .purpose .purpose2 h3 {
     font-size: 1.3rem;
     line-height: 2;
-    padding-bottom: 3vh;
+    padding-bottom: 2vh;
     }
 .purpose .purpose2 {
-    padding: 4vh 3vw 15vh 4vw;
-    font-size: 1.03rem;
+    padding: 0vh 3vw 15vh 4vw;
+    font-size: 1.13rem;
     line-height: 1.9;
     }
 }
@@ -650,67 +631,52 @@ header {
    
 .purpose .purpose1 {
     padding: 0vh 3vw 1vh 4vw;
-    font-size: 1.02rem;
+    font-size: 1.05rem;
     line-height: 1.9;
     }
 .purpose .purpose2 {
-    padding: 4vh 3vw 15vh 4vw;
-    font-size: 1.02rem;
+    padding: 0vh 3vw 15vh 4vw;
+    font-size: 1.05rem;
     line-height: 1.9;
     }
 }
 
-@media only screen and (max-width: 589px) {/* For mobile phones: */
-  
-.purpose .purpose1 {
-    padding: 0vh 3vw 1vh 4vw;
-    font-size: 1.01rem;
-    line-height: 1.8;
-    
-    }
-.purpose .purpose2 {
-    padding: 4vh 3vw 15vh 4vw;
-    font-size: 1.01rem;
-    line-height: 1.8;
-    }
-}
 
-@media only screen and (max-width: 575px) {
+
+@media only screen and (max-width: 519px) {
       
     .purpose .purpose1 h3 {
         font-size: 1.25rem;
         line-height: 2;
-        margin-top: -12vh;
-        padding-bottom: 1.5vh;
+        padding-bottom: 1vh;
         }
     .purpose .purpose1 {
         padding: 0vh 3vw 0vh 4vw;
-        font-size: 1rem;
-        line-height: 1.7;
+        font-size: 1.04rem;
+        line-height: 1.8;
         }
     .purpose .purpose2 h3 {
         font-size: 1.25rem;
         line-height: 2;
-        padding-bottom: 1.5vh;
+        padding-bottom: 1vh;
         }
     .purpose .purpose2 {
-        padding: 4vh 3vw 15vh 4vw;
-        font-size: 1rem;
-        line-height: 1.7;
+        padding: 0vh 3vw 15vh 4vw;
+        font-size: 1.04rem;
+        line-height: 1.8;
         }
 }
-@media only screen and (max-width: 495px) {
+@media only screen and (max-width: 466px) {
       
     .purpose .purpose1 h3 {
         font-size: 1.20rem;
         line-height: 1.5;
-        margin-top: -12vh;
         padding-bottom: 1.5vh;
         }
     .purpose .purpose1 {
         padding: 0vh 3vw 0vh 4vw;
-        font-size: 1rem;
-        line-height: 1.6;
+        font-size: 1.03rem;
+        line-height: 1.7;
        
         }
 .purpose .purpose2 h3 {
@@ -719,9 +685,9 @@ header {
         padding-bottom: 1.5vh;
         }
     .purpose .purpose2 {
-        padding: 4vh 3vw 15vh 4vw;
-        font-size: 1rem;
-        line-height: 1.6;
+        padding: 0vh 3vw 15vh 4vw;
+        font-size: 1.03rem;
+        line-height: 1.7;
         
         }
 }
@@ -768,6 +734,7 @@ header {
 }
 .purposetitle h2 {
     text-align: center;
+    margin: auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 3em;
     letter-spacing: 1.5; 
@@ -787,6 +754,7 @@ header {
 .purpose1 { /*make a difference*/
     flex-basis: 50%;
     text-align: justify;
+    margin: auto;
     padding: 0vh 3vw 3vh 3vw;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
@@ -809,6 +777,7 @@ header {
 .purpose2 { /*change*/
     flex-basis: 50%;
     text-align: justify;
+    margin: auto;
     padding: 0vh 3vw 3vh 3vw;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
@@ -829,7 +798,7 @@ header {
 .jumper3 { /*positioning of container for the button to reconfigure section*/
     height: 40px;
     position: absolute;
-    margin-top: 63.7vh;
+    margin-top: 78.7vh;
     margin-left: 50%;
 }
 .cont {
