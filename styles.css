@@ -354,6 +354,7 @@ header {
     
 .desc .desc1 h2, .desc .desc2 h2 {
     position: fixed;
+    z-index: 2;
 }
         .desc .desc1 { /*description of blog on the left side*/
            
