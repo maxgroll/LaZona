@@ -351,9 +351,10 @@ header {
     }
 }
     @media only screen and (max-width: 430px) {
-    .desc .desc1 h2 {
-        position: fixed;
-        z-index: 2;
+    .desc .desc1 h2, .desc .desc2 h2 {
+        display: flexbox;
+        position: sticky;
+        z-index: 10;
     }
         .desc .desc1 { /*description of blog on the left side*/
            
@@ -921,10 +922,10 @@ header {
 }
 @media only screen and (max-width: 465px) {
     #reconf h2 {
-        font-size: 1.3em;
+        font-size: 1.2em;
         font-weight: 500;
         line-height: 1.5;
-        padding: 6vh 13vw 0vh 17vw;
+        padding: 4vh 13vw 0vh 17vw;
         }
     #reconf p {
         font-size: 1.1em;
