@@ -351,18 +351,15 @@ header {
     }
 }
     @media only screen and (max-width: 430px) {
-    .desc .desc1 h2, .desc .desc2 h2 {
-        display: flexbox;
-        position: sticky;
-        z-index: 10;
-    }
-        .desc .desc1 { /*description of blog on the left side*/
+    
+
+        .desc .desc1 p { /*description of blog on the left side*/
            
             overflow: scroll;
             -webkit-overfow-scrolling: touch;
         }
         
-        .desc .desc2 { /*description of resources on the right side*/ 
+        .desc .desc2 p { /*description of resources on the right side*/ 
             overflow: scroll;
             -webkit-overfow-scrolling: touch;
         }
