@@ -567,29 +567,29 @@ header {
         display: none;
         }
         #purposetitle h2 {
-            padding-top: 1vh;
+            padding-top: 3vh;
             font-size: 2.5em
         }
         .purpose .purpose1 { /*make a difference*/
             margin: auto;
             padding: 0vh 3vw 0vh 3vw;
-            font-size: 1.2em;
-            line-height: 2;
+            font-size: 1.25em;
+            line-height: 2.2;
         }
-        .purpose .purpose1 h3 {
+        .purpose .purpose1 #diff {
             line-height: 1.5;
-            padding-bottom: 6vh;
+            padding-bottom: 1.8vh;
         }
         .purpose .purpose2 { /*change*/
             margin: auto;
             padding: 0vh 3vw 0vh 3vw;
-            font-size: 1.2em;
-            line-height: 2;
+            font-size: 1.25em;
+            line-height: 2.2;
            
         }
         .purpose .purpose2 h3 {
             line-height: 1.5;
-            padding-bottom: 6vh;
+            padding-bottom: 1.8vh;
         }
     }
 
