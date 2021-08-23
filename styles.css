@@ -261,7 +261,7 @@ header {
         display: none;
         }
         .desc .desc1 { /*description of blog on the left side*/
-            
+            font-size: 1.25em;
             padding: 5vw 3vw 0vw 3vw;
             line-height: 2;
         }
@@ -276,7 +276,7 @@ header {
             padding-bottom: 9vh;
         }
         .desc .desc2 { /*description of resources on the right side*/
-            
+            font-size: 1.25em;
             line-height: 2;
     }
 }
