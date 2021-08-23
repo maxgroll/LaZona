@@ -269,12 +269,14 @@ header {
             font-size: 1.25em;
             line-height: 2;
     }
+    
 }
 
 @media only screen and (max-width: 690px) {
     /* For mobile phones: */
     .desc {
         flex-direction: column; /*para el celular meter esto en media querie y ajustar paddings y demás*/
+        /*justify-content: space-around;*/
         }
     .desc .desc1 { /*description of blog on the left side*/
         padding: 7vw 3vw 0vw 3vw;
@@ -868,7 +870,12 @@ header {
 @media only screen and (max-width: 810px) {
 #reconf h2 {
     padding: 6vh 13vw 0vh 17vw;
-}  
+    } 
+#reconf p {
+    font-size: 1.3em;
+    line-height: 2.3;
+    padding: 0vh 17vw 15vh 17vw;
+    } 
 }
 
 @media only screen and (max-width: 690px) {
@@ -888,9 +895,9 @@ header {
         padding: 8vh 13vw 0vh 17vw;
     }
     #reconf p {
-        font-size: 1.1em;
+        font-size: 1.3em;
         line-height: 2;
-        padding: 0vh 17vw 20vh 17vw;
+        padding: 0vh 17vw 15vh 17vw;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -899,6 +906,11 @@ header {
         font-weight: 500;
         line-height: 2.5;
         padding: 8vh 13vw 0vh 17vw;
+    }
+    #reconf p {
+        font-size: 1.2em;
+        line-height: 2;
+        padding: 0vh 17vw 13vh 17vw;
     }
 }
 @media only screen and (max-width: 465px) {
@@ -909,9 +921,9 @@ header {
         padding: 12vh 13vw 0vh 17vw;
         }
     #reconf p {
-        font-size: 1.1em;
+        font-size: 1.23em;
         line-height: 2;
-        padding: 0vh 17vw 20vh 17vw;
+        padding: 0vh 17vw 13vh 17vw;
         }
 }
 
@@ -940,7 +952,7 @@ header {
 }
 .reconf p {
     font-family: 'Lora', serif;
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 2;
     color: rgba(255, 251, 251, 0.85);
     padding: 0vh 17vw 20vh 17vw;
