@@ -354,7 +354,7 @@ header {
     
 .desc {
     display: flexbox;
-    position: absolute;
+    position: relative;
 }
         .desc .desc1 p { /*description of blog on the left side*/
            
