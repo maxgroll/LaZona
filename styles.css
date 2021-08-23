@@ -329,7 +329,7 @@ header {
  
 @media only screen and (max-width: 522px) {
     
-	.desc .desc1 { /*description of blog on the left side*/
+	.desc .desc1 { 
         padding: 5vw 3vw 0vw 3vw;
         font-size: 1.05rem;
         line-height: 2;
@@ -339,7 +339,7 @@ header {
         line-height: 1.2;
         padding-top: 1vh;
     }
-    .desc .desc2 { /*description of resources on the right side*/
+    .desc .desc2 { 
         padding: 0vw 3vw 10vw 3vw;
         font-size: 1.05rem;
         line-height: 2;
@@ -352,7 +352,10 @@ header {
 }
     @media only screen and (max-width: 430px) {
     
-
+.desc {
+    display: flexbox;
+    position: absolute;
+}
         .desc .desc1 p { /*description of blog on the left side*/
            
             overflow: scroll;
