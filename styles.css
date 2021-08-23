@@ -351,16 +351,16 @@ header {
     }
 }
     @media only screen and (max-width: 430px) {
-    
+    .desc .desc1 h2 {
+        position: fixed;
+    }
         .desc .desc1 { /*description of blog on the left side*/
            
             overflow: scroll;
             -webkit-overfow-scrolling: touch;
-    
         }
         
-        .desc .desc2 { /*description of resources on the right side*/
-            
+        .desc .desc2 { /*description of resources on the right side*/ 
             overflow: scroll;
             -webkit-overfow-scrolling: touch;
         }
