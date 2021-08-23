@@ -693,14 +693,10 @@ header {
 }
         @media only screen and (max-width: 430px) {
           
-            #purposetitle {
-                position: relative;
-                margin-bottom: -12vh;
-            }
             
             #purposetitle h2 {
-                font-size: 2.2em;
-                padding-top: -12vh;
+                font-size: 2.1em;
+                padding-top: 1vh;
             }
             .purpose .purpose1 h3 {
                 font-size: 1.20rem;
