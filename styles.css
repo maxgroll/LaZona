@@ -276,13 +276,16 @@ header {
         display: none;
         }
     .desc {
-        flex-direction: column; /*para el celular meter esto en media querie y ajustar paddings y demás*/
+        position: block;
+        flex-direction:unset; /*para el celular meter esto en media querie y ajustar paddings y demás*/
         /*justify-content: space-around;*/
         }
     .desc .desc1 { /*description of blog on the left side*/
         padding: 7vw 3vw 0vw 3vw;
         font-size: 1.11em;
         line-height: 2.2;
+        
+
     }
     .desc .desc1 h2 { 
         font-size: 2rem;
@@ -293,6 +296,8 @@ header {
         padding: 0vw 3vw 0vw 3vw;
         font-size: 1.11rem;
         line-height: 2.2;
+        display: inline;
+        float: left;
     }
     .desc .desc2 h2 {
         font-size: 2rem;
@@ -358,7 +363,6 @@ header {
             overflow: scroll;
             -webkit-overfow-scrolling: touch;
             border-bottom: 2px solid #7600A5;
-            padding-bottom: 1vh;
         }
         
         .desc .desc2 { /*description of resources on the right side*/ 
