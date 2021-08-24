@@ -276,16 +276,13 @@ header {
         display: none;
         }
     .desc {
-        position: block;
-        flex-direction:unset; /*para el celular meter esto en media querie y ajustar paddings y demás*/
+        flex-direction: column; /*para el celular meter esto en media querie y ajustar paddings y demás*/
         /*justify-content: space-around;*/
         }
     .desc .desc1 { /*description of blog on the left side*/
         padding: 7vw 3vw 0vw 3vw;
         font-size: 1.11em;
-        line-height: 2.2;
-        
-
+        line-height: 2.2;  
     }
     .desc .desc1 h2 { 
         font-size: 2rem;
@@ -296,8 +293,6 @@ header {
         padding: 0vw 3vw 0vw 3vw;
         font-size: 1.11rem;
         line-height: 2.2;
-        display: inline;
-        float: left;
     }
     .desc .desc2 h2 {
         font-size: 2rem;
@@ -307,11 +302,12 @@ header {
   }
   
 @media only screen and (max-width: 582px) {
-    
+   
 	.desc .desc1 { /*description of blog on the left side*/
         padding: 5vw 3vw 0vw 3vw;
         font-size: 1.1rem;
         line-height: 2.1;
+        
        
     }
     .desc .desc1 h2 { 
@@ -356,7 +352,7 @@ header {
     }
 }
     @media only screen and (max-width: 430px) {
-    
+   
 
         .desc .desc1 { /*description of blog on the left side*/
            
