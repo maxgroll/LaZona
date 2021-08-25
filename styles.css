@@ -111,8 +111,34 @@ header {
         
 
 /*title section*/
+@media only screen and (max-width: 1200px) {
+    #title {
+        background-position-x: 63.43%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #title {
+        background-position-x: 62.43%;
+    }
+}
+
+@media only screen and (max-width: 1005px) {
+    #title {
+        background-position-x: 61.43%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #title {
+        background-position-x: 60.43%;
+    }
+}
 
 @media only screen and (max-width: 810px) {
+    
+    #title {
+        background-position-x: 59.53%;
+    }
     .title #type {
         margin-left: unset;
     }
@@ -134,6 +160,10 @@ header {
     }
 }
 @media only screen and (max-width: 675px){
+
+    #title {
+        background-position-x: 58.53%;
+    }
     .title .type #question1 {
         
         text-align: right;
@@ -143,6 +173,9 @@ header {
     } 
 }
 @media only screen and (max-width: 593px){
+    #title {
+        background-position-x: 57.53%;
+    }
     .title .type #question1 {
         text-align: right;
         font-size: 2em;
@@ -151,6 +184,9 @@ header {
     } 
 }
 @media only screen and (max-width: 430px) {
+    #title {
+        background-position-x: 56.53%;
+    }
     .title .type #question1 {
         text-align: right;
         font-size: 1.5em;
@@ -165,7 +201,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    background-position: center;
+    background-position: center center;
     background-position-x: 65.13%;
     max-width: 100%;
     max-height: auto;
