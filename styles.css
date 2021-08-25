@@ -113,21 +113,56 @@ header {
 /*title section*/
 
 @media only screen and (max-width: 810px) {
+    .title #type {
+        margin-left: unset;
+    }
     #question {
         display: none;
     }
     .title .type #question1 {
         font-family: 'Permanent Marker', cursive;
         font-weight: 300;
-        text-align: center;
+        text-align: right;
         /*padding-top: 54vh;*/
         color:rgb(245, 245, 245);
         font-size: 2.5em;
         letter-spacing: 0.09em;
         display: block;
         overflow-wrap: break-word;
-        padding-right: 16vw;
+        padding-right: 10vw;
+        padding-left:10vw;
+        
     }
+}
+@media only screen and (max-width: 675px){
+    .title .type #question1 {
+        /*font-family: 'Permanent Marker', cursive;
+        font-weight: 300;*/
+        text-align: right;
+        /*padding-top: 54vh;*/
+        /*color:rgb(245, 245, 245);*/
+        font-size: 2.2em;
+        letter-spacing: 0.09em;
+        display: block;
+        /*overflow-wrap: break-word;
+        padding-right: 10vw;
+        padding-left:10vw;*/   
+    } 
+}
+@media only screen and (max-width: 593px){
+    .title .type #question1 {
+        /*font-family: 'Permanent Marker', cursive;
+        font-weight: 300;*/
+        text-align: right;
+        /*padding-top: 54vh;*/
+        /*color:rgb(245, 245, 245);*/
+        font-size: 2em;
+        letter-spacing: 0.09em;
+        display: block;
+        /*overflow-wrap: break-word;
+        padding-right: 10vw;
+        padding-left:10vw;*/   
+    } 
 }
 
 .title {
