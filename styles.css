@@ -64,7 +64,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 header {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.25);
     grid-area: header;
     height: fit-content;
     height: -moz-fit-content;
@@ -88,7 +88,7 @@ header {
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
     font-weight: normal;
-    font-size: 2em;
+    font-size: 2.1em;
     letter-spacing: 0.1em;
     text-shadow: -0.5px 0.5px rgb(20, 20, 20);
     }
@@ -109,7 +109,7 @@ header {
             }
         li a {
             display: block;
-            color: rgb(240, 240, 240);
+            color: rgb(210, 210, 210);
             font-family: 'Poppins', sans-serif;
             text-align: center;
             font-size: 1.15em;
@@ -193,7 +193,7 @@ header {
         font-family: 'Permanent Marker', cursive;
         font-weight: 300;
         text-align: right;
-        color:rgb(245, 245, 245);
+        color:rgb(235, 235, 235);
         font-size: 2.5em;
         letter-spacing: 0.09em;
         display: block;
