@@ -96,7 +96,7 @@ header {
         /*color: rgb(240, 240, 240);*/
         color: #B400FC;
         }
-    ul {
+    .nav_menu {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -104,10 +104,10 @@ header {
         background-color: transparent;
         padding-right: 0.7vw;
         }
-        li {
+        .nav_item {
             float: right;
             }
-        li a {
+        .nav__link {
             display: block;
             color: rgb(210, 210, 210);
             font-family: 'Poppins', sans-serif;
@@ -119,10 +119,10 @@ header {
             z-index: 1;
             }
 
-        li a:hover {
+        .nav__link:hover {
             color: #B400FC;
             }
-        li a:active {
+        .nav__link:active {
             color: #0026FF;
             }
         
