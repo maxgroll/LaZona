@@ -84,7 +84,7 @@ header {
     position: relative;
     color: #0026FF;
     text-align: left;
-    padding: /*0.2em*/0.3vw 0 0 3vw;
+    padding: 0.2em 0 0 3vw;
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
     font-weight: normal;
@@ -112,9 +112,9 @@ header {
             color: rgb(240, 240, 240);
             font-family: 'Poppins', sans-serif;
             text-align: center;
-            font-size: 0.9em;
+            font-size: 1.15em;
             letter-spacing: 0.2em;
-            padding: 1.2em 1.6em 1.6em 1.6em;
+            padding: 1em 1.6em 1em 3vw;
             text-decoration: none;
             z-index: 1;
             }
