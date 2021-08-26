@@ -61,6 +61,8 @@ h1,h2,h3,h4,h5,h6 {
         height: 100%;
     }
 }*/
+
+
 header {
     background-color: rgba(0, 0, 0, 0.1);
     grid-area: header;
@@ -124,6 +126,28 @@ header {
             color: #0026FF;
             text-decoration: underline #0026FF;
         }
+        /*.nav__hamburger {
+            color: inherit;
+            min-width: 32px;
+            min-height: 32px;
+            transition: opacity 80ms linear;
+            
+            display: none;
+            opacity: 0;
+          }
+          
+          .nav__hamburgerclose {
+            color: inherit;
+            position: absolute;
+            top: 0;
+            min-width: 32px;
+            min-height: 32px;
+            transition: opacity 150ms linear;
+            
+            display: none;
+            opacity: 0;
+            z-index: -1;
+          }*/
         
 
 /*title section*/
