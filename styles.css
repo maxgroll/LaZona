@@ -62,7 +62,7 @@ header {
     position: relative;
     color: #0026FF;
     text-align: left;
-    padding: /*0.2em*/0.5vw 0 0 3vw;
+    padding: /*0.2em*/0.3vw 0 0 3vw;
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
     font-weight: normal;
@@ -966,8 +966,16 @@ header {
 }
 
 /*reconf section*/
+@media only screen and (max-width: 890px) {
+    #reconf {
+        background-size: contain;
+    }
+}
 @media only screen and (max-width: 810px) {
-#reconf h2 {
+    #reconf {
+        background-size: contain;
+    }
+    #reconf h2 {
     padding: 6vh 13vw 0vh 17vw;
     } 
 #reconf p {
@@ -1036,7 +1044,7 @@ header {
     background-image: linear-gradient(240deg, rgba(180,0,252,0.8), rgba(0,38,255,0.8)), url('images/robot.jpg');
     background-repeat: repeat-x;
     background-size: cover;
-    background-attachment: scroll; 
+    background-attachment: fixed; 
     margin-bottom: -8.83vh;
     justify-content: space-around;
 }
