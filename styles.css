@@ -185,7 +185,7 @@ header {
 }
 @media only screen and (max-width: 430px) {
     #title {
-        background-position-x: 57.33%;
+        background-position-x: 57.35%;
     }
     .title .type #question1 {
         text-align: right;
