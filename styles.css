@@ -102,7 +102,7 @@ header {
         padding: 0;
         overflow: hidden;
         background-color: transparent;
-        padding-right: 1.5em;
+        padding-right: 0.7vw;
         }
         li {
             float: right;
@@ -114,7 +114,7 @@ header {
             text-align: center;
             font-size: 1.15em;
             letter-spacing: 0.2em;
-            padding: 1em 1.6em 1em 3vw;
+            padding: 1em 1.6em 1em 1em;
             text-decoration: none;
             z-index: 1;
             }
