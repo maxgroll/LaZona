@@ -46,6 +46,21 @@ h1,h2,h3,h4,h5,h6 {
 /*layout-end*/
 
 /*header styles including logo and first nav*/
+@media only screen and (max-width: 1100px) {
+    header {
+        height: 60%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    header {
+        height: 50%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    header {
+        height: 100%;
+    }
+}
 header {
     background-color: rgba(0, 0, 0, 0.1);
     grid-area: header;
@@ -137,7 +152,7 @@ header {
 @media only screen and (max-width: 810px) {
     
     #title {
-        background-position-x: 57.98%;
+        background-position-x: 57.78%;
     }
     .title #type {
         margin-left: unset;
@@ -185,7 +200,7 @@ header {
 }
 @media only screen and (max-width: 430px) {
     #title {
-        background-position-x: 57.35%;
+        background-position-x: 57.38%;
     }
     .title .type #question1 {
         text-align: right;
