@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 /*layout-end*/
 
 /*header styles including logo and first nav*/
-@media only screen and (max-width: 1100px) {
+/*@media only screen and (max-width: 1100px) {
     header {
         height: 60%;
     }
@@ -60,11 +60,11 @@ h1,h2,h3,h4,h5,h6 {
     header {
         height: 100%;
     }
-}
+}*/
 header {
     background-color: rgba(0, 0, 0, 0.1);
     grid-area: header;
-    height: 100%;
+    height: fit-content;
     z-index: 2;
     }
 .pageheader{
@@ -1120,8 +1120,7 @@ header {
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
 }
 
-
-@media only screen and (max-width: 1100px) {
+/*@media only screen and (max-width: 1100px) {
     footer {
         height: 60%;
     }
@@ -1135,11 +1134,12 @@ header {
     footer {
         height: 100%;
     }
-}
+}*/
+
 footer {
     grid-area: footer;
     background-color: rgba(0, 0, 0, 0.5);
-    height:100%;
+    height: fit-content;
     z-index: 3;
 }
 .pagefooter {
