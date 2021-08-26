@@ -67,6 +67,7 @@ header {
     background-color: rgba(0, 0, 0, 0.1);
     grid-area: header;
     height: fit-content;
+    height: moz-fit-content;
     z-index: 3;
     }
 .pageheader{
@@ -1164,6 +1165,7 @@ footer {
     grid-area: footer;
     background-color: rgba(0, 0, 0, 0.5);
     height: fit-content;
+    height: moz-fit-content;
     z-index: 3;
 }
 .pagefooter {
