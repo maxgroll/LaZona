@@ -1169,6 +1169,7 @@ footer {
     grid-area: footer;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
+   
 }
 .pagefooter {
 	background-color: #1c2138;
