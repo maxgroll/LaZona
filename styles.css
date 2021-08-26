@@ -67,7 +67,7 @@ header {
     background-color: rgba(0, 0, 0, 0.1);
     grid-area: header;
     height: fit-content;
-    z-index: 2;
+    z-index: 3;
     }
 .pageheader{
 	background-color: #1c2138;
@@ -225,7 +225,7 @@ header {
 }
 @media only screen and (max-width: 430px) {
     #title {
-        background-position-x: 57.48%;
+        background-position-x: 57.50%;
     }
     .title .type #question1 {
         text-align: right;
