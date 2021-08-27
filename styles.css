@@ -1152,10 +1152,6 @@ header {
     footer {
         height: 60%;
         margin-top: 3.532vh;
-        min-height: -webkit-fill-available;
-        min-height: -moz-fill-available;
-        min-height: -o-fill-available;
-        min-height: -ms-fill-available;
     }
 }
 @media only screen and (max-width: 650px) {
