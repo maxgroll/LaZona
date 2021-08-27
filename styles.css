@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 /*layout-end*/
 
 /*header styles including logo and first nav*/
-/*@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
     header {
         height: 60%;
     }
@@ -60,18 +60,19 @@ h1,h2,h3,h4,h5,h6 {
     header {
         height: 100%;
     }
-}*/
+}
 
 
 header {
     background-color: rgba(0, 0, 0, 0.25);
     grid-area: header;
-    height: fit-content;
+    /*height: fit-content;
     height: -moz-fit-content;
     height: -webkit-fit-content;
     height: -o-fit-content;
-    height: -ms-fit-content;
+    height: -ms-fit-content;*/
     z-index: 3;
+    
     }
 .pageheader{
 	background-color: #1c2138;
@@ -249,7 +250,7 @@ header {
     background-position-x: 65.13%;
     max-width: 100%;
     max-height: auto;
-    margin-top: -8.83vh; 
+    margin-top: -8.83vh;
     position: relative;
     }
     .title .type { /*div class of the type*/
@@ -510,11 +511,12 @@ header {
     display: flex;
     max-width: 100%;
     position: relative;
-    margin: auto;
+    /*margin: auto;*/
     height: 100%;
     max-height: 100%;
     border-left: 2px solid #7600A5;
     border-right: 2px solid #0019A8;
+
 }
 .desc1 { /*description of blog on the left side*/
     flex-basis: 50%;
@@ -646,6 +648,7 @@ header {
     font-size: 1.3em;
     line-height: 2;
     color: rgb(221, 221, 221);
+    
 }
 .bateson1 h2 {
     font-family: 'Poppins', sans-serif;
@@ -1149,27 +1152,23 @@ header {
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
 }
 
-/*@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
     footer {
         height: 60%;
-    }
-}
-@media only screen and (max-width: 900px) {
-    footer {
-        height: 60%;
+        margin-top: 3.532vh;
     }
 }
 @media only screen and (max-width: 650px) {
     footer {
         height: 100%;
+        margin-top: unset;
     }
-}*/
+}
 
 footer {
     grid-area: footer;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-   
+    z-index: 3; 
 }
 .pagefooter {
 	background-color: #1c2138;
