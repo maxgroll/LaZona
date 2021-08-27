@@ -62,17 +62,12 @@ h1,h2,h3,h4,h5,h6 {
 header {
     background-color: rgba(0, 0, 0, 0.25);
     grid-area: header;
-    /*height: fit-content;
-    height: -moz-fit-content;
-    height: -webkit-fit-content;
-    height: -o-fit-content;
-    height: -ms-fit-content;*/
     z-index: 3;
-    
     }
 .pageheader{
 	background-color: #1c2138;
 }
+
 #MyLogo {
     float: left;
     }
@@ -89,44 +84,43 @@ header {
     letter-spacing: 0.1em;
     text-shadow: -0.5px 0.5px rgb(20, 20, 20);
     }
-    #MyLogo a:hover{
-        /*color: rgb(240, 240, 240);*/
-        color: #B400FC;
+#MyLogo a:hover{
+    color: #B400FC;
         }
-    .nav_menu {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: transparent;
-        padding-right: 0.7vw;
-        }
-        .nav_item {
-            float: right;
-            }
-        .nav__link {
-            display: block;
-            color: rgb(210, 210, 210);
-            font-family: 'Poppins', sans-serif;
-            text-align: center;
-            font-size: 1.15em;
-            letter-spacing: 0.2em;
-            padding: 1em 1.6em 1em 1em;
-            text-decoration: none;
-            z-index: 1;
-            }
+.nav_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    padding-right: 0.7vw;
+    }
+.nav_item {
+    float: right;
+    }
+.nav__link {
+    display: block;
+    color: rgb(210, 210, 210);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.15em;
+    letter-spacing: 0.2em;
+    padding: 1em 1.6em 1em 1em;
+    text-decoration: none;
+    z-index: 1;
+    }
 
-        .nav__link:hover {
-            color: #B400FC;
-            }
-        .nav__link:active {
-            color: #0026FF;
-            }
+.nav__link:hover {
+    color: #B400FC;
+    }
+.nav__link:active {
+    color: #0026FF;
+    }
         
-        #resourceslink, #bloglink, #aboutlink, #purposelink {
-            color: #0026FF;
-            text-decoration: underline #0026FF;
-        }
+#resourceslink, #bloglink, #aboutlink, #purposelink {
+    color: #0026FF;
+    text-decoration: underline #0026FF;
+    }
         /*.nav__hamburger {
             color: inherit;
             min-width: 32px;
@@ -153,86 +147,73 @@ header {
 
 /*title section*/
 @media only screen and (max-width: 1200px) {
-    #title {
-        background-position-x: 63.43%;
+#title {
+    background-position-x: 63.43%;
     }
 }
 
 @media only screen and (max-width: 1100px) {
-    #title {
-        background-position-x: 61.43%;
+#title {
+    background-position-x: 61.43%;
     }
 }
 
 @media only screen and (max-width: 1005px) {
-    #title {
-        background-position-x: 58.13%;
+#title {
+    background-position-x: 58.13%;
     }
 }
 @media only screen and (max-width: 900px) {
-    #title {
-        background-position-x: 57.53%;
+#title {
+    background-position-x: 57.53%;
     }
 }
 
 @media only screen and (max-width: 810px) {
-    
-    #title {
-        background-position-x: 57.78%;
+#title {
+    background-position-x: 57.78%;
     }
-    .title #type {
-        margin-left: unset;
+.title #type {
+    margin-left: unset;
     }
-    #question {
-        display: none;
+#question {
+    display: none;
     }
-    .title .type #question1 {
-        font-family: 'Permanent Marker', cursive;
-        font-weight: 300;
-        text-align: right;
-        color:rgb(235, 235, 235);
-        font-size: 2.5em;
-        letter-spacing: 0.09em;
-        display: block;
-        overflow-wrap: break-word;
-        padding-right: 10vw;
-        padding-left:10vw;
-        
+.title .type #question1 {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 300;
+    text-align: right;
+    color:rgb(235, 235, 235);
+    font-size: 2.5em;
+    letter-spacing: 0.09em;
+    display: block;
+    overflow-wrap: break-word;
+    padding-right: 10vw;
+    padding-left:10vw;     
     }
 }
 @media only screen and (max-width: 675px){
-
-    #title {
-        background-position-x: 58.53%;
+#title {
+    background-position-x: 58.53%;
     }
-    .title .type #question1 {
-        
-        text-align: right;
-        font-size: 2.2em;
-        letter-spacing: 0.09em;
-        display: block; 
+.title .type #question1 { 
+    font-size: 2.2em;
     } 
 }
 @media only screen and (max-width: 593px){
-    #title {
-        background-position-x: 57.59%;
+#title {
+    background-position-x: 57.59%;
     }
-    .title .type #question1 {
-        text-align: right;
-        font-size: 2em;
-        letter-spacing: 0.09em;
-        display: block;
+.title .type #question1 {
+    font-size: 2em;
     } 
 }
 @media only screen and (max-width: 430px) {
-    #title {
-        background-position-x: 57.55%;
+#title {
+    background-position-x: 57.56%;
     }
-    .title .type #question1 {
-        text-align: right;
-        font-size: 1.5em;
-        letter-spacing: 0.09em;
-        display: block;
+.title .type #question1 {
+    font-size: 1.5em;
     } 
 }
 
@@ -241,7 +222,7 @@ header {
     background-image: linear-gradient(240deg, rgba(0,38,255,0.8), rgba(180,0,252,0.8)), url('images/TechnologyHuman.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center center;
     background-position-x: 65.13%;
     max-width: 100%;
@@ -249,32 +230,31 @@ header {
     margin-top: -8.83vh;
     position: relative;
     }
-    .title .type { /*div class of the type*/
-        position: absolute; 
-        padding-top: 54vh; /*lo tenía directo en el texto*/
-        width: auto;
-        display: flex;
-        margin-left: 15%; 
+.title .type { /*div class of the type*/
+    position: absolute; 
+    padding-top: 54vh; /*lo tenía directo en el texto*/
+    width: auto;
+    display: flex;
+    margin-left: 15%; 
     }
-    #question1 {
-        display: none;
+#question1 {
+    display: none;
     }
-    #question {
-        font-family: 'Permanent Marker', cursive;
-        font-weight: 300;
-        text-align: center;
-        /*padding-top: 54vh;*/
-        color:rgb(245, 245, 245);
-        font-size: 3.5vw;
-        letter-spacing: 0.09em;
+#question {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 300;
+    text-align: center;
+    color:rgb(245, 245, 245);
+    font-size: 3.5vw;
+    letter-spacing: 0.09em;
 
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
         /*border-right: .08em solid transparent;*/ /* The typwriter cursor */
-        white-space: nowrap;/* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    white-space: nowrap;/* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
         /*overflow-wrap: break-spaces;*/
         
-        animation: 
+    animation: 
           typing 7s steps(40, end),
           blink-caret .75s step-end 9.514;
         }
@@ -282,20 +262,6 @@ header {
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
-}
-
-/*@keyframes slidein {
-    0% {
-      opacity: 1;
-    }
-    73% {
-      opacity: 0;
-    }
-}*/
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: rgb(255, 255, 255);}
 }
 
 /*button at the end of each section*/
@@ -368,9 +334,9 @@ header {
 }
 .page_title .pages_title {
     position: relative; 
-        padding-top: 23vh;
-        padding-right: 3em;
-        width: auto;  
+    padding-top: 23vh;
+    padding-right: 3em;
+    width: auto;  
     
 }
 .page_title .pages_title h1 {
@@ -385,120 +351,108 @@ header {
 /*description section*/
 
 @media only screen and (max-width: 810px) {
-    
-        .desc .desc1 { /*description of blog on the left side*/
-            font-size: 1.25em;
-            padding: 5vw 3vw 0vw 3vw;
-            line-height: 2;
-        }
-        .desc .desc2 { /*description of resources on the right side*/
-            font-size: 1.25em;
-            line-height: 2;
+.desc .desc1 { /*description of blog on the left side*/
+    font-size: 1.25em;
+    padding: 5vw 3vw 0vw 3vw;
+    line-height: 2;
     }
-    
+.desc .desc2 { /*description of resources on the right side*/
+    font-size: 1.25em;
+    line-height: 2;
+    }   
 }
 
 @media only screen and (max-width: 690px) {
     /* For mobile phones: */
-    .desc .jumper1 { /*positioning of container for the button to reconfigure section*/
-        display: none;
-        }
-    .desc {
-        flex-direction: column; /*para el celular meter esto en media querie y ajustar paddings y demás*/
-        /*justify-content: space-around;*/
-        }
-    .desc .desc1 { /*description of blog on the left side*/
-        padding: 7vw 3vw 0vw 3vw;
-        font-size: 1.11em;
-        line-height: 2.2;  
+.desc .jumper1 { /*positioning of container for the button to reconfigure section*/
+    display: none;
     }
-    .desc .desc1 h2 { 
-        font-size: 2rem;
-        line-height: 1.5;
-        padding-top: 2vh;
+.desc {
+    flex-direction: column; /*para el celular meter esto en media querie y ajustar paddings y demás*/
+    /*justify-content: space-around;*/
     }
-    .desc .desc2 { /*description of resources on the right side*/
-        padding: 0vw 3vw 0vw 3vw;
-        font-size: 1.11rem;
-        line-height: 2.2;
+.desc .desc1 { /*description of blog on the left side*/
+    padding: 7vw 3vw 0vw 3vw;
+    font-size: 1.11em;
+    line-height: 2.2;  
     }
-    .desc .desc2 h2 {
-        font-size: 2rem;
-        line-height: 1.5;
-        padding-bottom: 2vh;
+.desc .desc1 h2 { 
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-top: 2vh;
     }
-  }
+.desc .desc2 { /*description of resources on the right side*/
+    padding: 0vw 3vw 0vw 3vw;
+    font-size: 1.11rem;
+    line-height: 2.2;
+}
+.desc .desc2 h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-bottom: 2vh;
+    }
+}
   
 @media only screen and (max-width: 582px) {
    
-	.desc .desc1 { /*description of blog on the left side*/
-        padding: 5vw 3vw 0vw 3vw;
-        font-size: 1.1rem;
-        line-height: 2.1;
-        
-       
+.desc .desc1 { /*description of blog on the left side*/
+    padding: 5vw 3vw 0vw 3vw;
+    font-size: 1.1rem;
+    line-height: 2.1;      
     }
-    .desc .desc1 h2 { 
-        font-size: 1.8rem;
-        line-height: 1.2;
-        padding-top: 1vh;
+.desc .desc1 h2 { 
+    font-size: 1.8rem;
+    line-height: 1.2;
+    padding-top: 1vh;
     }
-    .desc .desc2 { /*description of resources on the right side*/
-        padding: 0vw 3vw 10vw 3vw;
-        font-size: 1.1rem;
-        line-height: 2.1;
-        
+.desc .desc2 { /*description of resources on the right side*/
+    padding: 0vw 3vw 10vw 3vw;
+    font-size: 1.1rem;
+    line-height: 2.1;    
     }
-    .desc .desc2 h2 {
-        font-size: 1.8rem;
-        line-height: 1.2;
-        padding-bottom: 1vh;
+.desc .desc2 h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    padding-bottom: 1vh;
     }
 }
  
-@media only screen and (max-width: 522px) {
-    
-	.desc .desc1 { 
-        padding: 5vw 3vw 0vw 3vw;
-        font-size: 1.05rem;
-        line-height: 2;
-        height: 100vh;
+@media only screen and (max-width: 522px) { 
+.desc .desc1 { 
+    padding: 5vw 3vw 0vw 3vw;
+    font-size: 1.05rem;
+    line-height: 2;
+    height: 100vh;
     }
-    .desc .desc1 h2 { 
-        font-size: 1.7rem;
-        line-height: 1.2;
-        padding-top: 1vh;
-        /*writing-mode: vertical-rl;
-        text-orientation: upright;*/
-       
+.desc .desc1 h2 { 
+    font-size: 1.7rem;
+    line-height: 1.2;
+    padding-top: 1vh;
+    /*writing-mode: vertical-rl;
+    text-orientation: upright;*/   
     }
-   
-    .desc .desc2 { 
-        padding: 0vw 3vw 10vw 3vw;
-        font-size: 1.05rem;
-        line-height: 2;
+.desc .desc2 { 
+    padding: 0vw 3vw 10vw 3vw;
+    font-size: 1.05rem;
+    line-height: 2;
     }
-    .desc .desc2 h2 {
-        font-size: 1.7rem;
-        line-height: 1.2;
-        padding-bottom: 1vh;
+.desc .desc2 h2 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+    padding-bottom: 1vh;
     }
 }
-    @media only screen and (max-width: 430px) {
-   
 
-        .desc .desc1 { /*description of blog on the left side*/
-           
-            overflow: scroll;
-            -webkit-overfow-scrolling: touch;
-            border-bottom: 2px solid #7600A5;
-        }
-        
-        .desc .desc2 { /*description of resources on the right side*/ 
-            overflow: scroll;
-            -webkit-overfow-scrolling: touch;
-        }
-        
+@media only screen and (max-width: 430px) {
+.desc .desc1 { /*description of blog on the left side*/
+    overflow: scroll;
+    -webkit-overfow-scrolling: touch;
+    border-bottom: 2px solid #7600A5;
+    }
+.desc .desc2 { /*description of resources on the right side*/ 
+    overflow: scroll;
+    -webkit-overfow-scrolling: touch;
+    }     
 }
  
 /*description section for the computer screen*/
@@ -512,7 +466,6 @@ header {
     max-height: 100%;
     border-left: 2px solid #7600A5;
     border-right: 2px solid #0019A8;
-
 }
 .desc1 { /*description of blog on the left side*/
     flex-basis: 50%;
@@ -563,27 +516,21 @@ header {
 
 /*Bateson quote section*/
 
-/*@media only screen and (max-width: 810px) {
-.bateson .jumper2 { 
-    display: none;
-    }
-}*/
 @media only screen and (max-width: 740px) {
 .bateson .bateson1 h2 { 
     font-size: 1.3em;
     line-height: 3;
-    
     }
-.bateson .bateson1 {
-    
+.bateson .bateson1 { 
     font-size: 1.3em;
     line-height: 2;
     }
 }
+
 @media only screen and (max-width: 690px) { /*quote section mobile small*/
-    .bateson .jumper2 { /*positioning of container for the button to purpose section*/
-        display: none;
-        }
+.bateson .jumper2 { /*positioning of container for the button to purpose section*/
+    display: none;
+    }
 .bateson { 
     flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
     }
@@ -597,9 +544,6 @@ header {
     font-size: 1.4em;
     line-height: 3;
     padding-top: 4vh;
-}
-.bateson .jumper2 { /*positioning of container for the button to purpose section*/
-    display: none;
     }
 }
 
@@ -609,7 +553,7 @@ header {
     font-size: 1.1em;
     line-height: 2;
     margin-top: 16vh;    
-}
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -617,7 +561,7 @@ header {
     padding: 12vh 6vw;
     font-size: 1.2em;
     line-height: 2;
-     margin-top: 14vh;    
+    margin-top: 14vh;    
     } 
 }
 
@@ -644,7 +588,6 @@ header {
     font-size: 1.3em;
     line-height: 2;
     color: rgb(221, 221, 221);
-    
 }
 .bateson1 h2 {
     font-family: 'Poppins', sans-serif;
@@ -681,62 +624,53 @@ header {
 /*purpose section*/
 
 @media only screen and (max-width: 1005px) {
-    .purpose1 h3 {
-        /*font-family: 'Open Sans', sans-serif;
-        font-size: 1.2em;
-        letter-spacing: 1;
-        color: #7600A5;
-        text-align: left;
-        font-weight: 600;
-        line-height: 1.5;
-        padding-bottom: 6vh;*/
-        display: none;
-        }
-    .purpose1 #diff {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1.2em;
-        letter-spacing: 1;
-        color: #7600A5;
-        text-align: left;
-        font-weight: 600;
-        line-height: 1.5;
-        padding-bottom: 6vh;
-            display: block;
-        }
+.purpose1 h3 {
+    display: none;
     }
-    @media only screen and (max-width: 810px) {
-    
-        #purposetitle h2 {
-            padding-top: 3vh;
-            font-size: 2.5em
-        }
-        .purpose .purpose1 { /*make a difference*/
-            margin: auto;
-            padding: 0vh 3vw 0vh 3vw;
-            font-size: 1.25em;
-            line-height: 2.2;
-        }
-        .purpose .purpose1 #diff {
-            line-height: 1.5;
-            padding-bottom: 1.8vh;
-        }
-        .purpose .purpose2 { /*change*/
-            margin: auto;
-            padding: 0vh 3vw 0vh 3vw;
-            font-size: 1.25em;
-            line-height: 2.2;
-           
-        }
-        .purpose .purpose2 h3 {
-            line-height: 1.5;
-            padding-bottom: 1.8vh;
-        }
+.purpose1 #diff {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 1;
+    color: #7600A5;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-bottom: 6vh;
+    display: block;
     }
+}
+
+@media only screen and (max-width: 810px) {
+#purposetitle h2 {
+    padding-top: 3vh;
+    font-size: 2.5em
+    }
+.purpose .purpose1 { /*make a difference*/
+    margin: auto;
+    padding: 0vh 3vw 0vh 3vw;
+    font-size: 1.25em;
+    line-height: 2.2;
+    }
+.purpose .purpose1 #diff {
+    line-height: 1.5;
+    padding-bottom: 1.8vh;
+    }
+.purpose .purpose2 { /*change*/
+    margin: auto;
+    padding: 0vh 3vw 0vh 3vw;
+    font-size: 1.25em;
+    line-height: 2.2;     
+    }
+.purpose .purpose2 h3 {
+    line-height: 1.5;
+    padding-bottom: 1.8vh;
+    }
+}
 
 @media only screen and (max-width: 690px) {/* For mobile phones: */
-    .purpose .jumper3 { /*positioning of container for the button to reconfigure section*/
-        display: none;
-        }
+.purpose .jumper3 { /*positioning of container for the button to reconfigure section*/
+    display: none;
+    }
 #purposetitle h2 {
     font-size: 2.2em;
     padding-top: 1vh;
@@ -753,7 +687,7 @@ header {
     }
 .purpose .purpose1 #diff {
     display: none;
-}
+    }
 .purpose .purpose1 {
     padding: 0vh 3vw 1vh 4vw;
     font-size: 1.13rem;
@@ -770,8 +704,8 @@ header {
     line-height: 1.9;
     }
 }
-@media only screen and (max-width: 600px) {/* For mobile phones: */
-   
+
+@media only screen and (max-width: 600px) {/* For mobile phones: */  
 .purpose .purpose1 {
     padding: 0vh 3vw 1vh 4vw;
     font-size: 1.05rem;
@@ -784,79 +718,72 @@ header {
     }
 }
 
-
-
-@media only screen and (max-width: 519px) {
-      
-    .purpose .purpose1 h3 {
-        font-size: 1.25rem;
-        line-height: 2;
-        padding-bottom: 1vh;
-        }
-    .purpose .purpose1 {
-        padding: 0vh 3vw 0vh 4vw;
-        font-size: 1.04rem;
-        line-height: 1.8;
-        }
-    .purpose .purpose2 h3 {
-        font-size: 1.25rem;
-        line-height: 2;
-        padding-bottom: 1vh;
-        }
-    .purpose .purpose2 {
-        padding: 0vh 3vw 15vh 4vw;
-        font-size: 1.04rem;
-        line-height: 1.8;
-        }
-}
-@media only screen and (max-width: 466px) {
-      
-    .purpose .purpose1 h3 {
-        font-size: 1.20rem;
-        line-height: 1.5;
-        padding-bottom: 1.5vh;
-        }
-    .purpose .purpose1 {
-        padding: 0vh 3vw 0vh 4vw;
-        font-size: 1.03rem;
-        line-height: 1.7;
-       
-        }
+@media only screen and (max-width: 519px) {  
+.purpose .purpose1 h3 {
+    font-size: 1.25rem;
+    line-height: 2;
+    padding-bottom: 1vh;
+    }
+.purpose .purpose1 {
+    padding: 0vh 3vw 0vh 4vw;
+    font-size: 1.04rem;
+    line-height: 1.8;
+    }
 .purpose .purpose2 h3 {
-        font-size: 1.20rem;
-        line-height: 1.5;
-        padding-bottom: 1.5vh;
-        }
-    .purpose .purpose2 {
-        padding: 0vh 3vw 15vh 4vw;
-        font-size: 1.03rem;
-        line-height: 1.7;
-        
-        }
+    font-size: 1.25rem;
+    line-height: 2;
+    padding-bottom: 1vh;
+    }
+.purpose .purpose2 {
+    padding: 0vh 3vw 15vh 4vw;
+    font-size: 1.04rem;
+    line-height: 1.8;
+    }
 }
-        @media only screen and (max-width: 430px) {
-           
-            #purposetitle h2 {
-                font-size: 2.1em;
-                padding-top: 1vh;
-            }
-            .purpose .purpose1 h3 {
-                font-size: 1.20rem;
-                line-height: 1.5;
-                margin-top: 0vh;
-                padding-bottom: 1.5vh;
-                }
-            
-            .purpose .purpose1 {
-                overflow: scroll;
-            -webkit-overfow-scrolling: touch;
-            border-bottom: 2px solid #7600A5;
-                }
-        
-            .purpose .purpose2 {
-                overflow: scroll;
-            -webkit-overfow-scrolling: touch;
-                }
+
+@media only screen and (max-width: 466px) {  
+.purpose .purpose1 h3 {
+    font-size: 1.20rem;
+    line-height: 1.5;
+    padding-bottom: 1.5vh;
+    }
+.purpose .purpose1 {
+    padding: 0vh 3vw 0vh 4vw;
+    font-size: 1.03rem;
+    line-height: 1.7; 
+    }
+.purpose .purpose2 h3 {
+    font-size: 1.20rem;
+    line-height: 1.5;
+    padding-bottom: 1.5vh;
+    }
+.purpose .purpose2 {
+    padding: 0vh 3vw 15vh 4vw;
+    font-size: 1.03rem;
+    line-height: 1.7;   
+    }
+}
+
+@media only screen and (max-width: 430px) {
+#purposetitle h2 {
+    font-size: 2.1em;
+    padding-top: 1vh;
+    }
+.purpose .purpose1 h3 {
+    font-size: 1.20rem;
+    line-height: 1.5;
+    margin-top: 0vh;
+    padding-bottom: 1.5vh;
+    } 
+.purpose .purpose1 {
+    overflow: scroll;
+    -webkit-overfow-scrolling: touch;
+    border-bottom: 2px solid #7600A5;
+    }    
+.purpose .purpose2 {
+    overflow: scroll;
+    -webkit-overfow-scrolling: touch;
+    }
 }
 
 /*Purpose for computer sceen*/
@@ -870,7 +797,7 @@ header {
     position: relative;
     border-left: 2px solid #0019A8;
     border-right: 2px solid #7600A5;
-}
+    }
 .purposetitle h2 {
     text-align: center;
     margin: auto;
@@ -879,7 +806,7 @@ header {
     letter-spacing: 1.5; 
     color: #000000;
     padding-top: 7vh;
-}
+    }
 .purpose {
     grid-area: purpose;
     display: flex;
@@ -889,7 +816,7 @@ header {
     height: 100%;
     border-left: 2px solid #0019A8;
     border-right: 2px solid #7600A5;
-}
+    }
 .purpose1 { /*make a difference*/
     flex-basis: 50%;
     text-align: justify;
@@ -899,10 +826,10 @@ header {
     font-size: 1.1em;
     line-height: 1.8;
     color: rgb(128, 128, 128); 
-}
+    }
 #diff {
-		 display: none;
-}
+	display: none;
+    }
 .purpose1 h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
@@ -912,7 +839,7 @@ header {
     font-weight: 600;
     line-height: 1.5;
     padding-bottom: 6vh;
-}
+    }
 .purpose2 { /*change*/
     flex-basis: 50%;
     text-align: justify;
@@ -922,8 +849,7 @@ header {
     font-size: 1.1em;
     line-height: 1.8;
     color: rgb(128, 128, 128);
-   
-}
+    }
 .purpose2 h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
@@ -933,13 +859,13 @@ header {
     font-weight: 600;
     line-height: 1.5;
     padding-bottom: 6vh;
-}
+    }
 .jumper3 { /*positioning of container for the button to reconfigure section*/
     height: 40px;
     position: absolute;
     margin-top: 78.7vh;
     margin-left: 50%;
-}
+    }
 .cont {
     grid-area: cont;
     display: flex;
@@ -951,7 +877,7 @@ header {
     /*background-image: url('images/Particle (Gerd altmann pixabay).jpg'); */ 
     /*background-color:white;
     opacity: 99%;*/
-}
+    }
 .cont::after {
     content: "";
     background-image: url('images/Particle inverse.jpg');
@@ -968,7 +894,7 @@ header {
     background-position: center;
     background-position-x: 64.75%;
     background-position-y: 55%;
-}
+    }
 .cont .purpose1cont h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
@@ -978,7 +904,7 @@ header {
     font-weight: 600;
     line-height: 1.5;
     padding-bottom: 6vh;
-}
+    }
 .cont .purpose1cont {
     flex-basis: 50%;
     text-align: justify;
@@ -987,7 +913,7 @@ header {
     font-size: 1.3vw;
     line-height: 1.6;
     color: rgb(58, 58, 58); 
-}
+    }
 .cont .purpose2cont h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
@@ -997,7 +923,7 @@ header {
     font-weight: 600;
     line-height: 1.5;
     padding-bottom: 6vh;
-}
+    }
 .cont .purpose2cont {
     flex-basis: 50%;
     text-align: justify;
@@ -1006,19 +932,19 @@ header {
     font-size: 1.3vw;
     line-height: 1.6;
     color: rgb(58, 58, 58);
-}
+    }
 
 /*reconf section*/
 @media only screen and (max-width: 890px) {
-    #reconf {
-        background-size: contain;
+#reconf {
+    background-size: contain;
     }
 }
 @media only screen and (max-width: 810px) {
-    #reconf {
-        background-size: contain;
+#reconf {
+    background-size: contain;
     }
-    #reconf h2 {
+#reconf h2 {
     padding: 6vh 13vw 0vh 17vw;
     } 
 #reconf p {
@@ -1029,52 +955,51 @@ header {
 }
 
 @media only screen and (max-width: 690px) {
-    #reconf h2 {
-        font-size: 2em;
-        font-weight: 500;
-        line-height: 2.5;
-        padding: 8vh 13vw 0vh 17vw;
+#reconf h2 {
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 2.5;
+    padding: 8vh 13vw 0vh 17vw;
     }
-   
 }
 @media only screen and (max-width: 630px) {
-    #reconf h2 {
-        font-size: 1.8em;
-        font-weight: 500;
-        line-height: 2.5;
-        padding: 8vh 13vw 0vh 17vw;
+#reconf h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+    line-height: 2.5;
+    padding: 8vh 13vw 0vh 17vw;
     }
-    #reconf p {
-        font-size: 1.3em;
-        line-height: 2;
-        padding: 0vh 17vw 15vh 17vw;
+#reconf p {
+    font-size: 1.3em;
+    line-height: 2;
+    padding: 0vh 17vw 15vh 17vw;
     }
 }
 @media only screen and (max-width: 600px) {
-    #reconf h2 {
-        font-size: 1.6em;
-        font-weight: 500;
-        line-height: 2.5;
-        padding: 8vh 13vw 0vh 17vw;
+#reconf h2 {
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 2.5;
+    padding: 8vh 13vw 0vh 17vw;
     }
-    #reconf p {
-        font-size: 1.2em;
-        line-height: 2;
-        padding: 0vh 17vw 13vh 17vw;
+#reconf p {
+    font-size: 1.2em;
+    line-height: 2;
+    padding: 0vh 17vw 13vh 17vw;
     }
 }
 @media only screen and (max-width: 465px) {
-    #reconf h2 {
-        font-size: 1.2em;
-        font-weight: 500;
-        line-height: 1.5;
-        padding: 4vh 13vw 0vh 17vw;
-        }
-    #reconf p {
-        font-size: 1.1em;
-        line-height: 1.5;
-        padding: 0vh 17vw 10vh 17vw;
-        }
+#reconf h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 4vh 13vw 0vh 17vw;
+    }
+#reconf p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    padding: 0vh 17vw 10vh 17vw;
+    }
 }
 
 /*reconf section for the computer screen*/
@@ -1087,20 +1012,19 @@ header {
     background-image: linear-gradient(240deg, rgba(180,0,252,0.8), rgba(0,38,255,0.8)), url('images/robot.jpg');
     background-repeat: repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     margin-bottom: -8.83vh;
     justify-content: space-around;
     position: relative;
-}
+    }
 .reconf h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.4em;
     font-weight: 500;
     line-height: 2.5;
     color: rgba(255, 255, 255, 0.95);
-    padding: 4vh 0vw 0vh 17vw;
-    
-}
+    padding: 4vh 0vw 0vh 17vw;  
+    }
 .reconf p {
     font-family: 'Lora', serif;
     font-size: 1.3em;
@@ -1108,27 +1032,26 @@ header {
     color: rgba(255, 251, 251, 0.85);
     padding: 0vh 17vw 20vh 17vw;
     text-align: justify;
-}
+    }
 .reconf .imglink { 
     position: relative;
     width: 66%;
     bottom: 12%;
-    left: 17%; 
-      
-}
+    left: 17%;    
+    }
 .reconf .overlay {
     /*height: 260px;*/
     background-color: #0019a800;
     transition: .5s ease;
     color: #0019A8;
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
-}
+    }
 .reconf .overlay img { 
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-}
+    }
 .reconf .overlay .text {
     position: absolute;
     font-family: 'Poppins', sans-serif;
@@ -1136,40 +1059,42 @@ header {
     top: 70%;
     left: 13%;
     text-align: left;
-}
+    }
 .reconf .overlay:hover {
     background-color: #0019a80c;
     color: #7600A5;
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
-}
+    }
 .reconf .overlay:active {
     background-color: #0019a800;
     color: #0019A8;
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
-}
+    }
 
+    /*footer section*/
 @media only screen and (max-width: 1100px) {
-    footer {
-        height: 60%;
-        margin-top: 3.532vh;
+footer {
+    height: 60%;
+    margin-top: 3.532vh;
     }
 }
 @media only screen and (max-width: 650px) {
     footer {
-        height: 100%;
-        margin-top: unset;
+    height: 100%;
+    margin-top: unset;
     }
 }
 
+/*footer for computer screen*/
 footer {
     grid-area: footer;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 3; 
-}
-.pagefooter {
+    }
+.pagefooter { /*footer for pages*/
 	background-color: #1c2138;
     z-index: 2; 
-}
+    }
 
 
 
