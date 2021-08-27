@@ -86,8 +86,11 @@ header {
     }
 #MyLogo a:hover{
     color: #B400FC;
-        }
-.nav_menu {
+    }
+
+        
+
+.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -95,25 +98,30 @@ header {
     background-color: transparent;
     padding-right: 0.7vw;
     }
-.nav_item {
+/*.nav-item {
     float: right;
-    }
-.nav__link {
+    }*/
+.nav-link {
     display: block;
-    color: rgb(210, 210, 210);
+    color: rgb(220, 220, 220);
     font-family: 'Poppins', sans-serif;
-    text-align: center;
+    text-align: right;
     font-size: 1.15em;
     letter-spacing: 0.2em;
-    padding: 1em 1.6em 1em 1em;
+    padding: 1em 1.6em 1em 1.6em;
     text-decoration: none;
     z-index: 1;
     }
+.pageheader .nav-link {
+    text-align: center;
+}
 
-.nav__link:hover {
+
+.nav-link:hover, 
+.header .menu-btn:hover {
     color: #B400FC;
     }
-.nav__link:active {
+.nav-link:active {
     color: #0026FF;
     }
         
@@ -121,28 +129,99 @@ header {
     color: #0026FF;
     text-decoration: underline #0026FF;
     }
-        /*.nav__hamburger {
-            color: inherit;
-            min-width: 32px;
-            min-height: 32px;
-            transition: opacity 80ms linear;
-            
-            display: none;
-            opacity: 0;
-          }
+
+.foot-nav .nav-item {
+    float: right;
+    }
+
+
+/*menu*/
+
+.header .menu , .pageheader .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  .header .menu-icon, .pageheader .menu-icon {
+      cursor: pointer;
+      float: right;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+  }
+  .header .menu-icon .nav-icon, .pageheader .menu-icon .nav-icon {
+      background: rgb(233, 233, 233);;
+      display: block;
+      height: 2.2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+  }
+  .header .menu-icon .nav-icon:before, .pageheader .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after,.pageheader .menu-icon .nav-icon:after {
+    background: rgb(233, 233, 233);;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+    }
+
+.header .menu-icon .nav-icon:before, .pageheader .menu-icon .nav-icon:before {
+    top: 7px;
+}
+
+.header .menu-icon .nav-icon:after, .pageheader .menu-icon .nav-icon:after {
+    top: -7px;
+}
+
+
+/* menu btn */
+
+.header .menu-btn, .pageheader .menu-btn {
+display: none;
+}
+
+.header .menu-btn:checked ~ .menu, .pageheader .menu-btn:checked ~ .menu {
+max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon, .pageheader .menu-btn:checked ~ .menu-icon .nav-icon {
+background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before, .pageheader .menu-btn:checked ~ .menu-icon .nav-icon:before {
+transform: rotate(-45deg);
+top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after, .pageheader .menu-btn:checked ~ .menu-icon .nav-icon:after {
+transform: rotate(45deg);
+top:0;
+}
+
+
+
+/* 48em = 768px @ 16pt font */
+
+@media (min-width: 52em) {
+.nav-item {
+    float: left;
+}
+/*.nav-link {
+    padding: 20px 30px;
+}*/
+.header .menu, .pageheader .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+}
+.header .menu-icon, .pageheader .menu-icon {
+    display: none;
+}
+}
           
-          .nav__hamburgerclose {
-            color: inherit;
-            position: absolute;
-            top: 0;
-            min-width: 32px;
-            min-height: 32px;
-            transition: opacity 150ms linear;
-            
-            display: none;
-            opacity: 0;
-            z-index: -1;
-          }*/
         
 
 /*title section*/
