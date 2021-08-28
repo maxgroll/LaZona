@@ -108,7 +108,8 @@ header {
     text-align: center;
     font-size: 1.15em;
     letter-spacing: 0.2em;
-    padding: 1em 1.6em 1em 1.6em;
+    /*padding: 1em 1.6em 1em 1.6em;*/
+    padding: 10px 30px;
     text-decoration: none;
     z-index: 1;
     }
@@ -226,9 +227,9 @@ top:0;
     float: left;
     background-color:transparent;
 }
-/*.nav-link {
+.nav-link {
     padding: 20px 30px;
-}*/
+}
 .header .menu, .pageheader .menu {
     clear: none;
     float: right;
