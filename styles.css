@@ -96,7 +96,7 @@ header {
     padding: 0;
     overflow: hidden;
     background-color: transparent;
-    padding-right: 0.7vw;
+    
     }
 /*.nav-item {
     float: right;
@@ -105,15 +105,23 @@ header {
     display: block;
     color: rgb(220, 220, 220);
     font-family: 'Poppins', sans-serif;
-    text-align: right;
+    text-align: center;
     font-size: 1.15em;
     letter-spacing: 0.2em;
     padding: 1em 1.6em 1em 1.6em;
     text-decoration: none;
     z-index: 1;
     }
+.nav-item {
+    background-color: rgba(0, 0, 0, 0.25);
+}
 .pageheader .nav-link {
     text-align: center;
+    color: rgb(240, 240, 240);
+}
+.pageheader .nav-item {
+    background-color: rgba(0, 0, 0, 0.45);
+    
 }
 
 
@@ -206,8 +214,17 @@ top:0;
 /* 48em = 768px @ 16pt font */
 
 @media (min-width: 52em) {
+  
 .nav-item {
     float: left;
+    background-color:transparent;
+}
+.pageheader .nav-link {
+    color: rgb(233, 233, 233);
+}
+.pageheader .nav-item {
+    float: left;
+    background-color:transparent;
 }
 /*.nav-link {
     padding: 20px 30px;
