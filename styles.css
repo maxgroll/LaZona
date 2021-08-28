@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6 {
 /*header styles including logo and first nav*/
 @media only screen and (max-width: 1100px) {
     header {
-        height: 60%;
+        height: 62.5%;
     }
 }
 
@@ -95,8 +95,7 @@ header {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: transparent;
-    
+    background-color: rgba(0, 0, 0, 0.25);
     }
 /*.nav-item {
     float: right;
@@ -113,9 +112,10 @@ header {
     text-decoration: none;
     z-index: 1;
     }
-.nav-item {
+/*.nav-item {
     background-color: rgba(0, 0, 0, 0.25);
-}
+    
+}*/
 .pageheader .nav-link {
     text-align: center;
     color: rgb(240, 240, 240);
@@ -215,7 +215,9 @@ top:0;
 /* 48em = 768px @ 16pt font */
 
 @media (min-width: 52em) {
-  
+  .menu{
+      background-color: transparent;
+  }
 .nav-item {
     float: left;
     background-color:transparent;
@@ -1171,8 +1173,8 @@ top:0;
     /*footer section*/
 @media only screen and (max-width: 1100px) {
 footer {
-    height: 60%;
-    margin-top: 3.532vh;
+    height: 62.5%;
+    margin-top: 3.31125vh;
     }
 }
 @media only screen and (max-width: 650px) {
