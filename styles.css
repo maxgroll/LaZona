@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6 {
 /*header styles including logo and first nav*/
 @media only screen and (max-width: 1100px) {
     header {
-        height: 62.5%;
+        height: 60%;
     }
 }
 
@@ -1173,8 +1173,8 @@ top:0;
     /*footer section*/
 @media only screen and (max-width: 1100px) {
 footer {
-    height: 62.5%;
-    margin-top: 3.31125vh;
+    height: 60;
+    margin-top: 3.532vh;
     }
 }
 @media only screen and (max-width: 650px) {
