@@ -46,13 +46,14 @@ h1,h2,h3,h4,h5,h6 {
 /*layout-end*/
 
 /*header styles including logo and first nav*/
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1100px) and (orientation: portrait){
     header {
         height: 60%;
     }
 }
 
-@media only screen and (max-width: 650px) {
+
+@media only screen and (max-width: 660px) and (orientation: portrait){
     header {
         height: 100%;
     }
@@ -108,7 +109,7 @@ header {
     font-size: 1.15em;
     letter-spacing: 0.2em;
     /*padding: 1em 1.6em 1em 1.6em;*/
-    padding: 13px 30px;
+    padding:13px 30px;
     text-decoration: none;
     z-index: 1;
     }
@@ -214,7 +215,7 @@ top:0;
 
 /* 48em = 768px @ 16pt font */
 
-@media (min-width: 52em) {
+@media (min-width: 50em) {
   .menu{
       background-color: transparent;
   }
@@ -230,7 +231,7 @@ top:0;
     background-color:transparent;
 }
 .nav-link {
-    padding: 20px 30px;
+    padding: 13px 30px;
 }
 .header .menu, .pageheader .menu {
     clear: none;
@@ -634,7 +635,7 @@ top:0;
     flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
     }
 .bateson .bateson1 {
-    padding: 13vh 6vw;
+    padding: 5vh 6vw;
     font-size: 1.1em;
     line-height: 2;
     margin-top: 18vh;
@@ -648,7 +649,7 @@ top:0;
 
 @media only screen and (max-width: 600px) {
 .bateson .bateson1 {
-    padding: 12vh 6vw;
+    padding: 4vh 6vw;
     font-size: 1.1em;
     line-height: 2;
     margin-top: 16vh;    
@@ -657,7 +658,7 @@ top:0;
 
 @media only screen and (max-width: 500px) {
 .bateson .bateson1 {
-    padding: 12vh 6vw;
+    padding: 3vh 6vw;
     font-size: 1.2em;
     line-height: 2;
     margin-top: 14vh;    
@@ -672,7 +673,7 @@ top:0;
     position: relative;
     margin: auto;
     height: 100%;
-    background-size: stretch;
+    background-size: cover;
     background-position-y: 55%;
     background-position-x: 65%;
     background-repeat: no-repeat;
@@ -1171,16 +1172,51 @@ top:0;
     }
 
     /*footer section*/
-@media only screen and (max-width: 1100px) {
-footer {
+@media only screen and (max-width: 1100px) and (orientation: portrait) {
+footer, .pagefooter {
     height: 60;
     margin-top: 3.532vh;
     }
 }
-@media only screen and (max-width: 650px) {
-    footer {
-    height: 100%;
-    margin-top: unset;
+
+@media only screen and (max-width: 800px) {
+    footer, .pagefooter {
+        height: 100%;
+        margin-top: unset;
+    }
+    footer .menu, .pagefooter .menu {
+        display: none;
+    }
+    footer #top-button, .pagefooter #top-button {
+    display: block;
+    color: rgb(220, 220, 220);
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    /*padding: 1em 1.6em 1em 1.6em;*/
+    padding: 5px 20px;
+    text-decoration: none;
+    z-index: 1;
+    float: right;
+    }
+    #top-button:hover {
+        color: #0026FF;
+    }
+    #top-button:active {
+        color: #7600A5;
+    }
+}
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+    footer, .pagefooter {
+        height: 60%;
+        margin-top: 3.532vh;
+    }
+}
+@media only screen and (max-width: 661px) and (orientation: portrait) {
+    footer, .pagefooter {
+        height: 100%;
+        margin-top: unset;
     }
 }
 
@@ -1194,6 +1230,11 @@ footer {
 	background-color: #1c2138;
     z-index: 2; 
     }
+    #top-button {
+        display: none;
+        }
+   
+
 
 
 
