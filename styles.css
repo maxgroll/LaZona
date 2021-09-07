@@ -1210,7 +1210,7 @@ footer, .pagefooter {
 @media only screen and (max-width: 800px) and (orientation: portrait) {
     footer, .pagefooter {
         height: 60%;
-        margin-top: 3.532vh;
+        margin-top: 3.3vh;
     }
 }
 @media only screen and (max-width: 661px) and (orientation: portrait) {
