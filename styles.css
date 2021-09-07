@@ -215,7 +215,7 @@ top:0;
 
 /* 48em = 768px @ 16pt font */
 
-@media (min-width: 50em) {
+@media (min-width: 50.0625em) {
   .menu{
       background-color: transparent;
   }
