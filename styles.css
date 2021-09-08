@@ -65,6 +65,10 @@ header {
     grid-area: header;
     z-index: 3;
     height: fit-content;
+    height: -moz-fit-content;
+    height: -ms-fit-content;
+    height: -o-fit-content;
+    height: -webkit-fit-content;
     }
 .pageheader{
 	background-color: #1c2138;
