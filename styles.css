@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 /*layout-end*/
 
 /*header styles including logo and first nav*/
-@media only screen and (max-width: 1100px) and (orientation: portrait){
+/*@media only screen and (max-width: 1100px) and (orientation: portrait){
     header {
         height: 60%;
     }
@@ -57,7 +57,7 @@ h1,h2,h3,h4,h5,h6 {
     header {
         height: 100%;
     }
-}
+}*/
 
 
 header {
@@ -1173,17 +1173,17 @@ top:0;
     }
 
     /*footer section*/
-@media only screen and (max-width: 1100px) and (orientation: portrait) {
+/*@media only screen and (max-width: 1100px) and (orientation: portrait) {
 footer, .pagefooter {
     height: fit-content;
     margin-top: auto;
     }
-}
+}*/
 
 @media only screen and (max-width: 800px) {
-    footer, .pagefooter {
+    /*footer, .pagefooter {
         height: fit-content;
-        margin-top: auto;
+        margin-top: auto;*/
     }
     footer .menu, .pagefooter .menu {
         display: none;
@@ -1207,8 +1207,8 @@ footer, .pagefooter {
     #top-button:active {
         color: #7600A5;
     }
-}
-@media only screen and (max-width: 800px) and (orientation: portrait) {
+
+/*@media only screen and (max-width: 800px) and (orientation: portrait) {
     footer, .pagefooter {
         height: fit-content;
         margin-top: auto;
@@ -1219,7 +1219,7 @@ footer, .pagefooter {
         height: fit-content;
         margin-top: auto;
     }
-}
+}+/
 
 /*footer for computer screen*/
 footer {
@@ -1227,6 +1227,10 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 3; 
     height: fit-content;
+    height: -moz-fit-content;
+    height: -ms-fit-content;
+    height: -o-fit-content;
+    height: -webkit-fit-content;
     margin-top: auto;
     }
 .pagefooter { /*footer for pages*/
