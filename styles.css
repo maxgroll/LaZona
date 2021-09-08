@@ -1184,11 +1184,10 @@ footer, .pagefooter {
     }
 }*/
 
-@media only screen and (max-width: 801px) {
+@media only screen and (max-width: 800px) {
     /*footer, .pagefooter {
         height: fit-content;
         margin-top: auto;*/
-    }
     footer .menu, .pagefooter .menu {
         display: none;
     }
@@ -1211,7 +1210,7 @@ footer, .pagefooter {
     #top-button:active {
         color: #7600A5;
     }
-
+}
 /*@media only screen and (max-width: 800px) and (orientation: portrait) {
     footer, .pagefooter {
         height: fit-content;
