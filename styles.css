@@ -46,19 +46,6 @@ h1,h2,h3,h4,h5,h6 {
 /*layout-end*/
 
 /*header styles including logo and first nav*/
-/*@media only screen and (max-width: 1100px) and (orientation: portrait){
-    header {
-        height: 60%;
-    }
-}
-
-
-@media only screen and (max-width: 660px) and (orientation: portrait){
-    header {
-        height: 100%;
-    }
-}*/
-
 
 header {
     background-color: rgba(0, 0, 0, 0.25);
@@ -101,11 +88,8 @@ header {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.25);
     }
-/*.nav-item {
-    float: right;
-    }*/
+
 .nav-link {
     display: block;
     color: rgb(220, 220, 220);
@@ -113,23 +97,18 @@ header {
     text-align: center;
     font-size: 1.15em;
     letter-spacing: 0.2em;
-    /*padding: 1em 1.6em 1em 1.6em;*/
     padding:13px 30px;
     text-decoration: none;
     z-index: 1;
     }
-/*.nav-item {
-    background-color: rgba(0, 0, 0, 0.25);
-    
-}*/
 .pageheader .nav-link {
     text-align: center;
     color: rgb(240, 240, 240);
 }
-.pageheader .nav-item {
+/*.pageheader .nav-item {
     background-color: rgba(0, 0, 0, 0.45);
     
-}
+}*/
 
 
 .nav-link:hover, 
@@ -273,6 +252,12 @@ top:0;
     background-position-x: 57.53%;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    #title .jumper {
+        display: none;
+        }
+    }
 
 @media only screen and (max-width: 810px) {
 #title {
@@ -467,16 +452,16 @@ top:0;
     }   
 }
 
-@media only screen and (max-width: 690px) {
+/*@media only screen and (max-width: 768px) { /*antes 690 ?*/
     /* For mobile phones: */
-.desc .jumper1 { /*positioning of container for the button to reconfigure section*/
-    display: none;
+/*.desc .jumper1 { /*positioning of container for the button to reconfigure section*/
+    /*display: none;
     }
 .desc {
-    flex-direction: column; /*para el celular meter esto en media querie y ajustar paddings y demás*/
-    /*justify-content: space-around;*/
+    flex-direction: column; 
+    
     }
-.desc .desc1 { /*description of blog on the left side*/
+.desc .desc1 { 
     padding: 7vw 3vw 0vw 3vw;
     font-size: 1.11em;
     line-height: 2.2;  
@@ -486,7 +471,7 @@ top:0;
     line-height: 1.5;
     padding-top: 2vh;
     }
-.desc .desc2 { /*description of resources on the right side*/
+.desc .desc2 { 
     padding: 0vw 3vw 0vw 3vw;
     font-size: 1.11rem;
     line-height: 2.2;
@@ -496,11 +481,11 @@ top:0;
     line-height: 1.5;
     padding-bottom: 2vh;
     }
-}
+}*/
   
-@media only screen and (max-width: 582px) {
+/*@media only screen and (max-width: 582px) {
    
-.desc .desc1 { /*description of blog on the left side*/
+.desc .desc1 { 
     padding: 5vw 3vw 0vw 3vw;
     font-size: 1.1rem;
     line-height: 2.1;      
@@ -510,7 +495,7 @@ top:0;
     line-height: 1.2;
     padding-top: 1vh;
     }
-.desc .desc2 { /*description of resources on the right side*/
+.desc .desc2 { 
     padding: 0vw 3vw 10vw 3vw;
     font-size: 1.1rem;
     line-height: 2.1;    
@@ -533,8 +518,7 @@ top:0;
     font-size: 1.7rem;
     line-height: 1.2;
     padding-top: 1vh;
-    /*writing-mode: vertical-rl;
-    text-orientation: upright;*/   
+    
     }
 .desc .desc2 { 
     padding: 0vw 3vw 10vw 3vw;
@@ -549,16 +533,16 @@ top:0;
 }
 
 @media only screen and (max-width: 430px) {
-.desc .desc1 { /*description of blog on the left side*/
+.desc .desc1 { 
     overflow: scroll;
     -webkit-overfow-scrolling: touch;
     border-bottom: 2px solid #7600A5;
     }
-.desc .desc2 { /*description of resources on the right side*/ 
+.desc .desc2 { 
     overflow: scroll;
     -webkit-overfow-scrolling: touch;
     }     
-}
+}*/
  
 /*description section for the computer screen*/
 .desc {
@@ -621,7 +605,7 @@ top:0;
 
 /*Bateson quote section*/
 
-@media only screen and (max-width: 740px) {
+/*@media only screen and (max-width: 740px) {
 .bateson .bateson1 h2 { 
     font-size: 1.3em;
     line-height: 3;
@@ -630,9 +614,9 @@ top:0;
     font-size: 1.3em;
     line-height: 2;
     }
-}
+}*/
 
-@media only screen and (max-width: 690px) { /*quote section mobile small*/
+@media only screen and (max-width: 768px) { /*antes 690 ?*/ /*quote section mobile small*/
 .bateson .jumper2 { /*positioning of container for the button to purpose section*/
     display: none;
     }
@@ -641,7 +625,7 @@ top:0;
     }
 .bateson .bateson1 {
     padding: 5vh 6vw;
-    font-size: 1.1em;
+    font-size: 1.3em;
     line-height: 2;
     margin-top: 18vh;
 }
@@ -652,10 +636,10 @@ top:0;
     }
 }
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
 .bateson .bateson1 {
     padding: 4vh 6vw;
-    font-size: 1.1em;
+    font-size: 1.3em;
     line-height: 2;
     margin-top: 16vh;    
     }
@@ -668,7 +652,7 @@ top:0;
     line-height: 2;
     margin-top: 14vh;    
     } 
-}
+}/*
 
 /*Bateson quote section computer screen*/
 .bateson {
@@ -772,9 +756,9 @@ top:0;
     }
 }
 
-@media only screen and (max-width: 690px) {/* For mobile phones: */
-.purpose .jumper3 { /*positioning of container for the button to reconfigure section*/
-    display: none;
+/*@media only screen and (max-width: 768px) { /*antes 690 ?*//* For mobile phones: */
+/*.purpose .jumper3 { /*positioning of container for the button to reconfigure section*/
+    /*display: none;
     }
 #purposetitle h2 {
     font-size: 2.2em;
@@ -810,7 +794,7 @@ top:0;
     }
 }
 
-@media only screen and (max-width: 600px) {/* For mobile phones: */  
+@media only screen and (max-width: 600px) { 
 .purpose .purpose1 {
     padding: 0vh 3vw 1vh 4vw;
     font-size: 1.05rem;
@@ -889,7 +873,7 @@ top:0;
     overflow: scroll;
     -webkit-overfow-scrolling: touch;
     }
-}
+}*/
 
 /*Purpose for computer sceen*/
 
@@ -1059,7 +1043,7 @@ top:0;
     } 
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 768px) { /*antes 690 ?*/
 #reconf h2 {
     font-size: 2em;
     font-weight: 500;
@@ -1177,17 +1161,10 @@ top:0;
     }
 
     /*footer section*/
-/*@media only screen and (max-width: 1100px) and (orientation: portrait) {
-footer, .pagefooter {
-    height: fit-content;
-    margin-top: auto;
-    }
-}*/
+
 
 @media only screen and (max-width: 800px) {
-    /*footer, .pagefooter {
-        height: fit-content;
-        margin-top: auto;*/
+   
     footer .menu, .pagefooter .menu {
         display: none;
     }
@@ -1211,18 +1188,7 @@ footer, .pagefooter {
         color: #7600A5;
     }
 }
-/*@media only screen and (max-width: 800px) and (orientation: portrait) {
-    footer, .pagefooter {
-        height: fit-content;
-        margin-top: auto;
-    }
-}
-@media only screen and (max-width: 661px) and (orientation: portrait) {
-    footer, .pagefooter {
-        height: fit-content;
-        margin-top: auto;
-    }
-}+/
+
 
 /*footer for computer screen*/
 footer {
