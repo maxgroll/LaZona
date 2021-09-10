@@ -1,10 +1,10 @@
 html, body {
     box-sizing: border-box;
-    font-weight: normal;
+    /*font-weight: normal;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	vertical-align: baseline;*/
   }
 *, *::before, *::after {
     box-sizing: inherit;
