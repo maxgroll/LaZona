@@ -101,6 +101,9 @@ html, body {
     line-height: 2.2; 
     margin-top: 30%;
     border-bottom: 2px solid #7600A5;
+    height: 100%;
+    -moz-font-size-adjust: none;
+    font-size-adjust: none;
     }
 .desc .desc1 h2 { 
     font-size: 2rem;
