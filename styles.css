@@ -1,7 +1,10 @@
-html {
+html, body {
     box-sizing: border-box;
     font-weight: normal;
-    font-size: 100%;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
   }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -618,7 +621,7 @@ top:0;
     }
 }*/
 
-@media only screen and (max-width: 768px) { /*antes 690 ?*/ /*quote section mobile small*/
+@media only screen and (max-width: 767px) { /*antes 690 ?*/ /*quote section mobile small*/
 .bateson .jumper2 { /*positioning of container for the button to purpose section*/
     display: none;
     }
@@ -1032,27 +1035,52 @@ top:0;
     }
 }
 @media only screen and (max-width: 810px) {
-#reconf {
-    background-size: contain;
-    }
-#reconf h2 {
-    padding: 6vh 13vw 0vh 17vw;
-    } 
-#reconf p {
-    font-size: 1.3em;
-    line-height: 2.3;
-    padding: 0vh 17vw 15vh 17vw;
-    } 
-}
 
-@media only screen and (max-width: 768px) { /*antes 690 ?*/
-#reconf h2 {
-    font-size: 2em;
-    font-weight: 500;
-    line-height: 2.5;
-    padding: 8vh 13vw 0vh 17vw;
+    #reconf h2 {
+        padding: 6vh 13vw 0vh 17vw;
+        } 
+    #reconf p {
+        font-size: 1.3em;
+        line-height: 2.3;
+        padding: 0vh 17vw 15vh 17vw;
+        } 
     }
-}
+
+    @media only screen and (max-width: 767px) { /*antes 690 ?*/
+        #reconf h2 {
+            font-size: 2em;
+            font-weight: 500;
+            line-height: 2.5;
+            padding: 8vh 13vw 0vh 17vw;
+            }
+        }
+@media only screen and (orientation: landscape) and (max-width: 767px) {
+    #reconf {
+        background-size: contain;
+        margin-bottom: -7.3%;
+        }
+        #reconf h2 {
+            font-size: 1.3em;
+            font-weight: 500;
+            line-height: 1;
+            padding: 0vh 13vw 0vh 17vw;
+            }
+        #reconf p {
+            font-size: 1em;
+            line-height: 1.5;
+            padding: 0vh 17vw 10vh 17vw;
+            margin-top: -6vh;
+            }
+            #reconf .imglink { 
+                position: relative;
+                width: 66%;
+                bottom: 15%;
+                left: 17%;    
+                }
+        }
+
+
+
 @media only screen and (max-width: 630px) {
 #reconf h2 {
     font-size: 1.8em;

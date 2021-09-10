@@ -16,16 +16,12 @@
     grid-template-rows: 8.83vh 91.17vh 200vh 100vh 10vh 190vh 91.17vh 8.83vh;
     }
 }*/
-html, body {
+/*html, body {
     -webkit-text-size-adjust: none;
    -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
     text-size-adjust: none;
-    -webkit-font-size-adjust: none;
-    -moz-font-size-adjust: none;
-    -ms-font-size-adjust: none;
-    font-size-adjust: none;
-}
+}*/
 
 
 @media only screen and (max-width: 767px)/*, only screen and (orientation: landscape) and (max-width: 767px)*/   {
@@ -97,13 +93,10 @@ html, body {
     }
 .desc .desc1 {
     padding: 0vw 3vw 0vw 3vw;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 2.2; 
     margin-top: 30%;
     border-bottom: 2px solid #7600A5;
-    height: 100%;
-    -moz-font-size-adjust: none;
-    font-size-adjust: none;
     }
 .desc .desc1 h2 { 
     font-size: 2rem;
@@ -113,7 +106,7 @@ html, body {
     }
 .desc .desc2 { 
     padding: 0vw 3vw 0vw 3vw;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 2.2;
     margin-top: 30%;
 }
@@ -151,7 +144,7 @@ html, body {
     }
 .purpose .purpose1 {
     padding: 0vh 3vw 1vh 4vw;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 2;
     margin-top: 20%;
     }
@@ -162,7 +155,7 @@ html, body {
     }
 .purpose .purpose2 {
     padding: 0vh 3vw 15vh 4vw;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 2;
     margin-top: 25%;
     }
