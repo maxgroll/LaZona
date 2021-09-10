@@ -16,7 +16,7 @@
     grid-template-rows: 8.83vh 91.17vh 200vh 100vh 10vh 190vh 91.17vh 8.83vh;
     }
 }*/
-body {
+html, body {
     -webkit-text-size-adjust: none;
    -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
@@ -26,6 +26,7 @@ body {
     -ms-font-size-adjust: none;
     font-size-adjust: none;
 }
+
 
 @media only screen and (max-width: 767px)/*, only screen and (orientation: landscape) and (max-width: 767px)*/   {
 .container { /*layout-start*/
