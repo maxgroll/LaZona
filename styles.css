@@ -715,11 +715,13 @@ header {
     display: none;
     }
 .purpose .purpose1 {
-    padding: 0vh 3vw 8vh 4vw;
+    padding: 10vh 3vw 0vh 4vw;
     font-size: 1.3rem;
     line-height: 2;
-    margin-top: 10%;
+    
     border-bottom: 2px solid #7600A5;
+    height:100%;
+    margin-bottom: 10vh;
     }
 .purpose .purpose2 h3 {
     font-size: 1.5rem;
@@ -729,10 +731,10 @@ header {
     
     }
 .purpose .purpose2 {
-    padding: 0vh 3vw 10vh 4vw;
+    padding: 0vh 3vw 0vh 4vw;
     font-size: 1.3rem;
     line-height: 2;
-    margin-top: 17%;
+    height: 100%;
     }
 }
 
