@@ -680,7 +680,7 @@ header {
     padding: 0vh 3vw 0vh 4vw;
     font-size: 1.2rem;
     line-height: 2;
-    margin-top: 5%;
+    margin-top: 4%;
     height: 100%;
     border-bottom: 2px solid #7600A5;
     }
@@ -715,10 +715,10 @@ header {
     display: none;
     }
 .purpose .purpose1 {
-    padding: 0vh 3vw 1vh 4vw;
+    padding: 0vh 3vw 10vh 4vw;
     font-size: 1.3rem;
     line-height: 2;
-    margin-top: 20%;
+    margin-top: 10%;
     border-bottom: 2px solid #7600A5;
     }
 .purpose .purpose2 h3 {
@@ -729,10 +729,10 @@ header {
     
     }
 .purpose .purpose2 {
-    padding: 0vh 3vw 15vh 4vw;
+    padding: 0vh 3vw 10vh 4vw;
     font-size: 1.3rem;
     line-height: 2;
-    margin-top: 25%;
+    margin-top: 17%;
     }
 }
 
