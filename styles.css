@@ -284,32 +284,32 @@ header {
 
 @media only screen and (max-width: 1200px) {
 #title {
-    background-position-x: 63.43%;
+    background-position-x: calc(100% - 36.97%);
     }
 }
 @media only screen and (max-width: 1100px) {
 #title {
-    background-position-x: 61.43%;
+    background-position-x: calc(100% - 37.97%);
     }
 }
 @media only screen and (max-width: 1005px) {
 #title {
-    background-position-x: 58.13%;
+    background-position-x: calc(100% - 38.97%)
     }
 }
 @media only screen and (max-width: 900px) {
 #title {
-    background-position-x: 57.53%;
+    background-position-x: calc(100% - 39.97%)
     }
 }
 @media only screen and (max-width: 767px) {
-    #title .jumper {
-        display: none;
-        }
+#title .jumper {
+    display: none;
     }
+}
 @media only screen and (max-width: 810px) {
 #title {
-    background-position-x: 57.78%;
+    background-position-x: calc(100% - 40.37%)
     }
 .title #type {
     margin-left: unset;
@@ -332,7 +332,7 @@ header {
 }
 @media only screen and (max-width: 675px){
 #title {
-    background-position-x: 58.53%;
+    background-position-x: calc(100% - 41.15%)
     }
 .title .type #question1 { 
     font-size: 2.2em;
@@ -340,7 +340,7 @@ header {
 }
 @media only screen and (max-width: 593px){
 #title {
-    background-position-x: 57.59%;
+    background-position-x: calc(100% - 41.57%)
     }
 .title .type #question1 {
     font-size: 2em;
@@ -348,7 +348,7 @@ header {
 }
 @media only screen and (max-width: 430px) {
 #title {
-    background-position-x: 57.56%;
+    background-position-x: calc(100% - 42.47%)
     }
 .title .type #question1 {
     font-size: 1.5em;
@@ -362,7 +362,7 @@ header {
     background-size: cover;
     background-attachment: scroll;
     background-position: center center;
-    background-position-x: 65.13%;
+    background-position-x: calc(100% - 34.87%);
     max-width: 100%;
     max-height: auto;
     margin-top: -8.83vh;
