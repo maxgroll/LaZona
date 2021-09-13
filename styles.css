@@ -18,6 +18,29 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 100%;
     }
 
+
+
+    @media only screen and (orientation: landscape) and (max-height:500px){
+        #container { 
+            display: grid;
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+            grid-template-areas: "header header header header header header header header header header header header"
+                                 "title title title title title title title title title title title title"
+                                 "desc desc desc desc desc desc desc desc desc desc desc desc"
+                                 "bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson"
+                                 "purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle"
+                                 "purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose"
+                                 "reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf"
+                                 "footer footer footer footer footer footer footer footer footer footer footer footer";
+            grid-template-columns: (12, 1fr);
+            grid-template-rows: 8.83vh 91.17vh 200vh 100vh 10vh 190vh 91.17vh 8.83vh;
+            }
+    
+    
+    }
+
 .container { /*layout-start*/
     display: grid;
     max-width: 100%;
@@ -34,8 +57,6 @@ h1,h2,h3,h4,h5,h6 {
     grid-template-columns: (12, 1fr);
     grid-template-rows: 8.83vh 91.17vh 100vh 100vh 10vh 90vh 91.17vh 8.83vh;
     }
-
-
 
 @media only screen and (max-width: 767px)  {
 .container { 
@@ -107,7 +128,13 @@ header {
     color: #B400FC;
     }
 
-        
+    @media only screen and (orientation: landscape) and (max-height:500px) {
+        .menu {
+            flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+        }
+    }    
 
 .menu {
     list-style-type: none;
@@ -219,7 +246,7 @@ header {
     }
 .nav-item {
     float: left;
-    background-color:transparent;
+    background-color: transparent;
     }
 .pageheader .nav-link {
     color: rgb(233, 233, 233);
@@ -230,6 +257,7 @@ header {
     }
 .nav-link {
     padding: 13px 30px;
+    color: rgb(220, 220, 220);
     }
 .header .menu, .pageheader .menu {
     clear: none;
@@ -242,6 +270,14 @@ header {
 }
 
 /*title section*/
+
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+    #question1 {
+        font-size: 1.75em !important;
+    }
+}
+
+
 @media only screen and (max-width: 1200px) {
 #title {
     background-position-x: 63.43%;
@@ -282,7 +318,7 @@ header {
     font-weight: 300;
     text-align: right;
     color:rgb(235, 235, 235);
-    font-size: 2.5em;
+    font-size: 2.2em;
     letter-spacing: 0.09em;
     display: block;
     overflow-wrap: break-word;
@@ -447,6 +483,42 @@ header {
 }
 
 /*description section*/
+
+
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+    .desc .jumper1 { 
+        display: none;
+        }
+    .desc {
+        flex-direction: column; 
+        }
+    #desc .desc1 {
+        padding: 5vw 3vw 0vw 3vw;
+        font-size: 1.2rem;
+        line-height: 2.2;   
+        border-bottom: 2px solid #0019A8;
+        height: 100%;
+        margin-top: 3%;
+        }
+    #desc .desc1 h2 { 
+        font-size: 2rem;
+        line-height: 1.5;
+        padding-top: 2vh;
+        }
+    #desc .desc2 { 
+        padding: 5vw 3vw 0vw 3vw;
+        font-size: 1.2rem;
+        line-height: 2.2;
+        height:100%;
+        margin-top: 3%;
+        }
+    #desc .desc2 h2 {
+        font-size: 2rem;
+        line-height: 1.5;
+        padding-bottom: 2vh;
+        }  
+}
+
 @media only screen and (orientation: landscape) and (max-width: 767px) {
 #desc .desc1 {
     padding: 0vw 3vw 0vw 3vw;
@@ -567,6 +639,27 @@ header {
 }
 
 /*Bateson quote section*/
+
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+    .bateson .jumper2 { /*positioning of container for the button to purpose section*/
+        display: none;
+        }
+    .bateson { 
+        flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
+        }
+    .bateson .bateson1 {
+        padding: 1vh 6vw !important;
+        font-size: 1.3em;
+        line-height: 2;
+        margin-top: 18vh;
+    }
+    .bateson .bateson1 h2 {
+        font-size: 1.4em;
+        line-height: 3;
+        padding-top: 4vh;
+        } 
+}
+
 @media only screen and (max-width: 767px) { /*antes 690 ?*/ /*quote section mobile small*/
 .bateson .jumper2 { /*positioning of container for the button to purpose section*/
     display: none;
@@ -593,7 +686,6 @@ header {
     display: flex;
     max-width: 100%;
     position: relative;
-    /*margin: auto;*/
     height: 100%;
     background-size: cover;
     background-position-y: 55%;
@@ -644,44 +736,24 @@ header {
  
 /*purpose section*/
 
-@media only screen and (max-width: 1005px) {
-.purpose1 h3 {
+@media only screen and (orientation: landscape) and (max-height: 500px){
+#purpose .jumper3 { 
     display: none;
     }
-.purpose1 #diff {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
-    letter-spacing: 1;
-    color: #7600A5;
-    text-align: left;
-    font-weight: 600;
-    line-height: 1.5;
-    padding-bottom: 6vh;
-    display: block;
+#purposetitle h2 {
+    font-size: 2.2em;
+    padding-top: 3vh;
     }
-    .purpose .purpose1 { 
-        margin: auto;
-        padding: 15vh 3vw 0vh 3vw;
-        font-size: 1.1rem;
-        line-height: 2;
-        }
-    .purpose .purpose2 { 
-        margin: auto;
-        padding: 15vh 3vw 0vh 3vw;
-        font-size: 1.1rem;
-        line-height: 2;   
+#purpose {
+    flex-direction: column;
     }
-}
-
-/*purpose section*/
-
-@media only screen and (orientation: landscape) and (max-width: 767px) {
 #purpose .purpose1 {
     padding: 6vh 3vw 0vh 4vw;
     font-size: 1.2rem;
     line-height: 2;
     height: 100%;
     border-bottom: 2px solid #7600A5;
+    margin-bottom: 10vh;
     
     }
 #purpose .purpose2 {
@@ -692,7 +764,36 @@ header {
     height:100%;
     }
 }
-    
+
+@media only screen and (max-width: 1005px) {
+    .purpose1 h3 {
+        display: none;
+        }
+    .purpose1 #diff {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2em;
+        letter-spacing: 1;
+        color: #7600A5;
+        text-align: left;
+        font-weight: 600;
+        line-height: 1.5;
+        padding-bottom: 6vh;
+        display: block;
+        }
+        .purpose .purpose1 { 
+            margin: auto;
+            padding: 15vh 3vw 0vh 3vw;
+            font-size: 1.1rem;
+            line-height: 2;
+            }
+        .purpose .purpose2 { 
+            margin: auto;
+            padding: 15vh 3vw 0vh 3vw;
+            font-size: 1.1rem;
+            line-height: 2;   
+        }
+    }
+
 @media only screen and (max-width: 767px) { 
 .purpose .jumper3 { 
     display: none;
@@ -819,6 +920,8 @@ header {
     margin-top: 78.7vh;
     margin-left: 50%;
     }
+
+ /*purpose page*/   
 .cont {
     grid-area: cont;
     display: flex;
@@ -882,8 +985,10 @@ header {
     color: rgb(58, 58, 58);
     }
 
+
 /*reconf section*/
-@media only screen and (max-width: 890px) {
+
+@media only screen and (max-width: 970px) {
 #reconf {
     background-size: contain;
     }
@@ -902,25 +1007,24 @@ header {
 @media only screen and (max-width: 767px) { /*antes 690 ?*/
     #reconf h2 {
         font-size: 2em;
-        font-weight: 500;
         line-height: 2.5;
         padding: 8vh 13vw 0vh 17vw;
         }
     }
+ 
 @media only screen and (orientation: landscape) and (max-width: 767px) {
 #reconf {
     background-size: contain;
-    margin-bottom: -7.7%;
+    margin-bottom: -7.7% !important;
      }
 #reconf h2 {
-    font-size: 1.3em;
-    font-weight: 500;
+    font-size: 1.6em;
     line-height: 1;
     padding: 0vh 13vw 0vh 17vw;
     }
 #reconf p {
-    font-size: 1em;
-    line-height: 1.5;
+    font-size: 1.3em;
+    line-height: 2;
     padding: 0vh 17vw 10vh 17vw;
     margin-top: -6vh;
     }
@@ -932,23 +1036,39 @@ header {
     }
 }
 
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+    #reconf {
+        background-size: contain;
+        margin-bottom: -6.3%;
+         }
+    #reconf h2 {
+        font-size: 1.3em;
+        line-height: 1;
+        padding: 0vh 13vw 0vh 17vw;
+        }
+    #reconf p {
+        font-size: 1em;
+        line-height: 1.5;
+        padding: 0vh 17vw 10vh 17vw;
+        margin-top: -6vh;
+        }
+    #reconf .imglink { 
+        bottom: 15%;   
+        }
+}
+
 @media only screen and (max-width: 630px) {
 #reconf h2 {
     font-size: 1.8em;
-    font-weight: 500;
-    line-height: 2.5;
-    padding: 8vh 13vw 0vh 17vw;
     }
 #reconf p {
     font-size: 1.3em;
-    line-height: 2;
-    padding: 0vh 17vw 15vh 17vw;
     }
 }
+
 @media only screen and (max-width: 600px) {
 #reconf h2 {
     font-size: 1.6em;
-    font-weight: 500;
     line-height: 2.5;
     padding: 8vh 13vw 0vh 17vw;
     }
@@ -958,16 +1078,16 @@ header {
     padding: 0vh 17vw 13vh 17vw;
     }
 }
+
 @media only screen and (max-width: 465px) {
 #reconf h2 {
-    font-size: 1.2em;
-    font-weight: 500;
+    font-size: 1.3em;
     line-height: 1.5;
     padding: 4vh 13vw 0vh 17vw;
     }
 #reconf p {
-    font-size: 1.1em;
-    line-height: 1.5;
+    font-size: 1.2em;
+    line-height: 1.8;
     padding: 0vh 17vw 10vh 17vw;
     }
 }
@@ -1042,7 +1162,6 @@ header {
     }
 
 /*footer section*/
-
 
 @media only screen and (max-width: 800px) {
    
