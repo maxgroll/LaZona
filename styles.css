@@ -128,13 +128,14 @@ header {
     color: #B400FC;
     }
 
-    @media only screen and (orientation: landscape) and (max-height:500px) {
-        .menu {
-            flex-direction: row;
+@media only screen and (orientation: landscape) and (max-height:500px) {
+.menu {
+    flex-direction: row;
     display: flex;
     flex-wrap: wrap;
-        }
-    }    
+    float: right;
+     }
+}    
 
 .menu {
     list-style-type: none;
@@ -275,6 +276,9 @@ header {
     #question1 {
         font-size: 1.75em !important;
     }
+    #title .jumper {
+        display: none;
+        }
 }
 
 
