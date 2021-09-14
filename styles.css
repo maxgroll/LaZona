@@ -353,7 +353,7 @@ header {
     background-position-x: calc(100% - 41.15%)
     }
 .title .type #question1 { 
-    font-size: 2.2em;
+    font-size: 2em;
     } 
 }
 @media only screen and (max-width: 593px){
@@ -361,7 +361,7 @@ header {
     background-position-x: calc(100% - 41.57%)
     }
 .title .type #question1 {
-    font-size: 2em;
+    font-size: 1.8em;
     } 
 }
 @media only screen and (max-width: 430px) {
@@ -694,6 +694,34 @@ header {
 
 /*Bateson quote section*/
 
+
+@supports (-moz-appearance:none) {
+    @media only screen and (orientation: landscape) and (max-height: 500px) {
+        #bateson .bateson1 { 
+            font-size: 1.1em !important;
+            margin-top: 10vh !important;
+            padding: 0vh 6vw !important;
+        }
+        #bateson .bateson1 h2 {
+            font-size: 1.3em !important;
+            line-height: 2.5 !important;
+            padding-top: 1vh !important;
+            }   
+                    
+}
+@media only screen and (max-width: 600px) {
+    #bateson .bateson1 { 
+        font-size: 1.1em !important;
+    }
+    #bateson .bateson1 h2 {
+        font-size: 1.3em !important;
+        
+        }   
+}
+}
+
+
+
 @media only screen and (orientation: landscape) and (max-height: 500px) {
     .bateson .jumper2 { /*positioning of container for the button to purpose section*/
         display: none;
@@ -712,7 +740,7 @@ header {
         line-height: 3;
         padding-top: 4vh;
         } 
-}
+    }
 
 @media only screen and (max-width: 767px) { /*antes 690 ?*/ /*quote section mobile small*/
 .bateson .jumper2 { /*positioning of container for the button to purpose section*/
@@ -733,6 +761,7 @@ header {
     padding-top: 4vh;
     }
 }
+
 
 /*Bateson quote section computer screen*/
 .bateson {
@@ -790,6 +819,50 @@ header {
  
 /*purpose section*/
 
+
+@supports (-moz-appearance:none) {
+    @media only screen and (orientation: landscape) and (max-height: 500px) {
+        #purposetitle h2 {
+            font-size: 2em !important;
+        }
+        #purpose .purpose1 {
+            padding: 6vh 3vw 0vh 4vw;
+            font-size: 1rem !important;
+            margin-bottom: 10vh !important;
+            
+            }
+        #purpose .purpose2 {
+            padding: 4vh 3vw 0vh 4vw;
+            font-size: 1rem !important;
+            }
+            #purpose .purpose1 h3 {
+                font-size: 1.3rem !important;
+                }
+                #purpose .purpose2 h3 {
+                    font-size: 1.3rem !important;
+                    }
+                }
+@media only screen and (max-width: 600px) {
+    #purposetitle h2 {
+        font-size: 2em !important;
+    }
+#purpose .purpose1 {
+    padding: 6vh 3vw 0vh 4vw;
+    font-size: 1rem !important;
+    margin-bottom: 10vh !important;
+    }
+#purpose .purpose2 {
+    padding: 4vh 3vw 0vh 4vw;
+    font-size: 1rem !important;
+    }
+    #purpose .purpose1 h3 {
+        font-size: 1.3rem !important;
+        }
+        #purpose .purpose2 h3 {
+            font-size: 1.3rem !important;
+            }
+}
+}
 @media only screen and (orientation: landscape) and (max-height: 500px){
 #purpose .jumper3 { 
     display: none;
@@ -1041,6 +1114,43 @@ header {
 
 
 /*reconf section*/
+
+@supports (-moz-appearance:none) {
+    @media only screen and (orientation: landscape) and (max-height: 500px) {
+        #reconf h2 {
+            font-size: 1.3em !important;
+            line-height: 1 !important;
+            padding: 0vh 13vw 0vh 17vw !important;
+            }
+        #reconf p {
+            font-size: 1em !important;
+            line-height: 1.5 !important;
+            padding: 1vh 13vw 10vh 17vw !important;
+            margin-top: -7vh !important;
+            }
+            #reconf {
+                margin-bottom: -7.7% !important;
+            }
+        }
+@media only screen and (max-width: 600px) {
+    #reconf h2 {
+            font-size: 1.3em !important;
+            line-height: 1 !important;
+            padding: 2vh 13vw 0vh 17vw !important;
+            }
+        #reconf p {
+            font-size: 1em !important;
+            line-height: 1.5 !important;
+            padding: 0vh 13vw 0vh 17vw !important;
+            margin-top: -12vh !important;
+            }
+            #reconf {
+                margin-bottom: -13% !important;
+            }
+}
+}
+
+
 
 @media only screen and (max-width: 970px) {
 #reconf {
