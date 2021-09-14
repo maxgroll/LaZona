@@ -277,6 +277,21 @@ header {
 
 /*title section*/
 
+@supports (-moz-appearance:none ) {
+    @media only screen and (orientation: landscape) and (max-height: 500px) {
+        #type #question1 {
+            font-size: 1.5em !important;
+    }
+}
+    @media only screen and (max-width: 500px) {
+        #type #question1 {
+            font-size: 1.6em !important;
+    }
+}
+}
+
+
+
 @media only screen and (orientation: landscape) and (max-height: 500px) {
     #question1 {
         font-size: 1.77em !important;
@@ -285,8 +300,6 @@ header {
         display: none;
         }
 }
-
-
 @media only screen and (max-width: 1200px) {
 #title {
     background-position-x: calc(100% - 36.97%);
@@ -495,37 +508,35 @@ header {
 @supports (-moz-appearance:none) {
     @media only screen and (orientation: landscape) and (max-height: 500px)
     {
-        #desc .desc1{
-            font-size: 1rem !important;  
-        }
-        #desc .desc2{
-            font-size: 1rem !important;  
-        }
-        #desc .desc1 h2 { 
-            font-size: 1.8rem !important;
-            }
-        #desc .desc2 h2 { 
-            font-size: 1.8rem !important;
-            }
-        
+#desc .desc1{
+    font-size: 1rem !important;  
     }
-    @media only screen and (max-width: 600px) {
-        #desc .desc1{
-            font-size: 1rem !important;
-            margin-top: 20% !important;
-        }
-        #desc .desc2 { 
-            font-size: 1rem !important;
-            margin-top: 20% !important;
-        }
-        #desc .desc1 h2 { 
-            font-size: 1.8rem !important;
-            }
-        #desc .desc2 h2 { 
-            font-size: 1.8rem !important;
-            } 
-        
+#desc .desc2{
+    font-size: 1rem !important;  
     }
+#desc .desc1 h2 { 
+    font-size: 1.8rem !important;
+    }
+#desc .desc2 h2 { 
+    font-size: 1.8rem !important;
+    }     
+}
+@media only screen and (max-width: 600px) {
+#desc .desc1{
+    font-size: 1rem !important;
+    margin-top: 20% !important;
+    }
+#desc .desc2 { 
+    font-size: 1rem !important;
+    margin-top: 20% !important;
+    }
+#desc .desc1 h2 { 
+    font-size: 1.8rem !important;
+    }
+#desc .desc2 h2 { 
+    font-size: 1.8rem !important;
+    }    
+}
 }
 
 @media only screen and (orientation: landscape) and (max-height: 500px) {
