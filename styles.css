@@ -285,7 +285,7 @@ header {
 }
     @media only screen and (max-width: 500px) {
         #type #question1 {
-            font-size: 1.6em !important;
+            font-size: 1.5em !important;
     }
 }
 }
