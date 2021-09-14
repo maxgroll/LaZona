@@ -1118,34 +1118,34 @@ header {
 @supports (-moz-appearance:none) {
     @media only screen and (orientation: landscape) and (max-height: 500px) {
         #reconf h2 {
-            font-size: 1.3em !important;
+            font-size: 1.2em !important;
             line-height: 1 !important;
             padding: 0vh 13vw 0vh 17vw !important;
             }
         #reconf p {
             font-size: 1em !important;
-            line-height: 1.5 !important;
+            line-height: 1.3 !important;
             padding: 1vh 13vw 10vh 17vw !important;
             margin-top: -7vh !important;
             }
             #reconf {
-                margin-bottom: -10% !important;
+                margin-bottom: -14% !important;
             }
         }
 @media only screen and (max-width: 600px) {
     #reconf h2 {
-            font-size: 1.2em !important;
+            font-size: 1.1em !important;
             line-height: 1 !important;
             padding: 2vh 13vw 0vh 17vw !important;
             }
         #reconf p {
             font-size: 1em !important;
             line-height: 2 !important;
-            padding: 0vh 13vw 0vh 17vw !important;
+            padding: 1vh 13vw 4vh 17vw !important;
             margin-top: -12vh !important;
             }
             #reconf {
-                margin-bottom: -15.5% !important;
+                margin-bottom: -16.5% !important;
             }
 }
 }
