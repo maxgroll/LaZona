@@ -1124,12 +1124,12 @@ header {
             }
         #reconf p {
             font-size: 1em !important;
-            line-height: 2 !important;
+            line-height: 1.5 !important;
             padding: 1vh 13vw 10vh 17vw !important;
             margin-top: -7vh !important;
             }
             #reconf {
-                margin-bottom: -8% !important;
+                margin-bottom: -10% !important;
             }
         }
 @media only screen and (max-width: 600px) {
@@ -1140,12 +1140,12 @@ header {
             }
         #reconf p {
             font-size: 1em !important;
-            line-height: 1.5 !important;
+            line-height: 2 !important;
             padding: 0vh 13vw 0vh 17vw !important;
             margin-top: -12vh !important;
             }
             #reconf {
-                margin-bottom: -13.5% !important;
+                margin-bottom: -15.5% !important;
             }
 }
 }
