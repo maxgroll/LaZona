@@ -274,7 +274,7 @@ header {
 
 @media only screen and (orientation: landscape) and (max-height: 500px) {
     #question1 {
-        font-size: 1.75em !important;
+        font-size: 1.77em !important;
     }
     #title .jumper {
         display: none;
@@ -312,7 +312,7 @@ header {
     background-position-x: calc(100% - 40.37%)
     }
 .title #type {
-    margin-left: 4%;
+    margin-left: 3%;
     }
 #question {
     display: none;
