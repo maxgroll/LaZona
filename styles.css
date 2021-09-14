@@ -1129,23 +1129,23 @@ header {
             margin-top: -7vh !important;
             }
             #reconf {
-                margin-bottom: -14% !important;
+                margin-bottom: -17% !important;
             }
         }
 @media only screen and (max-width: 600px) {
     #reconf h2 {
-            font-size: 1.1em !important;
+            font-size: 1em !important;
             line-height: 1 !important;
             padding: 2vh 13vw 0vh 17vw !important;
             }
         #reconf p {
             font-size: 1em !important;
             line-height: 2 !important;
-            padding: 1vh 13vw 4vh 17vw !important;
+            padding: 1vh 13vw 8vh 17vw !important;
             margin-top: -12vh !important;
             }
             #reconf {
-                margin-bottom: -16.5% !important;
+                margin-bottom: -17.5% !important;
             }
 }
 }
