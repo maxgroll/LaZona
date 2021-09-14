@@ -1140,8 +1140,8 @@ header {
         }
 @media only screen and (max-width: 600px) {
     #reconf h2 {
-            font-size: 1.05em !important;
-            line-height: 1 !important;
+            font-size: 1.09em !important;
+            line-height: 1.5 !important;
             padding: 2vh 13vw 0vh 17vw !important;
             }
         #reconf p {
