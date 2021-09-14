@@ -1128,9 +1128,15 @@ header {
             padding: 1vh 13vw 10vh 17vw !important;
             margin-top: -7vh !important;
             }
-            #reconf {
+            /*#reconf {
                 margin-bottom: -17% !important;
-            }
+            }*/
+            #reconf .imglink { 
+                position: relative;
+                width: 66%;
+                bottom: 12% !important;
+                left: 17%;    
+                }
         }
 @media only screen and (max-width: 600px) {
     #reconf h2 {
@@ -1144,9 +1150,15 @@ header {
             padding: 1vh 13vw 8vh 17vw !important;
             margin-top: -12vh !important;
             }
-            #reconf {
+            /*#reconf {
                 margin-bottom: -17.5% !important;
-            }
+            }*/
+            #reconf .imglink { 
+                position: relative;
+                width: 66%;
+                bottom: 12% !important;
+                left: 17%;    
+                }
 }
 }
 
