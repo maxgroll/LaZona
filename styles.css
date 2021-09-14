@@ -1148,7 +1148,7 @@ header {
             font-size: 1em !important;
             line-height: 2 !important;
             padding: 1vh 13vw 0vh 17vw !important;
-            margin-top: -10vh !important;
+            margin-top: -8vh !important;
             }
             /*#reconf {
                 margin-bottom: -17.5% !important;
@@ -1156,7 +1156,7 @@ header {
             #reconf .imglink { 
                 position: relative;
                 width: 66%;
-                bottom: 12% !important;
+                bottom: 9% !important;
                 left: 17%;    
                 }
 }
