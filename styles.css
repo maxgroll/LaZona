@@ -118,13 +118,13 @@ header {
     @media only screen and (orientation: landscape) and (max-height: 500px) {
         #MyLogo a {
             font-size: 1.8em !important;
-            padding: 0.1em 0 0 3vw !important;
+            padding: 0 0 0 3vw !important;
     }
 }
     @media only screen and (max-width: 500px) {
         #MyLogo a {
             font-size: 1.8em !important;
-            padding: 0.1em 0 0 3vw !important;
+            padding: 0 0 0 3vw !important;
     }
 }
 }
@@ -1352,9 +1352,9 @@ footer #top-button, .pagefooter #top-button {
     color: rgb(220, 220, 220);
     font-family: 'Poppins', sans-serif;
     text-align: right;
-    font-size: 2em;
+    font-size: 1.6em;
     letter-spacing: 0.2em;
-    padding: 5px 20px;
+    padding: 0.3em 20px 0.1em 20px;
     text-decoration: none;
     z-index: 1;
     float: right;
