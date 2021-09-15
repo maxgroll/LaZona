@@ -118,11 +118,13 @@ header {
     @media only screen and (orientation: landscape) and (max-height: 500px) {
         #MyLogo a {
             font-size: 1.8em !important;
+            padding: 0.1em 0 0 3vw !important;
     }
 }
     @media only screen and (max-width: 500px) {
         #MyLogo a {
             font-size: 1.8em !important;
+            padding: 0.1em 0 0 3vw !important;
     }
 }
 }
