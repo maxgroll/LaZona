@@ -497,7 +497,8 @@ header {
     @media only screen and (orientation: landscape) and (max-height: 500px)
     {
 #desc .desc1{
-    font-size: 1rem !important;  
+    font-size: 1rem !important; 
+    padding-top: 1vh !important; 
     }
 #desc .desc2{
     font-size: 1rem !important;  
@@ -1131,7 +1132,7 @@ header {
 @supports (-moz-appearance:none) {
 @media only screen and (orientation: landscape) and (max-height: 500px) {
 #reconf {
-    margin-bottom: -6.3% !important;
+    margin-bottom: -6.4% !important;
 }
     #reconf h2 {
     font-size: 1.2em !important;
