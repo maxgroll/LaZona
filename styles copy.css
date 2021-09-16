@@ -825,7 +825,7 @@ header {
     margin-bottom: 10vh !important;       
     }
 #purpose .purpose2 {
-    padding: 2vh 3vw 0vh 4vw !important;
+    padding: 0vh 3vw 0vh 4vw !important;
     font-size: 1rem !important;
     }
 #purpose .purpose1 h3 {
