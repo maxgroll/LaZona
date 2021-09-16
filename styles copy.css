@@ -498,10 +498,12 @@ header {
     {
 #desc .desc1{
     font-size: 1rem !important; 
-    padding-top: 1vh !important; 
+    padding-top: 0vh !important;
+    
     }
 #desc .desc2{
-    font-size: 1rem !important;  
+    font-size: 1rem !important; 
+    padding-top: 0vh !important; 
     }
 #desc .desc1 h2 { 
     font-size: 1.8rem !important;
