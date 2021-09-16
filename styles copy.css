@@ -820,12 +820,12 @@ header {
     font-size: 2em !important;
     }
 #purpose .purpose1 {
-    padding: 6vh 3vw 0vh 4vw;
+    padding: 8vh 3vw 0vh 4vw !important;
     font-size: 1rem !important;
     margin-bottom: 10vh !important;       
     }
 #purpose .purpose2 {
-    padding: 4vh 3vw 0vh 4vw;
+    padding: 2vh 3vw 0vh 4vw !important;
     font-size: 1rem !important;
     }
 #purpose .purpose1 h3 {
