@@ -1017,20 +1017,21 @@ header {
     #purpose .purpose1 {
         font-size: 1.2rem;
         line-height: 1.9; 
-        padding: 2vh 3vw 0vh 4vw;
-        margin-bottom: 1vh;
+        padding: 0vh 3vw 0vh 4vw;
         }
     #purpose .purpose1 h3 { 
         font-size: 1.4rem;
         line-height: 1.5;
+        /*margin-top: -2vh;*/
             }
     #purpose .purpose2 { 
         font-size: 1.2rem;
         line-height: 1.9;
         }
-    #purpose .Purpose h3 {
+    #purpose .purpose2 h3 {
         font-size: 1.4rem;
         line-height: 1.5;
+        margin-top: -5vh;
         } 
 }
 
