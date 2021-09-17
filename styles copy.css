@@ -568,6 +568,26 @@ header {
         }
     }
 
+
+    @media only screen and (orientation: portrait) and (max-height: 640px){
+        #desc .desc1 {
+            font-size: 1.2rem;
+            line-height: 1.9; 
+            margin-top: 5%;
+            }
+        #desc .desc1 h2 { 
+            font-size: 1.8rem;
+                }
+        #desc .desc2 { 
+            font-size: 1.2rem;
+            line-height: 1.9;
+            margin-top: 5%;
+            }
+        #desc .desc2 h2 {
+            font-size: 1.8rem !important;
+            } 
+    }
+
 /*decription section responsive landscape*/
 @media only screen and (orientation: landscape) and (max-height: 500px) {
 #desc .jumper1 { 
@@ -987,6 +1007,33 @@ header {
     }
 }
 
+
+
+@media only screen and (orientation: portrait) and (max-height: 640px){
+    #purposetitle h2 {
+        font-size: 1.8em;
+        padding-top: 1vh;
+        }
+    #purpose .purpose1 {
+        font-size: 1.2rem;
+        line-height: 1.9; 
+        padding: 2vh 3vw 0vh 4vw;
+        margin-bottom: 1vh;
+        }
+    #purpose .purpose1 h3 { 
+        font-size: 1.4rem;
+        line-height: 1.5;
+            }
+    #purpose .purpose2 { 
+        font-size: 1.2rem;
+        line-height: 1.9;
+        }
+    #purpose .Purpose h3 {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        } 
+}
+
 /*Purpose for computer sceen*/
 .purposetitle { 
     grid-area: purposetitle;
@@ -1226,7 +1273,7 @@ bottom: 12% !important;
 @media only screen and (orientation: landscape) and (max-width: 640px) {
     #reconf {
         background-size: contain;
-        margin-bottom: -8.9% !important;
+        margin-bottom: -9.3% !important;
          }
     #reconf h2 {
         font-size: 1.4em !important;
