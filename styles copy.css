@@ -1251,6 +1251,16 @@ bottom: 12% !important;
         background-size: contain;
         margin-bottom: -17%;
     }
+    #reconf h2 {
+        font-size: 1.2em !important;
+        line-height: 2.5;
+        padding: 8vh 13vw 0vh 17vw;
+        }
+        #reconf p {
+            font-size: 1.1em !important;
+            line-height: 2.3;
+            padding: 0vh 17vw 15vh 17vw;
+            } 
 }
 
 /*reconf styles responsive landscape*/
