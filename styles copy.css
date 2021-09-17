@@ -1248,18 +1248,14 @@ bottom: 12% !important;
 
 @media only screen and (orientation: portrait) and (max-height: 640px) {
     #reconf {
-        background-size: contain;
-        margin-bottom: -17%;
+        margin-bottom: -17% !important;
     }
     #reconf h2 {
         font-size: 1.2em !important;
-        line-height: 2.5;
-        padding: 8vh 13vw 0vh 17vw;
+       
         }
         #reconf p {
             font-size: 1.1em !important;
-            line-height: 2.3;
-            padding: 0vh 17vw 15vh 17vw;
             } 
 }
 
@@ -1293,16 +1289,16 @@ bottom: 12% !important;
         margin-bottom: -9.3% !important;
          }
     #reconf h2 {
-        font-size: 1.4em !important;
+        font-size: 1.2em !important;
         line-height: 1 !important;
         padding: 0vh 13vw 0vh 17vw;
-        margin-top: -8vh !important;
+        margin-top: -10vh !important;
         }
     #reconf p {
         font-size: 1.1em !important;
-        line-height: 1.5 !important;
-        padding: 0vh 17vw 0vh 17vw !important;
-        margin-top: -3vh !important;
+        line-height: 1.3 !important;
+        padding: 0vh 17vw 5vh 17vw !important;
+        margin-top: -7vh !important;
         }
     #reconf .imglink { 
         position: relative;
