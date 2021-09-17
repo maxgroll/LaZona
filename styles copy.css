@@ -1140,7 +1140,7 @@ header {
 @supports (-moz-appearance:none) {
 @media only screen and (orientation: landscape) and (max-height: 500px) {
 #reconf {
-    margin-bottom: -7.2% !important;
+    margin-bottom: -7.8% !important;
 }
     #reconf h2 {
     font-size: 1.2em !important;
