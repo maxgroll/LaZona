@@ -9,6 +9,7 @@ html, body {
    -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
         text-size-adjust: none;
+        /*height: 100%;*/
 
   }
 *, *::before, *::after {
@@ -42,6 +43,9 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 100%;
     position: relative;
     margin: auto;
+    /*min-height: 100%;
+    position: relative;
+    height: 100%;*/
     grid-template-areas: 
     "header header header header header header header header header header header header"
     "title title title title title title title title title title title title"
@@ -1136,7 +1140,7 @@ header {
 @supports (-moz-appearance:none) {
 @media only screen and (orientation: landscape) and (max-height: 500px) {
 #reconf {
-    margin-bottom: -6.4% !important;
+    margin-bottom: -6.6% !important;
 }
     #reconf h2 {
     font-size: 1.2em !important;
@@ -1199,7 +1203,7 @@ bottom: 12% !important;
 @media only screen and (orientation: landscape) and (max-width: 767px) {
 #reconf {
     background-size: contain;
-    margin-bottom: -7.7% !important;
+    margin-bottom: -7.5% !important;
      }
 #reconf h2 {
     font-size: 1.6em;
@@ -1222,7 +1226,7 @@ bottom: 12% !important;
 @media only screen and (orientation: landscape) and (max-width: 640px) {
     #reconf {
         background-size: contain;
-        margin-bottom: -9.7% !important;
+        margin-bottom: -8.9% !important;
          }
     #reconf h2 {
         font-size: 1.4em !important;
@@ -1246,7 +1250,7 @@ bottom: 12% !important;
 @media only screen and (orientation: landscape) and (max-height: 500px) {
 #reconf {
     background-size: contain;
-    margin-bottom: -6.4%;
+    margin-bottom: -6.2%;
     }
 #reconf h2 {
     font-size: 1.3em;
@@ -1368,7 +1372,7 @@ bottom: 12% !important;
     }
 
 /*footer section*/
-/*footer responsive top button instead of menu*/
+/*footer responsive to top button instead of menu*/
 @media only screen and (max-width: 800px) {  
 footer .menu, .pagefooter .menu {
     display: none;
@@ -1404,6 +1408,8 @@ footer {
     height: -o-fit-content;
     height: -webkit-fit-content;
     margin-top: auto;
+    position: static;
+    width:100%;
     }
 
 #top-button {
