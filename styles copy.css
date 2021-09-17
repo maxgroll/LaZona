@@ -1139,7 +1139,7 @@ header {
 /*reconf styles for firefox mobile*/
 @supports (-moz-appearance:none) {
 @media only screen and (orientation: landscape) and (max-height: 500px) {
-#reconf {
+.reconf #reconf {
     margin-bottom: -8.5% !important;
 }
     #reconf h2 {
