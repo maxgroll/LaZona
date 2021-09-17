@@ -6,10 +6,9 @@ html, body {
 	font: inherit;
 	vertical-align: baseline;
     -webkit-text-size-adjust: none;
-   -moz-text-size-adjust: none;
+    -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
-        text-size-adjust: none;
-        /*height: 100%;*/
+    text-size-adjust: none;
 
   }
 *, *::before, *::after {
@@ -32,7 +31,6 @@ h1,h2,h3,h4,h5,h6 {
     grid-template-rows: 8.83vh 91.17vh 200vh 100vh 10vh 190vh 91.17vh 8.83vh;
     }
 }
-
 @media only screen and (max-width: 767px) {
 #container { 
     grid-template-rows: 8.83vh 91.17vh 200vh 100vh 10vh 190vh 91.17vh 8.83vh;
@@ -43,9 +41,6 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 100%;
     position: relative;
     margin: auto;
-    /*min-height: 100%;
-    position: relative;
-    height: 100%;*/
     grid-template-areas: 
     "header header header header header header header header header header header header"
     "title title title title title title title title title title title title"
@@ -66,10 +61,11 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 100%;
     position: relative;
     margin: auto;
-    grid-template-areas: "header header header header header header header header header header header header"
-                         "title title title title title title title title title title title title"
-                         "cont cont cont cont cont cont cont cont cont cont cont cont"
-                         "footer footer footer footer footer footer footer footer footer footer footer footer";
+    grid-template-areas: 
+    "header header header header header header header header header header header header"
+    "title title title title title title title title title title title title"
+    "cont cont cont cont cont cont cont cont cont cont cont cont"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: (12, 1fr);
     grid-template-rows: 8.83vh 35.17vh 48.17vh 8.83vh;
 }    
@@ -93,19 +89,20 @@ header {
 
 /*logo for firefox mobile*/
 @supports (-moz-appearance:none ) {
-    @media only screen and (orientation: landscape) and (max-height: 500px) {
-        #MyLogo a {
-            font-size: 1.8em !important;
-            padding: 0 0 0 3vw !important;
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+#MyLogo a {
+    font-size: 1.8em !important;
+    padding: 0 0 0 3vw !important;
     }
 }
-    @media only screen and (max-width: 500px) {
-        #MyLogo a {
-            font-size: 1.8em !important;
-            padding: 0 0 0 3vw !important;
+@media only screen and (max-width: 500px) {
+    #MyLogo a {
+    font-size: 1.8em !important;
+    padding: 0 0 0 3vw !important;
     }
 }
 }
+
 /*logo*/
 #MyLogo {
     float: left;
@@ -134,7 +131,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     float: right;
-     }
+    }
 } 
 @media only screen and (orientation: landscape) and (max-width: 640px) {
 .nav-link {
@@ -215,7 +212,6 @@ header {
     top: -7px;
     }
 
-
 /* menu btn */
 .header .menu-btn, .pageheader .menu-btn {
     display: none;
@@ -270,30 +266,30 @@ header {
 
 /*title for firefox mobile*/
 @supports (-moz-appearance:none ) {
-    @media only screen and (orientation: landscape) and (max-height: 500px) {
-        #type #question1 {
-            font-size: 1.5em !important;
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+#type #question1 {
+    font-size: 1.5em !important;
     }
 }
-    @media only screen and (max-width: 500px) {
-        #type #question1 {
-            font-size: 1.5em !important;
+@media only screen and (max-width: 500px) {
+    #type #question1 {
+    font-size: 1.5em !important;
     }
 }
 }
 
 /*title section responsive*/
 
-/*landscape responsive styles*/
+/*landscape title section responsive styles*/
 @media only screen and (orientation: landscape) and (max-height: 500px) {
 #question1 {
     font-size: 1.77em !important;
-}
+    }
 }
 
 @media only screen and (orientation: portrait) and (max-height: 640px) {
-    #question1 {
-        font-size: 1.5em !important;
+#question1 {
+    font-size: 1.5em !important;
     } 
 }
 
@@ -490,16 +486,15 @@ header {
     position: relative; 
     padding-top: 23vh;
     padding-right: 3em;
-    width: auto;  
-    
+    width: auto;    
 }
 .page_title .pages_title h1 {
     font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        text-align: right;
-        color: #7600A5;
-        font-size: 3.5vw;
-        letter-spacing: 0.09em;
+    font-weight: 500;
+    text-align: right;
+    color: #7600A5;
+    font-size: 3.5vw;
+    letter-spacing: 0.09em;
 }
 
 /*description section*/
@@ -547,56 +542,54 @@ header {
 
 /*decription section responsive portrait*/   
 @media only screen and (max-width: 767px) { 
-    #desc .jumper1 { 
-        display: none;
-        }
-    #desc {
-        flex-direction: column; 
-        }
-    #desc .desc1 {
-        padding: 0vw 3vw 0vw 3vw;
-        font-size: 1.3rem;
-        line-height: 2.2; 
-        margin-top: 20%;
-        border-bottom: 2px solid #7600A5;
-        }
-    #desc .desc1 h2 { 
-        font-size: 2rem;
-        line-height: 1.5;
-        padding-top: 2vh;
-            }
-    #desc .desc2 { 
-        padding: 0vw 3vw 0vw 3vw;
-        font-size: 1.3rem;
-        line-height: 2.2;
-        margin-top: 20%;
-        }
-    #desc .desc2 h2 {
-        font-size: 2rem;
-        line-height: 1.5;
-        padding-bottom: 2vh;
-        }
+#desc .jumper1 { 
+    display: none;
     }
-
-
-    @media only screen and (orientation: portrait) and (max-height: 640px){
-        #desc .desc1 {
-            font-size: 1.2rem;
-            line-height: 1.9; 
-            margin-top: 5%;
-            }
-        #desc .desc1 h2 { 
-            font-size: 1.8rem;
-                }
-        #desc .desc2 { 
-            font-size: 1.2rem;
-            line-height: 1.9;
-            margin-top: 5%;
-            }
-        #desc .desc2 h2 {
-            font-size: 1.8rem !important;
-            } 
+#desc {
+    flex-direction: column; 
     }
+#desc .desc1 {
+    padding: 0vw 3vw 0vw 3vw;
+    font-size: 1.3rem;
+    line-height: 2.2; 
+    margin-top: 20%;
+    border-bottom: 2px solid #7600A5;
+    }
+#desc .desc1 h2 { 
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-top: 2vh;
+    }
+#desc .desc2 { 
+    padding: 0vw 3vw 0vw 3vw;
+    font-size: 1.3rem;
+    line-height: 2.2;
+    margin-top: 20%;
+    }
+#desc .desc2 h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-bottom: 2vh;
+    }
+}
+@media only screen and (orientation: portrait) and (max-height: 640px){
+#desc .desc1 {
+    font-size: 1.2rem;
+    line-height: 1.9; 
+    margin-top: 5%;
+    }
+#desc .desc1 h2 { 
+    font-size: 1.8rem;
+    }
+#desc .desc2 { 
+    font-size: 1.2rem;
+    line-height: 1.9;
+    margin-top: 5%;
+    }
+#desc .desc2 h2 {
+    font-size: 1.8rem !important;
+    } 
+}
 
 /*decription section responsive landscape*/
 @media only screen and (orientation: landscape) and (max-height: 500px) {
@@ -670,7 +663,7 @@ header {
     font-family: 'Lora', serif;
     font-size: 1.14em;
     line-height: 1.8;
-    color: rgb(128, 128, 128);
+    color: rgba(0, 0, 0, 0.75);
 }
 .desc1 h2 { 
     font-family: 'Poppins', sans-serif;
@@ -690,7 +683,7 @@ header {
     font-family: 'Lora', serif;
     font-size: 1.14em;
     line-height: 1.8;
-    color: rgb(128, 128, 128);
+    color: rgba(0, 0, 0, 0.75);
 }
 .desc2 h2 {
     font-family: 'Poppins', sans-serif;
@@ -713,26 +706,25 @@ header {
 
 /* Bateson quote section responsive styles for firefox mobile*/
 @supports (-moz-appearance:none) {
-    @media only screen and (orientation: landscape) and (max-height: 500px) {
-        #bateson .bateson1 { 
-            font-size: 1.1em !important;
-            margin-top: 10vh !important;
-            padding: 0vh 6vw !important;
-        }
-        #bateson .bateson1 h2 {
-            font-size: 1.3em !important;
-            line-height: 2.5 !important;
-            padding-top: 1vh !important;
-            }                     
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+#bateson .bateson1 { 
+    font-size: 1.1em !important;
+    margin-top: 10vh !important;
+    padding: 0vh 6vw !important;
+    }
+#bateson .bateson1 h2 {
+    font-size: 1.3em !important;
+    line-height: 2.5 !important;
+    padding-top: 1vh !important;
+    }                     
 }
 @media only screen and (max-width: 600px) {
-    #bateson .bateson1 { 
-        font-size: 1.1em !important;
+#bateson .bateson1 { 
+    font-size: 1.1em !important;
     }
-    #bateson .bateson1 h2 {
-        font-size: 1.3em !important;
-        
-        }   
+#bateson .bateson1 h2 {
+    font-size: 1.3em !important;   
+    }   
 }
 }
 
@@ -973,7 +965,6 @@ header {
     line-height: 2;   
     }
 }
-
 @media only screen and (max-width: 767px) { 
 .purpose .jumper3 { 
     display: none;
@@ -1016,36 +1007,32 @@ header {
     height: 100%;
     }
 }
-
-
-
 @media only screen and (orientation: portrait) and (max-height: 640px){
-    #purposetitle h2 {
-        font-size: 1.8em;
-        padding-top: 1vh;
-        }
-    #purpose .purpose1 {
-        font-size: 1.2rem;
-        line-height: 1.9; 
-        padding: 0vh 3vw 0vh 4vw;
-        }
-    #purpose .purpose1 h3 { 
-        font-size: 1.4rem;
-        line-height: 1.5;
-        /*margin-top: -2vh;*/
-            }
-    #purpose .purpose2 { 
-        font-size: 1.2rem;
-        line-height: 1.9;
-        }
-    #purpose .purpose2 h3 {
-        font-size: 1.4rem;
-        line-height: 1.5;
-        margin-top: -5vh;
-        } 
+#purposetitle h2 {
+    font-size: 1.8em;
+    padding-top: 1vh;
+    }
+#purpose .purpose1 {
+    font-size: 1.2rem;
+    line-height: 1.9; 
+    padding: 0vh 3vw 0vh 4vw;
+    }
+#purpose .purpose1 h3 { 
+    font-size: 1.4rem;
+    line-height: 1.5;
+    }
+#purpose .purpose2 { 
+    font-size: 1.2rem;
+    line-height: 1.9;
+    }
+#purpose .purpose2 h3 {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-top: -5vh;
+    } 
 }
 
-/*Purpose for computer sceen*/
+/*Purpose section general styles*/
 .purposetitle { 
     grid-area: purposetitle;
     max-width: 100%;
@@ -1083,7 +1070,7 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1rem;
     line-height: 1.8;
-    color: rgb(128, 128, 128); 
+    color: rgba(0, 0, 0, 0.75); 
     height: 100%;
     }
 #diff {
@@ -1107,7 +1094,7 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
     line-height: 1.8;
-    color: rgb(128, 128, 128);
+    color: rgba(0, 0, 0, 0.75);
     height: 100%;
     }
 .purpose2 h3 {
@@ -1197,10 +1184,7 @@ header {
 /*reconf styles for firefox mobile*/
 @supports (-moz-appearance:none) {
 @media only screen and (orientation: landscape) and (max-height: 500px) {
-    /*#reconf {
-    margin-bottom: -8.5% !important;
-    }*/
-    #reconf h2 {
+#reconf h2 {
     font-size: 1.2em !important;
     line-height: 1 !important;
     padding: 0vh 13vw 0vh 17vw !important;
@@ -1212,7 +1196,7 @@ header {
     margin-top: -7vh !important;
     }
 #reconf .imglink { 
-bottom: 12% !important;   
+    bottom: 12% !important;   
     }
 }
 @media only screen and (max-width: 600px) {
@@ -1256,18 +1240,16 @@ bottom: 12% !important;
     padding: 8vh 13vw 0vh 17vw;
     }
 }
-
 @media only screen and (orientation: portrait) and (max-height: 640px) {
-    #reconf {
-        margin-bottom: -17% !important;
+#reconf {
+    margin-bottom: -17% !important;
     }
-    #reconf h2 {
-        font-size: 1.2em !important;
-       
-        }
-        #reconf p {
-            font-size: 1.1em !important;
-            } 
+#reconf h2 {
+    font-size: 1.2em !important;
+    }
+    #reconf p {
+    font-size: 1.1em !important;
+    } 
 }
 
 /*reconf styles responsive landscape*/
@@ -1295,29 +1277,29 @@ bottom: 12% !important;
     }
 }
 @media only screen and (orientation: landscape) and (max-width: 640px) {
-    #reconf {
-        background-size: contain;
-        margin-bottom: -9.3% !important;
-         }
-    #reconf h2 {
-        font-size: 1.2em !important;
-        line-height: 1 !important;
-        padding: 0vh 13vw 0vh 17vw;
-        margin-top: -10vh !important;
-        }
-    #reconf p {
-        font-size: 1.1em !important;
-        line-height: 1.3 !important;
-        padding: 0vh 17vw 5vh 17vw !important;
-        margin-top: -7vh !important;
-        }
-    #reconf .imglink { 
-        position: relative;
-        width: 66%;
-        bottom: 15%;
-        left: 17%;    
-        }
+#reconf {
+    background-size: contain;
+    margin-bottom: -9.3% !important;
     }
+#reconf h2 {
+    font-size: 1.2em !important;
+    line-height: 1 !important;
+    padding: 0vh 13vw 0vh 17vw;
+    margin-top: -10vh !important;
+    }
+#reconf p {
+    font-size: 1.1em !important;
+    line-height: 1.3 !important;
+    padding: 0vh 17vw 5vh 17vw !important;
+    margin-top: -7vh !important;
+    }
+#reconf .imglink { 
+    position: relative;
+    width: 66%;
+    bottom: 15%;
+    left: 17%;    
+    }
+}
 @media only screen and (orientation: landscape) and (max-height: 500px) {
 #reconf {
     background-size: contain;
@@ -1373,7 +1355,7 @@ bottom: 12% !important;
     }
 }
 
-/*reconf section styles for the computer screen*/
+/*reconf section general styles*/
 .reconf {
     display: flex;
     flex-direction: column;
@@ -1468,7 +1450,7 @@ footer #top-button, .pagefooter #top-button {
     }
 }
 
-/*footer for computer screen with menu*/
+/*footer general styles with menu*/
 footer {
     grid-area: footer;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1482,7 +1464,6 @@ footer {
     position: static;
     width:100%;
     }
-
 #top-button {
     display: none;
     }
