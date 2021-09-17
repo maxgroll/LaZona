@@ -569,7 +569,7 @@ header {
     }
 
 
-    @media only screen and (orientation: portrait) and (max-height: 640px){
+    @media only screen and (orientation: portrait) and (max-height: 600px){
         #desc .desc1 {
             font-size: 1.2rem;
             line-height: 1.9; 
