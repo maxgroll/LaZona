@@ -1246,6 +1246,13 @@ bottom: 12% !important;
     }
 }
 
+@media only screen and (orientation: portrait) and (max-height: 640px) {
+    #reconf {
+        background-size: contain;
+        margin-bottom: -17%;
+    }
+}
+
 /*reconf styles responsive landscape*/
 @media only screen and (orientation: landscape) and (max-width: 767px) {
 #reconf {
