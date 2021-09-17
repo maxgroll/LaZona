@@ -136,7 +136,11 @@ header {
     float: right;
      }
 } 
-
+@media only screen and (orientation: landscape) and (max-width: 640px) {
+.nav-link {
+    padding:13px 25px !important;
+    }
+}
 .menu {
     list-style-type: none;
     margin: 0;
@@ -285,6 +289,12 @@ header {
 #question1 {
     font-size: 1.77em !important;
 }
+}
+
+@media only screen and (orientation: portrait) and (max-height: 640px) {
+    #question1 {
+        font-size: 1.5em !important;
+    } 
 }
 
 /*portrait & general responsive styles*/
