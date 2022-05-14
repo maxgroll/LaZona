@@ -9,7 +9,6 @@ html, body {
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
     text-size-adjust: none;
-
   }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -67,7 +66,7 @@ h1,h2,h3,h4,h5,h6 {
     "cont cont cont cont cont cont cont cont cont cont cont cont"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: (12, 1fr);
-    grid-template-rows: 8.83vh 35.17vh 48.17vh 8.83vh;
+    grid-template-rows: 8.83vh 44vh auto 8.83vh;
 }    
 /*layout-end*/
 
@@ -84,7 +83,7 @@ header {
     height: -webkit-fit-content;
     }
 .pageheader{
-	background-color: #1c2138;
+	background-color: rgba(0, 0, 0, 0.60);
 }
 
 /*logo for firefox mobile*/
@@ -146,7 +145,7 @@ header {
     }
 .nav-link {
     display: block;
-    color: rgb(233, 233, 233);
+    color: rgba(255, 255, 255, 0.90);
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 1.15em;
@@ -157,7 +156,8 @@ header {
     }
 .pageheader .nav-link {
     text-align: center;
-    color: rgb(240, 240, 240);
+    color: rgba(255, 255, 255, 0.95);
+    padding:15px 30px;
 }
 .nav-link:hover, 
 .header .menu-btn:hover {
@@ -188,7 +188,7 @@ header {
     user-select: none;
     }
 .header .menu-icon .nav-icon, .pageheader .menu-icon .nav-icon {
-    background: rgb(233, 233, 233);;
+    background: rgba(255, 255, 255, 0.90);
     display: block;
     height: 2.2px;
     position: relative;
@@ -197,7 +197,7 @@ header {
     }
 .header .menu-icon .nav-icon:before, .pageheader .menu-icon .nav-icon:before,
 .header .menu-icon .nav-icon:after,.pageheader .menu-icon .nav-icon:after {
-    background: rgb(233, 233, 233);;
+    background: rgba(255, 255, 255, 0.90);
     content: '';
     display: block;
     height: 100%;
@@ -242,7 +242,7 @@ header {
     background-color: transparent;
     }
 .pageheader .nav-link {
-    color: rgb(233, 233, 233);
+    color: rgba(255, 255, 255, 0.95);
     }
 .pageheader .nav-item {
     float: left;
@@ -250,7 +250,7 @@ header {
     }
 .nav-link {
     padding: 13px 30px;
-    color: rgb(233, 233, 233);
+    color: rgba(255, 255, 255, 0.90);
     }
 .header .menu, .pageheader .menu {
     clear: none;
@@ -285,6 +285,9 @@ header {
 #question1 {
     font-size: 1.77em !important;
     }
+#title .jumper {
+    display: none;
+    }
 }
 
 @media only screen and (orientation: portrait) and (max-height: 640px) {
@@ -296,7 +299,7 @@ header {
 /*portrait & general responsive styles*/
 @media only screen and (max-width: 1200px) {
 #title {
-    background-position-x: calc(100% - 36.97%);
+    background-position-x: right 36.57%;
     }
 }
 @media only screen and (max-width: 1100px) {
@@ -328,7 +331,7 @@ header {
     font-family: 'Permanent Marker', cursive;
     font-weight: 300;
     text-align: right;
-    color:rgb(235, 235, 235);
+    color: rgba(255, 255, 255, 0.90);
     font-size: 2.2em;
     letter-spacing: 0.09em;
     display: block;
@@ -374,8 +377,9 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    background-position: center center;
-    background-position-x: calc(100% - 34.87%);
+    /*background-position: center center;*/
+    /*background-position-x: calc(100% - 34.87%);*/
+    background-position-x: right 34.87%;
     max-width: 100%;
     max-height: auto;
     margin-top: -8.83vh;
@@ -395,7 +399,7 @@ header {
     font-family: 'Permanent Marker', cursive;
     font-weight: 300;
     text-align: center;
-    color:rgb(245, 245, 245);
+    color: rgba(255, 255, 255, 0.90);
     font-size: 3.5vw;
     letter-spacing: 0.09em;
 
@@ -430,7 +434,7 @@ header {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-#chevron { /*the button for colored background*/
+#chevron, #chevron2 { /*the button for colored background*/
     font-size: 30px;
     background-color: rgba(0, 0, 0, 0.1);
     border-color: rgba(255, 255, 255, 0.2);
@@ -439,7 +443,7 @@ header {
     border-width: 1px;
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6); 
 }
-#chevron2 { /*the button for white background*/
+#chevron1, #chevron3 { /*the button for white background*/
     font-size: 30px;
     border-color: rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.2);
@@ -448,12 +452,12 @@ header {
     border-width: 1px;
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
 }
-#chevron:hover {
+#chevron:hover, #chevron2:hover {
     background-color: rgba(0, 0, 0, 0.2);
     border-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
 }
-#chevron2:hover {
+#chevron1:hover, #chevron3:hover {
     border-color: rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
@@ -481,10 +485,11 @@ header {
     background-position-y: 75%;
     max-width: 100%;
     max-height: 100%;
+    margin-top: -8.83vh;
 }
 .page_title .pages_title {
     position: relative; 
-    padding-top: 23vh;
+    padding-top: 32vh;
     padding-right: 3em;
     width: auto;    
 }
@@ -655,6 +660,23 @@ header {
     border-left: 2px solid #7600A5;
     border-right: 2px solid #0019A8;
 }
+/*.desc::after {
+    content: "";
+    background-image: url('images/Particle inversecopy.jpg');
+    opacity: 30%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-position-x: 64.75%;
+    background-position-y: 55%;
+    }*/
 .desc1 { /*description of blog on the left side*/
     flex-basis: 50%;
     text-align: justify;
@@ -798,13 +820,13 @@ header {
 }
 .bateson1 {
     flex-basis: 50%;
-    background-color: rgba(66, 91, 216, 0.801);
+    background-color: rgba(66, 91, 216, 0.80);
     text-align: center;
     padding: 27.3vh 6vw;
     font-family: 'Lora', serif;
     font-size: 1.3em;
     line-height: 2;
-    color: rgb(221, 221, 221);
+    color: rgba(255, 255, 255, 0.90);
 }
 .bateson1 h2 {
     font-family: 'Poppins', sans-serif;
@@ -812,7 +834,7 @@ header {
     font-weight: 500;
     line-height: 3;
     letter-spacing: 1.5px;
-    color: rgb(221, 221, 221);
+    color: rgba(255, 255, 255, 0.90);
     text-align: center;
 }
 .bateson2 {
@@ -1117,10 +1139,17 @@ header {
  /*purpose page*/   
 .cont {
     grid-area: cont;
-    display: flex;
+    /*display: flex;*/
     max-width: 100%;
     position: relative;
     height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: (2, 1fr);
+    grid-template-areas: 
+    "cont cont";
+    grid-auto-flow: row dense;
+    /*margin-bottom: -8.83vh;*/
     }
 .cont::after {
     content: "";
@@ -1132,12 +1161,13 @@ header {
     right: 0;
     position: absolute;
     z-index: -1; 
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-attachment: scroll;
     background-position: center;
     background-position-x: 64.75%;
     background-position-y: 55%;
+    margin-top: -8.83vh;
     }
 .cont .purpose1cont h3 {
     font-family: 'Open Sans', sans-serif;
@@ -1150,13 +1180,14 @@ header {
     padding-bottom: 6vh;
     }
 .cont .purpose1cont {
-    flex-basis: 50%;
+    /*flex-basis: 50%;*/
     text-align: justify;
-    padding: 1.5vh 3vw 15vh 4vw;
+    padding: 1.5vh 3vw 015vh 4vw;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3vw;
     line-height: 1.6;
-    color: rgb(58, 58, 58); 
+    color: rgba(0, 0, 0, 0.75); 
+    margin-top: -8.83vh;
     }
 .cont .purpose2cont h3 {
     font-family: 'Open Sans', sans-serif;
@@ -1169,16 +1200,15 @@ header {
     padding-bottom: 6vh;
     }
 .cont .purpose2cont {
-    flex-basis: 50%;
+    /*flex-basis: 50%;*/
     text-align: justify;
     padding: 1.5vh 4vw 3vh 3vw;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3vw;
     line-height: 1.6;
-    color: rgb(58, 58, 58);
+    color: rgba(0, 0, 0, 0.75);
+    margin-top: -8.83vh;
     }
-
-
 /*reconf section*/
 
 /*reconf styles for firefox mobile*/
@@ -1376,20 +1406,20 @@ header {
     font-weight: 500;
     line-height: 2.5;
     color: rgba(255, 255, 255, 0.95);
-    padding: 4vh 0vw 0vh 17vw;  
+    padding: 2vh 0vw 0vh 17vw;  
     }
 .reconf p {
     font-family: 'Lora', serif;
     font-size: 1.3em;
     line-height: 2;
-    color: rgba(255, 251, 251, 0.85);
+    color: rgba(255, 255, 255, 0.85);
     padding: 0vh 17vw 20vh 17vw;
     text-align: justify;
     }
 .reconf .imglink { 
     position: relative;
     width: 66%;
-    bottom: 12%;
+    bottom: 15%;
     left: 17%;    
     }
 .reconf .overlay {
@@ -1432,7 +1462,7 @@ footer .menu, .pagefooter .menu {
 }
 footer #top-button, .pagefooter #top-button {
     display: block;
-    color: rgb(220, 220, 220);
+    color: rgba(255, 255, 255, 0.90);
     font-family: 'Poppins', sans-serif;
     text-align: right;
     font-size: 1.6em;
