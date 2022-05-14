@@ -341,8 +341,8 @@ header {
 .title #type {
     margin-left: 3%;
     }
-#question {
-    display: none;
+    #question {
+        display: none;
     }
 .title .type #question1 {
     font-family: 'Permanent Marker', cursive;
@@ -386,6 +386,7 @@ header {
     font-size: 1.8em;
     } 
 }
+
 
 /*title section styles general*/
 .title {
@@ -473,11 +474,13 @@ header {
     background-color: rgba(0, 0, 0, 0.2);
     border-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
+    cursor:pointer;
 }
 #chevron1:hover, #chevron3:hover {
     border-color: rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
+    cursor:pointer;
 }
 #chevron:active {
     background-color: rgba(0, 0, 0, 0.1);
@@ -704,7 +707,7 @@ header {
     line-height: 1.8;
     color: rgba(0, 0, 0, 0.75);
 }
-.desc1 h2 { 
+.desc1 h2  { 
     font-family: 'Poppins', sans-serif;
     font-size: 4.4vw;
     letter-spacing: 1.5; 
@@ -713,6 +716,7 @@ header {
     font-weight: 600;
     line-height: 3;
     padding-top: 6vh;
+    
 }
 .desc2 { /*description of resources on the right side*/
     flex-basis: 50%;
