@@ -6,10 +6,9 @@ html, body {
 	font: inherit;
 	vertical-align: baseline;
     -webkit-text-size-adjust: none;
-   -moz-text-size-adjust: none;
+    -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
-        text-size-adjust: none;
-
+    text-size-adjust: none;
   }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -24,76 +23,50 @@ h1,h2,h3,h4,h5,h6 {
     }
 
 
+/*layout-start*/
 
-    @media only screen and (orientation: landscape) and (max-height:500px){
-        #container { 
-            display: grid;
-            max-width: 100%;
-            position: relative;
-            margin: auto;
-            grid-template-areas: "header header header header header header header header header header header header"
-                                 "title title title title title title title title title title title title"
-                                 "desc desc desc desc desc desc desc desc desc desc desc desc"
-                                 "bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson"
-                                 "purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle"
-                                 "purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose"
-                                 "reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf"
-                                 "footer footer footer footer footer footer footer footer footer footer footer footer";
-            grid-template-columns: (12, 1fr);
-            grid-template-rows: 8.83vh 91.17vh 200vh 100vh 10vh 190vh 91.17vh 8.83vh;
-            }
-    
-    
+@media only screen and (orientation: landscape) and (max-height: 500px){
+#container { 
+    grid-template-rows: 8.83vh 91.17vh 200vh 100vh 10vh 190vh 91.17vh 8.83vh;
     }
-
-.container { /*layout-start*/
-    display: grid;
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-    grid-template-areas: "header header header header header header header header header header header header"
-                         "title title title title title title title title title title title title"
-                         "desc desc desc desc desc desc desc desc desc desc desc desc"
-                         "bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson"
-                         "purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle"
-                         "purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose"
-                         "reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf"
-                         "footer footer footer footer footer footer footer footer footer footer footer footer";
-    grid-template-columns: (12, 1fr);
-    grid-template-rows: 8.83vh 91.17vh 100vh 100vh 10vh 90vh 91.17vh 8.83vh;
+}
+@media only screen and (max-width: 767px) {
+#container { 
+    grid-template-rows: 8.83vh 91.17vh 200vh 100vh 10vh 190vh 91.17vh 8.83vh;
     }
-
-@media only screen and (max-width: 767px)  {
+}
 .container { 
     display: grid;
     max-width: 100%;
     position: relative;
     margin: auto;
-    grid-template-areas: "header header header header header header header header header header header header"
-                         "title title title title title title title title title title title title"
-                         "desc desc desc desc desc desc desc desc desc desc desc desc"
-                         "bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson"
-                         "purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle"
-                         "purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose"
-                         "reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf"
-                         "footer footer footer footer footer footer footer footer footer footer footer footer";
+    grid-template-areas: 
+    "header header header header header header header header header header header header"
+    "title title title title title title title title title title title title"
+    "desc desc desc desc desc desc desc desc desc desc desc desc"
+    "bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson"
+    "purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle"
+    "purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose"
+    "reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: (12, 1fr);
-    grid-template-rows: 8.83vh 91.17vh 200vh 100vh 10vh 190vh 91.17vh 8.83vh;
+    grid-template-rows: 8.83vh 91.17vh 100vh 100vh 10vh 90vh 91.17vh 8.83vh;
     }
-}
-    
-    
-#pagecontainer {/*container for the single pages*/
+
+/*container for the single pages*/
+
+#pagecontainer {
 	display: grid;
     max-width: 100%;
     position: relative;
     margin: auto;
-    grid-template-areas: "header header header header header header header header header header header header"
-                         "title title title title title title title title title title title title"
-                         "cont cont cont cont cont cont cont cont cont cont cont cont"
-                         "footer footer footer footer footer footer footer footer footer footer footer footer";
+    grid-template-areas: 
+    "header header header header header header header header header header header header"
+    "title title title title title title title title title title title title"
+    "cont cont cont cont cont cont cont cont cont cont cont cont"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: (12, 1fr);
-    grid-template-rows: 8.83vh 35.17vh 48.17vh 8.83vh;
+    grid-template-rows: 8.83vh 44vh 38.34vh 8.83vh;
 }    
 /*layout-end*/
 
@@ -110,29 +83,27 @@ header {
     height: -webkit-fit-content;
     }
 .pageheader{
-	background-color: #1c2138;
+	background-color: rgba(0, 0, 0, 0.60);
 }
 
-
+/*logo for firefox mobile*/
 @supports (-moz-appearance:none ) {
-    @media only screen and (orientation: landscape) and (max-height: 500px) {
-        #MyLogo a {
-            font-size: 1.8em !important;
-            padding: 0 0 0 3vw !important;
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+#MyLogo a {
+    font-size: 1.8em !important;
+    padding: 0 0 0 3vw !important;
     }
 }
-    @media only screen and (max-width: 500px) {
-        #MyLogo a {
-            font-size: 1.8em !important;
-            padding: 0 0 0 3vw !important;
+@media only screen and (max-width: 500px) {
+    #MyLogo a {
+    font-size: 1.8em !important;
+    padding: 0 0 0 3vw !important;
     }
 }
 }
 
-
-
-
-#MyLogo {
+/*logo*/
+#MyLogo, #MyLogo1 {
     float: left;
     }
 #MyLogo a {
@@ -148,29 +119,50 @@ header {
     letter-spacing: 0.1em;
     text-shadow: -0.5px 0.5px rgb(20, 20, 20);
     }
+
+#MyLogo1 a {
+    display: block;
+    position: relative;
+    color: #B400FC;
+    text-align: left;
+    padding: 0.2em 0 0 3vw;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
+    font-size: 2.1em;
+    letter-spacing: 0.1em;
+    text-shadow: -0.5px 0.5px rgb(20, 20, 20);
+}
 #MyLogo a:hover{
     color: #B400FC;
     }
+#MyLogo1 a:hover{
+    color: #0026FF;
+     }
 
-@media only screen and (orientation: landscape) and (max-height:500px) {
+/* navigation menu*/
+@media only screen and (orientation: landscape) and (max-height: 500px) {
 .menu {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
     float: right;
-     }
-}    
-
+    }
+} 
+@media only screen and (orientation: landscape) and (max-width: 640px) {
+.nav-link {
+    padding:13px 25px !important;
+    }
+}
 .menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     }
-
 .nav-link {
     display: block;
-    color: rgb(220, 220, 220);
+    color: rgba(255, 255, 255, 0.90);
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 1.15em;
@@ -181,7 +173,8 @@ header {
     }
 .pageheader .nav-link {
     text-align: center;
-    color: rgb(240, 240, 240);
+    color: rgba(255, 255, 255, 0.95);
+    padding:15px 30px;
 }
 .nav-link:hover, 
 .header .menu-btn:hover {
@@ -199,7 +192,6 @@ header {
     }
 
 /*menu*/
-
 .header .menu , .pageheader .menu {
     clear: both;
     max-height: 0;
@@ -213,7 +205,7 @@ header {
     user-select: none;
     }
 .header .menu-icon .nav-icon, .pageheader .menu-icon .nav-icon {
-    background: rgb(233, 233, 233);;
+    background: rgba(255, 255, 255, 0.90);
     display: block;
     height: 2.2px;
     position: relative;
@@ -222,7 +214,7 @@ header {
     }
 .header .menu-icon .nav-icon:before, .pageheader .menu-icon .nav-icon:before,
 .header .menu-icon .nav-icon:after,.pageheader .menu-icon .nav-icon:after {
-    background: rgb(233, 233, 233);;
+    background: rgba(255, 255, 255, 0.90);
     content: '';
     display: block;
     height: 100%;
@@ -230,26 +222,20 @@ header {
     transition: all .2s ease-out;
     width: 100%;
     }
-
 .header .menu-icon .nav-icon:before, .pageheader .menu-icon .nav-icon:before {
     top: 7px;
     }
-
 .header .menu-icon .nav-icon:after, .pageheader .menu-icon .nav-icon:after {
     top: -7px;
     }
 
-
 /* menu btn */
-
 .header .menu-btn, .pageheader .menu-btn {
     display: none;
     }
-
 .header .menu-btn:checked ~ .menu, .pageheader .menu-btn:checked ~ .menu {
     max-height: 240px;
     }
-
 .header .menu-btn:checked ~ .menu-icon .nav-icon, .pageheader .menu-btn:checked ~ .menu-icon .nav-icon {
     background: transparent;
     }
@@ -264,7 +250,6 @@ header {
     }
 
 /* 48em = 768px @ 16pt font */
-
 @media (min-width: 50.0625em) { /* = 801px */
 .menu{
     background-color: transparent;
@@ -274,7 +259,7 @@ header {
     background-color: transparent;
     }
 .pageheader .nav-link {
-    color: rgb(233, 233, 233);
+    color: rgba(255, 255, 255, 0.95);
     }
 .pageheader .nav-item {
     float: left;
@@ -282,7 +267,7 @@ header {
     }
 .nav-link {
     padding: 13px 30px;
-    color: rgb(220, 220, 220);
+    color: rgba(255, 255, 255, 0.90);
     }
 .header .menu, .pageheader .menu {
     clear: none;
@@ -294,32 +279,44 @@ header {
     }
 }
 
-/*title section*/
+/*title section styles*/
 
+/*title for firefox mobile*/
 @supports (-moz-appearance:none ) {
-    @media only screen and (orientation: landscape) and (max-height: 500px) {
-        #type #question1 {
-            font-size: 1.5em !important;
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+#type #question1 {
+    font-size: 1.5em !important;
     }
 }
-    @media only screen and (max-width: 500px) {
-        #type #question1 {
-            font-size: 1.5em !important;
+@media only screen and (max-width: 500px) {
+    #type #question1 {
+    font-size: 1.5em !important;
     }
 }
 }
 
+/*title section responsive*/
+
+/*landscape title section responsive styles*/
 @media only screen and (orientation: landscape) and (max-height: 500px) {
 #question1 {
     font-size: 1.77em !important;
-}
+    }
 #title .jumper {
     display: none;
     }
 }
+
+@media only screen and (orientation: portrait) and (max-height: 640px) {
+#question1 {
+    font-size: 1.5em !important;
+    } 
+}
+
+/*portrait & general responsive styles*/
 @media only screen and (max-width: 1200px) {
 #title {
-    background-position-x: calc(100% - 36.97%);
+    background-position-x: right 36.57%;
     }
 }
 @media only screen and (max-width: 1100px) {
@@ -337,11 +334,6 @@ header {
     background-position-x: calc(100% - 39.97%)
     }
 }
-@media only screen and (max-width: 767px) {
-#title .jumper {
-    display: none;
-    }
-}
 @media only screen and (max-width: 810px) {
 #title {
     background-position-x: calc(100% - 40.37%)
@@ -356,7 +348,7 @@ header {
     font-family: 'Permanent Marker', cursive;
     font-weight: 300;
     text-align: right;
-    color:rgb(235, 235, 235);
+    color: rgba(255, 255, 255, 0.90);
     font-size: 2.2em;
     letter-spacing: 0.09em;
     display: block;
@@ -365,6 +357,11 @@ header {
     padding-left:10vw;     
     }
 }
+@media only screen and (max-width: 767px) {
+    #title .jumper {
+        display: none;
+        }
+    }
 @media only screen and (max-width: 675px){
 #title {
     background-position-x: calc(100% - 41.15%)
@@ -390,22 +387,24 @@ header {
     } 
 }
 
+/*title section styles general*/
 .title {
     grid-area: title;
     background-image: linear-gradient(240deg, rgba(0,38,255,0.8), rgba(180,0,252,0.8)), url('images/TechnologyHuman.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    background-position: center center;
-    background-position-x: calc(100% - 34.87%);
+    /*background-position: center center;*/
+    /*background-position-x: calc(100% - 34.87%);*/
+    background-position-x: right 34.87%;
     max-width: 100%;
     max-height: auto;
     margin-top: -8.83vh;
     position: relative;
     }
-.title .type { /*div class of the type*/
+.title .type { 
     position: absolute; 
-    padding-top: 54vh; /*lo tenía directo en el texto*/
+    padding-top: 54vh; 
     width: auto;
     display: flex;
     margin-left: 15%; 
@@ -417,7 +416,7 @@ header {
     font-family: 'Permanent Marker', cursive;
     font-weight: 300;
     text-align: center;
-    color:rgb(245, 245, 245);
+    color: rgba(255, 255, 255, 0.90);
     font-size: 3.5vw;
     letter-spacing: 0.09em;
 
@@ -452,17 +451,16 @@ header {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-#chevron { /*the button for colored background*/
+#chevron, #chevron2 { /*the button for colored background*/
     font-size: 30px;
     background-color: rgba(0, 0, 0, 0.1);
     border-color: rgba(255, 255, 255, 0.2);
     padding: 4px 16px;
     border-radius: 8px;
     border-width: 1px;
-    /*box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);*/
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6); 
 }
-#chevron2 { /*the button for white background*/
+#chevron1, #chevron3 { /*the button for white background*/
     font-size: 30px;
     border-color: rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.2);
@@ -471,12 +469,12 @@ header {
     border-width: 1px;
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
 }
-#chevron:hover {
+#chevron:hover, #chevron2:hover {
     background-color: rgba(0, 0, 0, 0.2);
     border-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
 }
-#chevron2:hover {
+#chevron1:hover, #chevron3:hover {
     border-color: rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
@@ -504,38 +502,46 @@ header {
     background-position-y: 75%;
     max-width: 100%;
     max-height: 100%;
+    margin-top: -8.83vh;
 }
 .page_title .pages_title {
     position: relative; 
-    padding-top: 23vh;
+    padding-top: 32vh;
     padding-right: 3em;
-    width: auto;  
-    
+    width: auto;    
 }
 .page_title .pages_title h1 {
     font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        text-align: right;
-        color: #7600A5;
-        font-size: 3.5vw;
-        letter-spacing: 0.09em;
+    font-weight: 500;
+    text-align: right;
+    color: #7600A5;
+    font-size: 3.5vw;
+    letter-spacing: 0.09em;
 }
 
 /*description section*/
+
+/*description section responsive*/
+
+/*description section styles for firefox mobile*/
 @supports (-moz-appearance:none) {
     @media only screen and (orientation: landscape) and (max-height: 500px)
     {
 #desc .desc1{
-    font-size: 1rem !important;  
+    font-size: 1rem !important; 
+    padding-top: 0vh !important;
+    
     }
 #desc .desc2{
-    font-size: 1rem !important;  
+    font-size: 1rem !important; 
+    padding-top: 0vh !important; 
     }
 #desc .desc1 h2 { 
     font-size: 1.8rem !important;
     }
 #desc .desc2 h2 { 
     font-size: 1.8rem !important;
+    padding-top: 0vh !important;
     }     
 }
 @media only screen and (max-width: 600px) {
@@ -556,43 +562,67 @@ header {
 }
 }
 
-@media only screen and (orientation: landscape) and (max-height: 500px) {
-    .desc .jumper1 { 
-        display: none;
-        }
-    .desc {
-        flex-direction: column; 
-        }
-    #desc .desc1 {
-        padding: 5vw 3vw 0vw 3vw;
-        font-size: 1.2rem;
-        line-height: 2.2;   
-        border-bottom: 2px solid #0019A8;
-        height: 100%;
-        margin-top: 3%;
-        }
-    #desc .desc1 h2 { 
-        font-size: 2rem;
-        line-height: 1.5;
-        padding-top: 2vh;
-        }
-    #desc .desc2 { 
-        padding: 5vw 3vw 0vw 3vw;
-        font-size: 1.2rem;
-        line-height: 2.2;
-        height:100%;
-        margin-top: 3%;
-        }
-    #desc .desc2 h2 {
-        font-size: 2rem;
-        line-height: 1.5;
-        padding-bottom: 2vh;
-        }  
-}
-
-@media only screen and (orientation: landscape) and (max-width: 767px) {
+/*decription section responsive portrait*/   
+@media only screen and (max-width: 767px) { 
+#desc .jumper1 { 
+    display: none;
+    }
+#desc {
+    flex-direction: column; 
+    }
 #desc .desc1 {
     padding: 0vw 3vw 0vw 3vw;
+    font-size: 1.3rem;
+    line-height: 2.2; 
+    margin-top: 20%;
+    border-bottom: 2px solid #7600A5;
+    }
+#desc .desc1 h2 { 
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-top: 2vh;
+    }
+#desc .desc2 { 
+    padding: 0vw 3vw 0vw 3vw;
+    font-size: 1.3rem;
+    line-height: 2.2;
+    margin-top: 20%;
+    }
+#desc .desc2 h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-bottom: 2vh;
+    }
+}
+@media only screen and (orientation: portrait) and (max-height: 640px){
+#desc .desc1 {
+    font-size: 1.2rem;
+    line-height: 1.9; 
+    margin-top: 5%;
+    }
+#desc .desc1 h2 { 
+    font-size: 1.8rem;
+    }
+#desc .desc2 { 
+    font-size: 1.2rem;
+    line-height: 1.9;
+    margin-top: 5%;
+    }
+#desc .desc2 h2 {
+    font-size: 1.8rem !important;
+    } 
+}
+
+/*decription section responsive landscape*/
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+#desc .jumper1 { 
+    display: none;
+    }
+#desc {
+    flex-direction: column; 
+    }
+#desc .desc1 {
+    padding: 5vw 3vw 0vw 3vw;
     font-size: 1.2rem;
     line-height: 2.2;   
     border-bottom: 2px solid #0019A8;
@@ -605,7 +635,7 @@ header {
     padding-top: 2vh;
     }
 #desc .desc2 { 
-    padding: 0vw 3vw 0vw 3vw;
+    padding: 5vw 3vw 0vw 3vw;
     font-size: 1.2rem;
     line-height: 2.2;
     height:100%;
@@ -615,43 +645,28 @@ header {
     font-size: 2rem;
     line-height: 1.5;
     padding-bottom: 2vh;
-    } 
-    }
-    
-@media only screen and (max-width: 767px) { 
-    /* For mobile phones: */
-.desc .jumper1 { 
-    display: none;
-    }
-.desc {
-    flex-direction: column; 
-    }
-.desc .desc1 {
-    padding: 0vw 3vw 0vw 3vw;
-    font-size: 1.3rem;
-    line-height: 2.2; 
-    margin-top: 20%;
-    border-bottom: 2px solid #7600A5;
-    }
-.desc .desc1 h2 { 
-    font-size: 2rem;
-    line-height: 1.5;
-    padding-top: 2vh;
-        }
-.desc .desc2 { 
-    padding: 0vw 3vw 0vw 3vw;
-    font-size: 1.3rem;
-    line-height: 2.2;
-    margin-top: 20%;
-    }
-.desc .desc2 h2 {
-    font-size: 2rem;
-    line-height: 1.5;
-    padding-bottom: 2vh;
-    }
+    }  
 }
-
-/*description section for the computer screen*/
+@media only screen and (orientation: landscape) and (max-width: 640px) {
+#desc .desc1 {
+    padding: 0vw 3vw 0vw 3vw;
+    font-size: 1.1rem;
+    line-height: 2.1;   
+    }
+#desc .desc1 h2 { 
+    font-size: 1.75rem;
+    }
+#desc .desc2 { 
+    padding: 0vw 3vw 0vw 3vw;
+    font-size: 1.1rem;
+    line-height: 2.1;
+    }
+#desc .desc2 h2 {
+    font-size: 1.75rem;
+    } 
+}  
+        
+/*description section general styles*/
 .desc {
     grid-area: desc;
     display: flex;
@@ -662,6 +677,23 @@ header {
     border-left: 2px solid #7600A5;
     border-right: 2px solid #0019A8;
 }
+/*.desc::after {
+    content: "";
+    background-image: url('images/Particle inversecopy.jpg');
+    opacity: 30%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-position-x: 64.75%;
+    background-position-y: 55%;
+    }*/
 .desc1 { /*description of blog on the left side*/
     flex-basis: 50%;
     text-align: justify;
@@ -670,7 +702,7 @@ header {
     font-family: 'Lora', serif;
     font-size: 1.14em;
     line-height: 1.8;
-    color: rgb(128, 128, 128);
+    color: rgba(0, 0, 0, 0.75);
 }
 .desc1 h2 { 
     font-family: 'Poppins', sans-serif;
@@ -690,7 +722,7 @@ header {
     font-family: 'Lora', serif;
     font-size: 1.14em;
     line-height: 1.8;
-    color: rgb(128, 128, 128);
+    color: rgba(0, 0, 0, 0.75);
 }
 .desc2 h2 {
     font-family: 'Poppins', sans-serif;
@@ -711,60 +743,71 @@ header {
 
 /*Bateson quote section*/
 
-
+/* Bateson quote section responsive styles for firefox mobile*/
 @supports (-moz-appearance:none) {
-    @media only screen and (orientation: landscape) and (max-height: 500px) {
-        #bateson .bateson1 { 
-            font-size: 1.1em !important;
-            margin-top: 10vh !important;
-            padding: 0vh 6vw !important;
-        }
-        #bateson .bateson1 h2 {
-            font-size: 1.3em !important;
-            line-height: 2.5 !important;
-            padding-top: 1vh !important;
-            }   
-                    
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+#bateson .bateson1 { 
+    font-size: 1.1em !important;
+    margin-top: 10vh !important;
+    padding: 0vh 6vw !important;
+    }
+#bateson .bateson1 h2 {
+    font-size: 1.3em !important;
+    line-height: 2.5 !important;
+    padding-top: 1vh !important;
+    }                     
 }
 @media only screen and (max-width: 600px) {
-    #bateson .bateson1 { 
-        font-size: 1.1em !important;
+#bateson .bateson1 { 
+    font-size: 1.1em !important;
     }
-    #bateson .bateson1 h2 {
-        font-size: 1.3em !important;
-        
-        }   
+#bateson .bateson1 h2 {
+    font-size: 1.3em !important;   
+    }   
 }
 }
 
-
-
+/* Bateson quote section responsive styles landscape*/
 @media only screen and (orientation: landscape) and (max-height: 500px) {
-    .bateson .jumper2 { /*positioning of container for the button to purpose section*/
-        display: none;
-        }
-    .bateson { 
-        flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
-        }
-    .bateson .bateson1 {
-        padding: 1vh 6vw !important;
-        font-size: 1.3em;
-        line-height: 2;
-        margin-top: 18vh;
+#bateson .jumper2 { 
+    display: none;
     }
-    .bateson .bateson1 h2 {
-        font-size: 1.4em;
-        line-height: 3;
-        padding-top: 4vh;
-        } 
+#bateson { 
+    flex-direction: column;  
     }
+#bateson .bateson1 {
+    padding: 1vh 6vw;
+    font-size: 1.3em;
+    line-height: 2;
+    margin-top: 18vh;
+    }
+#bateson .bateson1 h2 {
+    font-size: 1.4em;
+    line-height: 3;
+    padding-top: 4vh;
+    } 
+}
+@media only screen and (orientation: landscape) and (max-width: 640px) {
+#bateson .bateson1 {
+    padding: 0vh 6vw;
+    font-size: 1.3em;
+    line-height: 2;
+    margin-top: 8vh;
+}
+#bateson .bateson1 h2 {
+    font-size: 1.4em;
+    line-height: 3;
+    padding-top: 4vh;
+    } 
+}
 
-@media only screen and (max-width: 767px) { /*antes 690 ?*/ /*quote section mobile small*/
-.bateson .jumper2 { /*positioning of container for the button to purpose section*/
+/* Bateson quote section responsive styles portrait*/
+@media only screen and (max-width: 767px) { 
+.bateson .jumper2 { 
     display: none;
     }
 .bateson { 
-    flex-direction: column;  /*para el celular meter esto en media querie y ajustar paddings y demás*/
+    flex-direction: column;  
     }
 .bateson .bateson1 {
     padding: 5vh 6vw;
@@ -779,8 +822,7 @@ header {
     }
 }
 
-
-/*Bateson quote section computer screen*/
+/*Bateson quote section general styles*/
 .bateson {
     grid-area: bateson;
     display: flex;
@@ -795,13 +837,13 @@ header {
 }
 .bateson1 {
     flex-basis: 50%;
-    background-color: rgba(66, 91, 216, 0.801);
+    background-color: rgba(66, 91, 216, 0.80);
     text-align: center;
     padding: 27.3vh 6vw;
     font-family: 'Lora', serif;
     font-size: 1.3em;
     line-height: 2;
-    color: rgb(221, 221, 221);
+    color: rgba(255, 255, 255, 0.90);
 }
 .bateson1 h2 {
     font-family: 'Poppins', sans-serif;
@@ -809,7 +851,7 @@ header {
     font-weight: 500;
     line-height: 3;
     letter-spacing: 1.5px;
-    color: rgb(221, 221, 221);
+    color: rgba(255, 255, 255, 0.90);
     text-align: center;
 }
 .bateson2 {
@@ -836,29 +878,29 @@ header {
  
 /*purpose section*/
 
-
+/*purpose section responsive for firefox mobile*/
 @supports (-moz-appearance:none) {
-    @media only screen and (orientation: landscape) and (max-height: 500px) {
-        #purposetitle h2 {
-            font-size: 2em !important;
-        }
-        #purpose .purpose1 {
-            padding: 6vh 3vw 0vh 4vw;
-            font-size: 1rem !important;
-            margin-bottom: 10vh !important;
-            
-            }
-        #purpose .purpose2 {
-            padding: 4vh 3vw 0vh 4vw;
-            font-size: 1rem !important;
-            }
-            #purpose .purpose1 h3 {
-                font-size: 1.3rem !important;
-                }
-                #purpose .purpose2 h3 {
-                    font-size: 1.3rem !important;
-                    }
-                }
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+#purposetitle h2 {
+    font-size: 2em !important;
+    }
+#purpose .purpose1 {
+    padding: 8vh 3vw 0vh 4vw !important;
+    font-size: 1rem !important;
+    margin-bottom: 10vh !important;       
+    }
+#purpose .purpose2 {
+    padding: 0vh 3vw 0vh 4vw !important;
+    font-size: 1rem !important;
+    }
+#purpose .purpose1 h3 {
+    font-size: 1.3rem !important;
+    }
+#purpose .purpose2 h3 {
+    font-size: 1.3rem !important;
+    padding-top: 0vh !important;
+    }
+}
 @media only screen and (max-width: 600px) {
     #purposetitle h2 {
         font-size: 2em !important;
@@ -872,14 +914,16 @@ header {
     padding: 4vh 3vw 0vh 4vw;
     font-size: 1rem !important;
     }
-    #purpose .purpose1 h3 {
-        font-size: 1.3rem !important;
-        }
-        #purpose .purpose2 h3 {
-            font-size: 1.3rem !important;
-            }
+#purpose .purpose1 h3 {
+    font-size: 1.3rem !important;
+    }
+#purpose .purpose2 h3 {
+    font-size: 1.3rem !important;
+    }
 }
 }
+
+/*purpose section responsive landscape*/
 @media only screen and (orientation: landscape) and (max-height: 500px){
 #purpose .jumper3 { 
     display: none;
@@ -891,6 +935,12 @@ header {
 #purpose {
     flex-direction: column;
     }
+#purpose .purpose1 #diff {
+    display: none !important;
+    }
+#purpose .purpose1 h3 {
+    display: block;
+    }
 #purpose .purpose1 {
     padding: 6vh 3vw 0vh 4vw;
     font-size: 1.2rem;
@@ -898,46 +948,62 @@ header {
     height: 100%;
     border-bottom: 2px solid #7600A5;
     margin-bottom: 10vh;
-    
     }
 #purpose .purpose2 {
     padding: 4vh 3vw 0vh 4vw;
     font-size: 1.2rem;
     line-height: 2;
-    
     height:100%;
     }
 }
-
-@media only screen and (max-width: 1005px) {
-    .purpose1 h3 {
-        display: none;
-        }
-    .purpose1 #diff {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1.2em;
-        letter-spacing: 1;
-        color: #7600A5;
-        text-align: left;
-        font-weight: 600;
-        line-height: 1.5;
-        padding-bottom: 6vh;
-        display: block;
-        }
-        .purpose .purpose1 { 
-            margin: auto;
-            padding: 15vh 3vw 0vh 3vw;
-            font-size: 1.1rem;
-            line-height: 2;
-            }
-        .purpose .purpose2 { 
-            margin: auto;
-            padding: 15vh 3vw 0vh 3vw;
-            font-size: 1.1rem;
-            line-height: 2;   
-        }
+@media only screen and (orientation: landscape) and (max-width: 640px) {
+#purpose .jumper3 { 
+    display: none;
     }
+#purposetitle h2 {
+    font-size: 2em !important;
+    padding-top: 2vh !important;
+    }
+#purpose .purpose1 {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    }
+#purpose .purpose2 {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding: 0vh 3vw 0vh 4vw;
+    }
+}
 
+/*purpose section responsive portrait*/
+@media only screen and (max-width: 1005px) {
+.purpose1 h3 {
+    display: none;
+    }
+.purpose1 #diff {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 1;
+    color: #7600A5;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-bottom: 6vh;
+    display: block;
+    }
+.purpose .purpose1 { 
+    margin: auto;
+    padding: 15vh 3vw 0vh 3vw;
+    font-size: 1.1rem;
+    line-height: 2;
+    }
+.purpose .purpose2 { 
+    margin: auto;
+    padding: 15vh 3vw 0vh 3vw;
+    font-size: 1.1rem;
+    line-height: 2;   
+    }
+}
 @media only screen and (max-width: 767px) { 
 .purpose .jumper3 { 
     display: none;
@@ -972,7 +1038,6 @@ header {
     line-height: 2;
     padding-bottom: 2vh;
     margin: auto;
-    
     }
 .purpose .purpose2 {
     padding: 0vh 3vw 0vh 4vw;
@@ -981,9 +1046,32 @@ header {
     height: 100%;
     }
 }
+@media only screen and (orientation: portrait) and (max-height: 640px){
+#purposetitle h2 {
+    font-size: 1.8em;
+    padding-top: 1vh;
+    }
+#purpose .purpose1 {
+    font-size: 1.2rem;
+    line-height: 1.9; 
+    padding: 0vh 3vw 0vh 4vw;
+    }
+#purpose .purpose1 h3 { 
+    font-size: 1.4rem;
+    line-height: 1.5;
+    }
+#purpose .purpose2 { 
+    font-size: 1.2rem;
+    line-height: 1.9;
+    }
+#purpose .purpose2 h3 {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-top: -5vh;
+    } 
+}
 
-/*Purpose for computer sceen*/
-
+/*Purpose section general styles*/
 .purposetitle { 
     grid-area: purposetitle;
     max-width: 100%;
@@ -1021,7 +1109,7 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1rem;
     line-height: 1.8;
-    color: rgb(128, 128, 128); 
+    color: rgba(0, 0, 0, 0.75); 
     height: 100%;
     }
 #diff {
@@ -1045,7 +1133,7 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
     line-height: 1.8;
-    color: rgb(128, 128, 128);
+    color: rgba(0, 0, 0, 0.75);
     height: 100%;
     }
 .purpose2 h3 {
@@ -1066,12 +1154,19 @@ header {
     }
 
  /*purpose page*/   
-.cont {
+ .cont {
     grid-area: cont;
     display: flex;
     max-width: 100%;
     position: relative;
     height: 100%;
+    /*display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: (2, 1fr);
+    grid-template-areas: 
+    "cont cont";
+    grid-auto-flow: row dense;
+    margin-bottom: -8.83vh;*/
     }
 .cont::after {
     content: "";
@@ -1089,6 +1184,7 @@ header {
     background-position: center;
     background-position-x: 64.75%;
     background-position-y: 55%;
+    margin-top: -8.83vh;
     }
 .cont .purpose1cont h3 {
     font-family: 'Open Sans', sans-serif;
@@ -1101,13 +1197,14 @@ header {
     padding-bottom: 6vh;
     }
 .cont .purpose1cont {
-    flex-basis: 50%;
+    /*flex-basis: 50%;*/
     text-align: justify;
-    padding: 1.5vh 3vw 15vh 4vw;
+    padding: 1.5vh 3vw 015vh 4vw;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3vw;
     line-height: 1.6;
-    color: rgb(58, 58, 58); 
+    color: rgba(0, 0, 0, 0.75); 
+    margin-top: -8.83vh;
     }
 .cont .purpose2cont h3 {
     font-family: 'Open Sans', sans-serif;
@@ -1120,18 +1217,18 @@ header {
     padding-bottom: 6vh;
     }
 .cont .purpose2cont {
-    flex-basis: 50%;
+    /*flex-basis: 50%;*/
     text-align: justify;
     padding: 1.5vh 4vw 3vh 3vw;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3vw;
     line-height: 1.6;
-    color: rgb(58, 58, 58);
+    color: rgba(0, 0, 0, 0.75);
+    margin-top: -8.83vh;
     }
-
-
 /*reconf section*/
 
+/*reconf styles for firefox mobile*/
 @supports (-moz-appearance:none) {
 @media only screen and (orientation: landscape) and (max-height: 500px) {
 #reconf h2 {
@@ -1142,11 +1239,11 @@ header {
 #reconf p {
     font-size: 1em !important;
     line-height: 1.3 !important;
-    padding: 1vh 13vw 10vh 17vw !important;
+    padding: 1vh 17vw 10vh 17vw !important;
     margin-top: -7vh !important;
     }
 #reconf .imglink { 
-bottom: 12% !important;   
+    bottom: 12% !important;   
     }
 }
 @media only screen and (max-width: 600px) {
@@ -1158,7 +1255,7 @@ bottom: 12% !important;
 #reconf p {
     font-size: 1em !important;
     line-height: 2 !important;
-    padding: 1vh 13vw 0vh 17vw !important;
+    padding: 1vh 17vw 0vh 17vw !important;
     margin-top: -8vh !important;
     }
 #reconf .imglink { 
@@ -1167,6 +1264,7 @@ bottom: 12% !important;
 }
 }
 
+/*reconf styles responsive portrait*/
 @media only screen and (max-width: 970px) {
 #reconf {
     background-size: contain;
@@ -1182,19 +1280,30 @@ bottom: 12% !important;
     padding: 0vh 17vw 15vh 17vw;
     } 
 }
-
-@media only screen and (max-width: 767px) { /*antes 690 ?*/
+@media only screen and (max-width: 767px) { 
 #reconf h2 {
     font-size: 2em;
     line-height: 2.5;
     padding: 8vh 13vw 0vh 17vw;
     }
 }
- 
+@media only screen and (orientation: portrait) and (max-height: 640px) {
+#reconf {
+    margin-bottom: -17% !important;
+    }
+#reconf h2 {
+    font-size: 1.2em !important;
+    }
+    #reconf p {
+    font-size: 1.1em !important;
+    } 
+}
+
+/*reconf styles responsive landscape*/
 @media only screen and (orientation: landscape) and (max-width: 767px) {
 #reconf {
     background-size: contain;
-    margin-bottom: -7.7% !important;
+    margin-bottom: -7.5% !important;
      }
 #reconf h2 {
     font-size: 1.6em;
@@ -1214,11 +1323,34 @@ bottom: 12% !important;
     left: 17%;    
     }
 }
-
+@media only screen and (orientation: landscape) and (max-width: 640px) {
+#reconf {
+    background-size: contain;
+    margin-bottom: -9.3% !important;
+    }
+#reconf h2 {
+    font-size: 1.2em !important;
+    line-height: 1 !important;
+    padding: 0vh 13vw 0vh 17vw;
+    margin-top: -10vh !important;
+    }
+#reconf p {
+    font-size: 1.1em !important;
+    line-height: 1.3 !important;
+    padding: 0vh 17vw 5vh 17vw !important;
+    margin-top: -7vh !important;
+    }
+#reconf .imglink { 
+    position: relative;
+    width: 66%;
+    bottom: 15%;
+    left: 17%;    
+    }
+}
 @media only screen and (orientation: landscape) and (max-height: 500px) {
 #reconf {
     background-size: contain;
-    margin-bottom: -6.3%;
+    margin-bottom: -6.2%
     }
 #reconf h2 {
     font-size: 1.3em;
@@ -1236,6 +1368,7 @@ bottom: 12% !important;
     }
 }
 
+/*reconf styles responsive portrait*/
 @media only screen and (max-width: 630px) {
 #reconf h2 {
     font-size: 1.8em;
@@ -1244,7 +1377,6 @@ bottom: 12% !important;
     font-size: 1.3em;
     }
 }
-
 @media only screen and (max-width: 600px) {
 #reconf h2 {
     font-size: 1.6em;
@@ -1257,7 +1389,6 @@ bottom: 12% !important;
     padding: 0vh 17vw 13vh 17vw;
     }
 }
-
 @media only screen and (max-width: 465px) {
 #reconf h2 {
     font-size: 1.3em;
@@ -1271,7 +1402,7 @@ bottom: 12% !important;
     }
 }
 
-/*reconf section for the computer screen*/
+/*reconf section general styles*/
 .reconf {
     display: flex;
     flex-direction: column;
@@ -1292,20 +1423,20 @@ bottom: 12% !important;
     font-weight: 500;
     line-height: 2.5;
     color: rgba(255, 255, 255, 0.95);
-    padding: 4vh 0vw 0vh 17vw;  
+    padding: 2vh 0vw 0vh 17vw;  
     }
 .reconf p {
     font-family: 'Lora', serif;
     font-size: 1.3em;
     line-height: 2;
-    color: rgba(255, 251, 251, 0.85);
+    color: rgba(255, 255, 255, 0.85);
     padding: 0vh 17vw 20vh 17vw;
     text-align: justify;
     }
 .reconf .imglink { 
     position: relative;
     width: 66%;
-    bottom: 12%;
+    bottom: 15%;
     left: 17%;    
     }
 .reconf .overlay {
@@ -1341,15 +1472,14 @@ bottom: 12% !important;
     }
 
 /*footer section*/
-
-@media only screen and (max-width: 800px) {
-   
+/*footer responsive to top button instead of menu*/
+@media only screen and (max-width: 800px) {  
 footer .menu, .pagefooter .menu {
     display: none;
 }
 footer #top-button, .pagefooter #top-button {
     display: block;
-    color: rgb(220, 220, 220);
+    color: rgba(255, 255, 255, 0.90);
     font-family: 'Poppins', sans-serif;
     text-align: right;
     font-size: 1.6em;
@@ -1367,7 +1497,7 @@ footer #top-button, .pagefooter #top-button {
     }
 }
 
-/*footer for computer screen*/
+/*footer general styles with menu*/
 footer {
     grid-area: footer;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1378,13 +1508,15 @@ footer {
     height: -o-fit-content;
     height: -webkit-fit-content;
     margin-top: auto;
-    }
-.pagefooter { /*footer for pages*/
-	background-color: #1c2138;
-    z-index: 2; 
+    position: static;
+    width:100%;
     }
 #top-button {
     display: none;
+    }
+.pagefooter { /*footer for pages*/
+    background-color: #1c2138;
+    z-index: 2; 
     }
    
 
