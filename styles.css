@@ -49,7 +49,7 @@ h1,h2,h3,h4,h5,h6 {
     "purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose"
     "reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
-    grid-template-columns: 12 1fr;
+    grid-template-columns: 12fr 1fr;
     grid-template-rows: 8.83vh 91.17vh 100vh 100vh 10vh 90vh 91.17vh 8.83vh;
     }
 
@@ -65,7 +65,7 @@ h1,h2,h3,h4,h5,h6 {
     "title title title title title title title title title title title title"
     "cont cont cont cont cont cont cont cont cont cont cont cont"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
-    grid-template-columns: 12 1fr;
+    grid-template-columns: 12fr 1fr;
     grid-template-rows: 8.83vh 44vh 38.34vh 8.83vh;
 }    
 /*layout-end*/
