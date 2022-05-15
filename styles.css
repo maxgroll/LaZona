@@ -49,7 +49,7 @@ h1,h2,h3,h4,h5,h6 {
     "purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose"
     "reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
-    grid-template-columns: (12, 1fr);
+    grid-template-columns: (12 1fr);
     grid-template-rows: 8.83vh 91.17vh 100vh 100vh 10vh 90vh 91.17vh 8.83vh;
     }
 
@@ -65,7 +65,7 @@ h1,h2,h3,h4,h5,h6 {
     "title title title title title title title title title title title title"
     "cont cont cont cont cont cont cont cont cont cont cont cont"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
-    grid-template-columns: (12, 1fr);
+    grid-template-columns: (12 1fr);
     grid-template-rows: 8.83vh 44vh 38.34vh 8.83vh;
 }    
 /*layout-end*/
@@ -399,7 +399,7 @@ header {
     /*background-position-x: calc(100% - 34.87%);*/
     background-position-x: right 34.87%;
     max-width: 100%;
-    max-height: auto;
+    height: auto;
     margin-top: -8.83vh;
     position: relative;
     }
@@ -710,7 +710,7 @@ header {
 .desc1 h2  { 
     font-family: 'Poppins', sans-serif;
     font-size: 4.4vw;
-    letter-spacing: 1.5; 
+    letter-spacing: 1.5px; 
     color: #0019A8;
     text-align: left;
     font-weight: 600;
@@ -731,7 +731,7 @@ header {
 .desc2 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 4.4vw;
-    letter-spacing: 1.5;
+    letter-spacing: 1.5px;
     color: #7600A5;
     text-align: right;
     font-weight: 600;
@@ -987,7 +987,7 @@ header {
 .purpose1 #diff {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
-    letter-spacing: 1;
+    letter-spacing: 1px;
     color: #7600A5;
     text-align: left;
     font-weight: 600;
@@ -1091,7 +1091,7 @@ header {
     margin: auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 3em;
-    letter-spacing: 1.5; 
+    letter-spacing: 1.5px; 
     color: #000000;
     padding-top: 7vh;
     }
@@ -1122,7 +1122,7 @@ header {
 .purpose1 h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
-    letter-spacing: 1;
+    letter-spacing: 1px;
     color: #7600A5;
     text-align: left;
     font-weight: 600;
@@ -1143,7 +1143,7 @@ header {
 .purpose2 h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
-    letter-spacing: 1; 
+    letter-spacing: 1px; 
     color: #0019A8;
     text-align: right;
     font-weight: 600;
@@ -1193,7 +1193,7 @@ header {
 .cont .purpose1cont h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
-    letter-spacing: 1;
+    letter-spacing: 1px;
     color: #7600A5;
     text-align: left;
     font-weight: 600;
@@ -1213,7 +1213,7 @@ header {
 .cont .purpose2cont h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
-    letter-spacing: 1; 
+    letter-spacing: 1px; 
     color: #0019A8;
     text-align: right;
     font-weight: 600;
@@ -1412,7 +1412,7 @@ header {
     flex-direction: column;
     grid-area: reconf;
     max-width: 100%;
-    max-height: auto;
+    height: auto;
     background-image: linear-gradient(240deg, rgba(180,0,252,0.8), rgba(0,38,255,0.8)), url('images/robot.jpg');
     background-repeat: repeat;
     background-size: cover;
