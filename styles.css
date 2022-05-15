@@ -482,12 +482,12 @@ header {
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
     cursor:pointer;
 }
-#chevron:active {
+#chevron:active, #chevron2:active {
     background-color: rgba(0, 0, 0, 0.1);
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
 }
-#chevron2:active {
+#chevron1:active, #chevron3:active {
     border-color: rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
@@ -718,6 +718,9 @@ header {
     padding-top: 6vh;
     
 }
+.desc1 #link_to_blog:hover {
+    color: #7600A5;
+}
 .desc2 { /*description of resources on the right side*/
     flex-basis: 50%;
     text-align: justify;
@@ -737,6 +740,9 @@ header {
     font-weight: 600;
     line-height: 3;
     padding-bottom: 9vh;
+}
+.desc2 #link_to_resources:hover {
+    color: #0019A8;
 }
 .jumper1 { /*positioning of container for the button to quote section*/
     height: 40px;
@@ -857,6 +863,9 @@ header {
     letter-spacing: 1.5px;
     color: rgba(255, 255, 255, 0.90);
     text-align: center;
+}
+.bateson1 #link_to_bateson:hover {
+    color: rgb(210, 210, 210)
 }
 .bateson2 {
     flex-basis: 50%;
