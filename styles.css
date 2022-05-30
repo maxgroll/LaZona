@@ -81,6 +81,8 @@ header {
     height: -ms-fit-content;
     height: -o-fit-content;
     height: -webkit-fit-content;
+    /*position: sticky;
+    top: 0;*/
     }
 .pageheader{
 	background-color: rgba(0, 0, 0, 0.60);
@@ -89,13 +91,13 @@ header {
 /*logo for firefox mobile*/
 @supports (-moz-appearance:none ) {
 @media only screen and (orientation: landscape) and (max-height: 500px) {
-#MyLogo a {
+#MyLogo a, #MyLogo1 a {
     font-size: 1.8em !important;
     padding: 0 0 0 3vw !important;
     }
 }
 @media only screen and (max-width: 500px) {
-    #MyLogo a {
+    #MyLogo a, #MyLogo1 a {
     font-size: 1.8em !important;
     padding: 0 0 0 3vw !important;
     }
