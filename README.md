@@ -1,6 +1,7 @@
 # LaZona
 ## Does Technology Make us Human?
 
-Personal webpage of my research into the relationship of humans and technology...
+Personal webpage of my research into the relationship of humans and technology.
+Content forthcoming. Pretty occupied at the moment learning programming...
 
-My forst contact with selftaught HTML, CSS and just a tinybit of JavaScript.
+My first contact with selftaught HTML, CSS and just a tinybit of JavaScript.
