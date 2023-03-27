@@ -23,7 +23,7 @@ h1,h2,h3,h4,h5,h6 {
     }
 
 
-/*layout-start*/
+/*_____________layout-start____________*/
 
 @media only screen and (orientation: landscape) and (max-height: 500px){
 #container { 
@@ -32,6 +32,16 @@ h1,h2,h3,h4,h5,h6 {
 }
 @media only screen and (max-width: 767px) {
 #container { 
+    grid-template-areas:
+    "header header header header header header header header"
+    "title title title title title title title title"
+    "description description description description description description description description"
+    "bateson bateson bateson bateson bateson bateson bateson bateson"
+    "purpose_title purpose_title purpose_title purpose_title purpose_title purpose_title purpose_title purpose_title"
+    "purpose purpose purpose purpose purpose purpose purpose purpose"
+    "reconfigure reconfigure reconfigure reconfigure reconfigure reconfigure reconfigure reconfigure"
+    "footer footer footer footer footer footer footer footer";
+    grid-template-columns: 8fr, 1fr;
     grid-template-rows: 8.83vh 91.17vh 200vh 100vh 10vh 190vh 91.17vh 8.83vh;
     }
 }
@@ -40,16 +50,16 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 100%;
     position: relative;
     margin: auto;
-    grid-template-areas: 
+    grid-template-areas:
     "header header header header header header header header header header header header"
     "title title title title title title title title title title title title"
-    "desc desc desc desc desc desc desc desc desc desc desc desc"
+    "description description description description description description description description description description description description"
     "bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson bateson"
-    "purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle purposetitle"
+    "purpose_title purpose_title purpose_title purpose_title purpose_title purpose_title purpose_title purpose_title purpose_title purpose_title purpose_title purpose_title"
     "purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose"
-    "reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf reconf"
+    "reconfigure reconfigure reconfigure reconfigure reconfigure reconfigure reconfigure reconfigure reconfigure reconfigure reconfigure reconfigure"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
-    grid-template-columns: 12fr 1fr;
+    grid-template-columns: 12fr, 1fr;
     grid-template-rows: 8.83vh 91.17vh 100vh 100vh 10vh 90vh 91.17vh 8.83vh;
     }
 
@@ -60,12 +70,12 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 100%;
     position: relative;
     margin: auto;
-    grid-template-areas: 
+    grid-template-areas:
     "header header header header header header header header header header header header"
     "title title title title title title title title title title title title"
     "cont cont cont cont cont cont cont cont cont cont cont cont"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
-    grid-template-columns: 12fr 1fr;
+    /*grid-template-columns: 12fr 1fr;*/
     grid-template-rows: 8.83vh 44vh 38.34vh 8.83vh;
 }    
 /*layout-end*/
@@ -91,15 +101,15 @@ header {
 /*logo for firefox mobile*/
 @supports (-moz-appearance:none ) {
 @media only screen and (orientation: landscape) and (max-height: 500px) {
-#MyLogo a, #MyLogo1 a {
-    font-size: 1.8em !important;
-    padding: 0 0 0 3vw !important;
+.header #MyLogo a, .header #MyLogo1 a {
+    font-size: 2em;
+    padding: 2.5vh 0 0 3vw;
     }
 }
 @media only screen and (max-width: 500px) {
-    #MyLogo a, #MyLogo1 a {
-    font-size: 1.8em !important;
-    padding: 0 0 0 3vw !important;
+    header #MyLogo a, header #MyLogo1 a {
+    font-size: 1.9em;
+    padding: 1.5vh 0 0 3vw;
     }
 }
 }
@@ -142,7 +152,7 @@ header {
     color: #0026FF;
      }
 
-/* navigation menu*/
+/*--navigation menu--*/
 @media only screen and (orientation: landscape) and (max-height: 500px) {
 .menu {
     flex-direction: row;
@@ -178,8 +188,8 @@ header {
     color: rgba(255, 255, 255, 0.95);
     padding:15px 30px;
 }
-.nav-link:hover, 
-.header .menu-btn:hover {
+.nav-link:hover 
+ {
     color: #B400FC;
     }
 .nav-link:active {
@@ -281,41 +291,44 @@ header {
     }
 }
 
-/*title section styles*/
+/*---title section styles---*/
 
 /*title for firefox mobile*/
 @supports (-moz-appearance:none ) {
 @media only screen and (orientation: landscape) and (max-height: 500px) {
-#type #question1 {
+#type #question {
     font-size: 1.5em !important;
     }
-}
+  }
 @media only screen and (max-width: 500px) {
-    #type #question1 {
-    font-size: 1.5em !important;
+    #type #question {
+    font-size: 1.5em;
     }
-}
+  }
 }
 
-/*title section responsive*/
-
+/*--title section responsive--*/
 /*landscape title section responsive styles*/
 @media only screen and (orientation: landscape) and (max-height: 500px) {
-#question1 {
+#question {
     font-size: 1.77em !important;
     }
 #title .jumper {
     display: none;
     }
+#title .type {
+    margin-left: 27%;
+    
+    }
 }
 
 @media only screen and (orientation: portrait) and (max-height: 640px) {
-#question1 {
+#question {
     font-size: 1.5em !important;
     } 
 }
 
-/*portrait & general responsive styles*/
+/*--portrait & general responsive styles--*/
 @media only screen and (max-width: 1200px) {
 #title {
     background-position-x: right 36.57%;
@@ -341,22 +354,16 @@ header {
     background-position-x: calc(100% - 40.37%)
     }
 .title #type {
-    margin-left: 3%;
+    margin-left: 13%;
     }
-    #question {
-        display: none;
-    }
-.title .type #question1 {
-    font-family: 'Permanent Marker', cursive;
-    font-weight: 300;
+.title .type #question {
     text-align: right;
-    color: rgba(255, 255, 255, 0.90);
     font-size: 2.2em;
-    letter-spacing: 0.09em;
-    display: block;
-    overflow-wrap: break-word;
+    animation: none;
+    /*overflow-wrap: break-word;*/
     padding-right: 10vw;
-    padding-left:10vw;     
+    padding-left:10vw; 
+    white-space: break-spaces;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -368,7 +375,7 @@ header {
 #title {
     background-position-x: calc(100% - 41.15%)
     }
-.title .type #question1 { 
+.title .type #question { 
     font-size: 2em;
     } 
 }
@@ -376,7 +383,7 @@ header {
 #title {
     background-position-x: calc(100% - 41.57%)
     }
-.title .type #question1 {
+.title .type #question {
     font-size: 1.8em;
     } 
 }
@@ -384,21 +391,18 @@ header {
 #title {
     background-position-x: calc(100% - 42.47%)
     }
-.title .type #question1 {
+.title .type #question {
     font-size: 1.8em;
     } 
 }
 
-
-/*title section styles general*/
+/*--title section styles general--*/
 .title {
     grid-area: title;
     background-image: linear-gradient(240deg, rgba(0,38,255,0.8), rgba(180,0,252,0.8)), url('images/TechnologyHuman.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    /*background-position: center center;*/
-    /*background-position-x: calc(100% - 34.87%);*/
     background-position-x: right 34.87%;
     max-width: 100%;
     height: auto;
@@ -410,10 +414,7 @@ header {
     padding-top: 54vh; 
     width: auto;
     display: flex;
-    margin-left: 15%; 
-    }
-#question1 {
-    display: none;
+    margin-left: 15%;
     }
 #question {
     font-family: 'Permanent Marker', cursive;
@@ -424,23 +425,44 @@ header {
     letter-spacing: 0.09em;
 
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-        /*border-right: .08em solid transparent;*/ /* The typwriter cursor */
+    border-right: .08em solid transparent; /* The typwriter cursor */
     white-space: nowrap;/* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        /*overflow-wrap: break-spaces;*/
-        
-    animation: 
-          typing 7s steps(40, end),
-          blink-caret .75s step-end 9.514;
-        }
+
+    animation:
+        typing 7s steps(40, end),
+        blink-caret .95s step-end 8.5;
+        /*slidein 0.05s ease 7s forwards; nueva linea*/
+}
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
+/*@keyframes slidein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }*/
+  
+  /* The typewriter cursor effect  tambien lo meti nuevo*/
+  
+@keyframes blink-caret {
+    from,
+    to {
+      border-color: rgba(255, 255, 255, 0.90);
+    }
+    50% {
+      border-color: transparent;
+    }
+  }
+
 /*button at the end of each section*/
-.jumper { /*positioning of container for the button to description section*/
+.jumper { /*positioning of container for the button to descriptionription section*/
     height: 40px;
     position: absolute;
     margin-top: 88.7vh; 
@@ -524,44 +546,44 @@ header {
     letter-spacing: 0.09em;
 }
 
-/*description section*/
+/*descriptionription section*/
 
-/*description section responsive*/
+/*descriptionription section responsive*/
 
-/*description section styles for firefox mobile*/
+/*descriptionription section styles for firefox mobile*/
 @supports (-moz-appearance:none) {
     @media only screen and (orientation: landscape) and (max-height: 500px)
     {
-#desc .desc1{
+#description .description1{
     font-size: 1rem !important; 
     padding-top: 0vh !important;
     
     }
-#desc .desc2{
+#description .description2{
     font-size: 1rem !important; 
     padding-top: 0vh !important; 
     }
-#desc .desc1 h2 { 
+#description .description1 h2 { 
     font-size: 1.8rem !important;
     }
-#desc .desc2 h2 { 
+#description .description2 h2 { 
     font-size: 1.8rem !important;
     padding-top: 0vh !important;
     }     
 }
 @media only screen and (max-width: 600px) {
-#desc .desc1{
+#description .description1{
     font-size: 1rem !important;
     margin-top: 20% !important;
     }
-#desc .desc2 { 
+#description .description2 { 
     font-size: 1rem !important;
     margin-top: 20% !important;
     }
-#desc .desc1 h2 { 
+#description .description1 h2 { 
     font-size: 1.8rem !important;
     }
-#desc .desc2 h2 { 
+#description .description2 h2 { 
     font-size: 1.8rem !important;
     }    
 }
@@ -569,64 +591,64 @@ header {
 
 /*decription section responsive portrait*/   
 @media only screen and (max-width: 767px) { 
-#desc .jumper1 { 
+#description .jumper1 { 
     display: none;
     }
-#desc {
+#description {
     flex-direction: column; 
     }
-#desc .desc1 {
+#description .description1 {
     padding: 0vw 3vw 0vw 3vw;
     font-size: 1.3rem;
     line-height: 2.2; 
     margin-top: 20%;
     border-bottom: 2px solid #7600A5;
     }
-#desc .desc1 h2 { 
+#description .description1 h2 { 
     font-size: 2rem;
     line-height: 1.5;
     padding-top: 2vh;
     }
-#desc .desc2 { 
+#description .description2 { 
     padding: 0vw 3vw 0vw 3vw;
     font-size: 1.3rem;
     line-height: 2.2;
     margin-top: 20%;
     }
-#desc .desc2 h2 {
+#description .description2 h2 {
     font-size: 2rem;
     line-height: 1.5;
     padding-bottom: 2vh;
     }
 }
 @media only screen and (orientation: portrait) and (max-height: 640px){
-#desc .desc1 {
+#description .description1 {
     font-size: 1.2rem;
     line-height: 1.9; 
     margin-top: 5%;
     }
-#desc .desc1 h2 { 
+#description .description1 h2 { 
     font-size: 1.8rem;
     }
-#desc .desc2 { 
+#description .description2 { 
     font-size: 1.2rem;
     line-height: 1.9;
     margin-top: 5%;
     }
-#desc .desc2 h2 {
+#description .description2 h2 {
     font-size: 1.8rem !important;
     } 
 }
 
 /*decription section responsive landscape*/
 @media only screen and (orientation: landscape) and (max-height: 500px) {
-#desc .jumper1 { 
+#description .jumper1 { 
     display: none;
     }
-#desc {
+#description {
     flex-direction: column; 
     }
-#desc .desc1 {
+#description .description1 {
     padding: 5vw 3vw 0vw 3vw;
     font-size: 1.2rem;
     line-height: 2.2;   
@@ -634,46 +656,46 @@ header {
     height: 100%;
     margin-top: 3%;
     }
-#desc .desc1 h2 { 
+#description .description1 h2 { 
     font-size: 2rem;
     line-height: 1.5;
     padding-top: 2vh;
     }
-#desc .desc2 { 
+#description .description2 { 
     padding: 5vw 3vw 0vw 3vw;
     font-size: 1.2rem;
     line-height: 2.2;
     height:100%;
     margin-top: 3%;
     }
-#desc .desc2 h2 {
+#description .description2 h2 {
     font-size: 2rem;
     line-height: 1.5;
     padding-bottom: 2vh;
     }  
 }
 @media only screen and (orientation: landscape) and (max-width: 640px) {
-#desc .desc1 {
+#description .description1 {
     padding: 0vw 3vw 0vw 3vw;
     font-size: 1.1rem;
     line-height: 2.1;   
     }
-#desc .desc1 h2 { 
+#description .description1 h2 { 
     font-size: 1.75rem;
     }
-#desc .desc2 { 
+#description .description2 { 
     padding: 0vw 3vw 0vw 3vw;
     font-size: 1.1rem;
     line-height: 2.1;
     }
-#desc .desc2 h2 {
+#description .description2 h2 {
     font-size: 1.75rem;
     } 
 }  
         
-/*description section general styles*/
-.desc {
-    grid-area: desc;
+/*descriptionription section general styles*/
+.description {
+    grid-area: description;
     display: flex;
     max-width: 100%;
     position: relative;
@@ -682,24 +704,7 @@ header {
     border-left: 2px solid #7600A5;
     border-right: 2px solid #0019A8;
 }
-/*.desc::after {
-    content: "";
-    background-image: url('images/Particle inversecopy.jpg');
-    opacity: 30%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: center;
-    background-position-x: 64.75%;
-    background-position-y: 55%;
-    }*/
-.desc1 { /*description of blog on the left side*/
+.description1 { /*descriptionription of blog on the left side*/
     flex-basis: 50%;
     text-align: justify;
     margin: auto;
@@ -709,7 +714,7 @@ header {
     line-height: 1.8;
     color: rgba(0, 0, 0, 0.75);
 }
-.desc1 h2  { 
+.description1 h2  { 
     font-family: 'Poppins', sans-serif;
     font-size: 4.4vw;
     letter-spacing: 1.5px; 
@@ -720,10 +725,10 @@ header {
     padding-top: 6vh;
     
 }
-.desc1 #link_to_blog:hover {
+.description1 #link_to_blog:hover {
     color: #7600A5;
 }
-.desc2 { /*description of resources on the right side*/
+.description2 { /*descriptionription of resources on the right side*/
     flex-basis: 50%;
     text-align: justify;
     margin: auto;
@@ -733,7 +738,7 @@ header {
     line-height: 1.8;
     color: rgba(0, 0, 0, 0.75);
 }
-.desc2 h2 {
+.description2 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 4.4vw;
     letter-spacing: 1.5px;
@@ -743,7 +748,7 @@ header {
     line-height: 3;
     padding-bottom: 9vh;
 }
-.desc2 #link_to_resources:hover {
+.description2 #link_to_resources:hover {
     color: #0019A8;
 }
 .jumper1 { /*positioning of container for the button to quote section*/
@@ -896,7 +901,7 @@ header {
 /*purpose section responsive for firefox mobile*/
 @supports (-moz-appearance:none) {
 @media only screen and (orientation: landscape) and (max-height: 500px) {
-#purposetitle h2 {
+#purpose_title h2 {
     font-size: 2em !important;
     }
 #purpose .purpose1 {
@@ -917,7 +922,7 @@ header {
     }
 }
 @media only screen and (max-width: 600px) {
-    #purposetitle h2 {
+    #purpose_title h2 {
         font-size: 2em !important;
     }
 #purpose .purpose1 {
@@ -943,7 +948,7 @@ header {
 #purpose .jumper3 { 
     display: none;
     }
-#purposetitle h2 {
+#purpose_title h2 {
     font-size: 2.2em;
     padding-top: 3vh;
     }
@@ -975,7 +980,7 @@ header {
 #purpose .jumper3 { 
     display: none;
     }
-#purposetitle h2 {
+#purpose_title h2 {
     font-size: 2em !important;
     padding-top: 2vh !important;
     }
@@ -1023,7 +1028,7 @@ header {
 .purpose .jumper3 { 
     display: none;
     }
-#purposetitle h2 {
+#purpose_title h2 {
     font-size: 2.2em;
     padding-top: 3vh;
     }
@@ -1062,7 +1067,7 @@ header {
     }
 }
 @media only screen and (orientation: portrait) and (max-height: 640px){
-#purposetitle h2 {
+#purpose_title h2 {
     font-size: 1.8em;
     padding-top: 1vh;
     }
@@ -1087,8 +1092,8 @@ header {
 }
 
 /*Purpose section general styles*/
-.purposetitle { 
-    grid-area: purposetitle;
+.purpose_title { 
+    grid-area: purpose_title;
     max-width: 100%;
     height: 100%;
     margin: auto;
@@ -1097,7 +1102,7 @@ header {
     border-left: 2px solid #0019A8;
     border-right: 2px solid #7600A5;
     }
-.purposetitle h2 {
+.purpose_title h2 {
     text-align: center;
     margin: auto;
     font-family: 'Open Sans', sans-serif;
@@ -1161,7 +1166,7 @@ header {
     line-height: 1.5;
     padding-bottom: 6vh;
     }
-.jumper3 { /*positioning of container for the button to reconfigure section*/
+.jumper3 { /*positioning of container for the button to reconfigureigure section*/
     height: 40px;
     position: absolute;
     margin-top: 78.7vh;
@@ -1241,97 +1246,97 @@ header {
     color: rgba(0, 0, 0, 0.75);
     margin-top: -8.83vh;
     }
-/*reconf section*/
+/*reconfigure section*/
 
-/*reconf styles for firefox mobile*/
+/*reconfigure styles for firefox mobile*/
 @supports (-moz-appearance:none) {
 @media only screen and (orientation: landscape) and (max-height: 500px) {
-#reconf h2 {
+#reconfigure h2 {
     font-size: 1.2em !important;
     line-height: 1 !important;
     padding: 0vh 13vw 0vh 17vw !important;
     }
-#reconf p {
+#reconfigure p {
     font-size: 1em !important;
     line-height: 1.3 !important;
     padding: 1vh 17vw 10vh 17vw !important;
     margin-top: -7vh !important;
     }
-#reconf .imglink { 
+#reconfigure .imglink { 
     bottom: 12% !important;   
     }
 }
 @media only screen and (max-width: 600px) {
-#reconf h2 {
+#reconfigure h2 {
     font-size: 1.13em !important;
     line-height: 1.5 !important;
     padding: 2vh 13vw 2vh 17vw !important;
     }
-#reconf p {
+#reconfigure p {
     font-size: 1em !important;
     line-height: 2 !important;
     padding: 1vh 17vw 0vh 17vw !important;
     margin-top: -8vh !important;
     }
-#reconf .imglink { 
+#reconfigure .imglink { 
     bottom: 9% !important;   
     }
 }
 }
 
-/*reconf styles responsive portrait*/
+/*reconfigure styles responsive portrait*/
 @media only screen and (max-width: 970px) {
-#reconf {
+#reconfigure {
     background-size: contain;
     }
 }
 @media only screen and (max-width: 810px) {
-#reconf h2 {
+#reconfigure h2 {
     padding: 6vh 13vw 0vh 17vw;
     } 
-#reconf p {
+#reconfigure p {
     font-size: 1.3em;
     line-height: 2.3;
     padding: 0vh 17vw 15vh 17vw;
     } 
 }
 @media only screen and (max-width: 767px) { 
-#reconf h2 {
+#reconfigure h2 {
     font-size: 2em;
     line-height: 2.5;
     padding: 8vh 13vw 0vh 17vw;
     }
 }
 @media only screen and (orientation: portrait) and (max-height: 640px) {
-#reconf {
+#reconfigure {
     margin-bottom: -17% !important;
     }
-#reconf h2 {
+#reconfigure h2 {
     font-size: 1.2em !important;
     }
-    #reconf p {
+    #reconfigure p {
     font-size: 1.1em !important;
     } 
 }
 
-/*reconf styles responsive landscape*/
+/*reconfigure styles responsive landscape*/
 @media only screen and (orientation: landscape) and (max-width: 767px) {
-#reconf {
+#reconfigure {
     background-size: contain;
     margin-bottom: -7.5% !important;
      }
-#reconf h2 {
+#reconfigure h2 {
     font-size: 1.6em;
     line-height: 1;
     padding: 0vh 13vw 0vh 17vw;
     }
-#reconf p {
+#reconfigure p {
     font-size: 1.3em;
     line-height: 2;
     padding: 0vh 17vw 10vh 17vw;
     margin-top: -6vh;
     }
-#reconf .imglink { 
+#reconfigure .imglink { 
     position: relative;
     width: 66%;
     bottom: 15%;
@@ -1339,23 +1344,23 @@ header {
     }
 }
 @media only screen and (orientation: landscape) and (max-width: 640px) {
-#reconf {
+#reconfigure {
     background-size: contain;
     margin-bottom: -9.3% !important;
     }
-#reconf h2 {
+#reconfigure h2 {
     font-size: 1.2em !important;
     line-height: 1 !important;
     padding: 0vh 13vw 0vh 17vw;
     margin-top: -10vh !important;
     }
-#reconf p {
+#reconfigure p {
     font-size: 1.1em !important;
     line-height: 1.3 !important;
     padding: 0vh 17vw 5vh 17vw !important;
     margin-top: -7vh !important;
     }
-#reconf .imglink { 
+#reconfigure .imglink { 
     position: relative;
     width: 66%;
     bottom: 15%;
@@ -1363,65 +1368,65 @@ header {
     }
 }
 @media only screen and (orientation: landscape) and (max-height: 500px) {
-#reconf {
+#reconfigure {
     background-size: contain;
     margin-bottom: -6.2%
     }
-#reconf h2 {
+#reconfigure h2 {
     font-size: 1.3em;
     line-height: 1;
     padding: 0vh 13vw 0vh 17vw;
     }
-#reconf p {
+#reconfigure p {
     font-size: 1em;
     line-height: 1.5;
     padding: 0vh 17vw 10vh 17vw;
     margin-top: -6vh;
     }
-#reconf .imglink { 
+#reconfigure .imglink { 
     bottom: 15%;   
     }
 }
 
-/*reconf styles responsive portrait*/
+/*reconfigure styles responsive portrait*/
 @media only screen and (max-width: 630px) {
-#reconf h2 {
+#reconfigure h2 {
     font-size: 1.8em;
     }
-#reconf p {
+#reconfigure p {
     font-size: 1.3em;
     }
 }
 @media only screen and (max-width: 600px) {
-#reconf h2 {
+#reconfigure h2 {
     font-size: 1.6em;
     line-height: 2.5;
     padding: 8vh 13vw 0vh 17vw;
     }
-#reconf p {
+#reconfigure p {
     font-size: 1.2em;
     line-height: 2;
     padding: 0vh 17vw 13vh 17vw;
     }
 }
 @media only screen and (max-width: 465px) {
-#reconf h2 {
+#reconfigure h2 {
     font-size: 1.3em;
     line-height: 1.5;
     padding: 4vh 13vw 0vh 17vw;
     }
-#reconf p {
+#reconfigure p {
     font-size: 1.2em;
     line-height: 1.8;
     padding: 0vh 17vw 10vh 17vw;
     }
 }
 
-/*reconf section general styles*/
-.reconf {
+/*reconfigure section general styles*/
+.reconfigure {
     display: flex;
     flex-direction: column;
-    grid-area: reconf;
+    grid-area: reconfigure;
     max-width: 100%;
     height: auto;
     background-image: linear-gradient(240deg, rgba(180,0,252,0.8), rgba(0,38,255,0.8)), url('images/robot.jpg');
@@ -1432,7 +1437,7 @@ header {
     justify-content: space-around;
     position: relative;
     }
-.reconf h2 {
+.reconfigure h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.4em;
     font-weight: 500;
@@ -1440,7 +1445,7 @@ header {
     color: rgba(255, 255, 255, 0.95);
     padding: 2vh 0vw 0vh 17vw;  
     }
-.reconf p {
+.reconfigure p {
     font-family: 'Lora', serif;
     font-size: 1.3em;
     line-height: 2;
@@ -1448,26 +1453,26 @@ header {
     padding: 0vh 17vw 20vh 17vw;
     text-align: justify;
     }
-.reconf .imglink { 
+.reconfigure .imglink { 
     position: relative;
     width: 66%;
     bottom: 15%;
     left: 17%;    
     }
-.reconf .overlay {
+.reconfigure .overlay {
     /*height: 260px;*/
     background-color: #0019a800;
     transition: .5s ease;
     color: #0019A8;
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
     }
-.reconf .overlay img { 
+.reconfigure .overlay img { 
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     }
-.reconf .overlay .text {
+.reconfigure .overlay .text {
     position: absolute;
     font-family: 'Poppins', sans-serif;
     font-size: 3vw;
@@ -1475,12 +1480,12 @@ header {
     left: 13%;
     text-align: left;
     }
-.reconf .overlay:hover {
+.reconfigure .overlay:hover {
     background-color: #0019a80c;
     color: #7600A5;
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6), 0 6px 10px 0 rgba(0,0,0,0.2);
     }
-.reconf .overlay:active {
+.reconfigure .overlay:active {
     background-color: #0019a800;
     color: #0019A8;
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.6);
