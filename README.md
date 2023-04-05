@@ -10,6 +10,3 @@
 > :computer: My first contact with selftaught HTML, CSS and just a tinybit of JavaScript.
 
 > :point_right: Check the [LaZona](https://maxgroll.github.io/LaZona/) out on GitHub pages
-
-
-<a href="https://maxgroll.github.io/LaZona/" target="_blank">LaZona</a>
